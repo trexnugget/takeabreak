@@ -2,22 +2,27 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TakeABreak – Privacy Policy</title>
 <style>
-:root{--bg:#0D0C0E;--fg:#F6F1EA;--muted:#B9B2B8;--gold:#F2C14E}
-@media (prefers-color-scheme: light){:root{--bg:#FBF7F0;--fg:#211C19;--muted:#5C534C;--gold:#8A6100}}
+:root{--bg:#0D0C0E;--fg:#F6F1EA;--muted:#B9B2B8;--gold:#F2C14E;--card:#19181B;--line:#2A292D}
+@media (prefers-color-scheme: light){:root{--bg:#FBF7F0;--fg:#211C19;--muted:#5C534C;--gold:#8A6100;--card:#F1EADF;--line:#DDD2C4}}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
 main{max-width:720px;margin:0 auto;padding:40px 20px 80px}
 h1{color:var(--gold);font-size:28px;line-height:1.2;margin:0 0 16px}
 h2{font-size:19px;margin:36px 0 8px}
 p,li{color:var(--fg)} strong{font-weight:650}
 a{color:var(--gold)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:4px 18px 8px;margin:16px 0}
+.muted{color:var(--muted)}
 </style></head><body><main>
 <h1>TakeABreak – Privacy Policy</h1>
 <p><strong>App:</strong> TakeABreak: Stop Doomscrolling (Android)
-<strong>Effective date:</strong> 28 October 2026
+<strong>Effective date:</strong> 7 November 2026 (app version 4.21)
 <strong>Developer:</strong> Anup Agarwal
 <strong>Contact:</strong> anupagarwal199@gmail.com</p>
+
 <h2>The short version</h2>
-<p>TakeABreak does not collect, upload, sell or share any of your data. Everything the app knows about your phone use stays on your phone. The app's internet permission is used only by Google Play Billing, if you choose to make an optional purchase; your usage data is never sent anywhere. There is no account, no ads and no analytics.</p>
+<p>Everything the app knows about how you use your phone stays on your phone: which apps you open, when, and for how long is never uploaded. There are no ads and no analytics, and nothing is sold or shared.</p>
+<p>The one exception is optional. If you join the <strong>leaderboard</strong> (the Ranks tab) by signing in with Google, the app uploads your first name and your total screen time for the week, so you can compare with friends and other users. Nothing is uploaded unless you choose to join, and you can leave or delete your leaderboard account at any time.</p>
+
 <h2>1. What the app looks at, and why</h2>
 <p>TakeABreak helps you notice and cut down on long scrolling sessions, and gives you a focus timer. To do that it needs a few permissions. Each one is used only on your phone.</p>
 <p><strong>Usage access.</strong> Lets the app see which app is open on screen and for how long, and how many times you unlock your phone. This is how it counts your screen time, sends nudges when a session runs long, and shows your daily and weekly patterns.</p>
@@ -26,31 +31,65 @@ a{color:var(--gold)}
 <p><strong>Display over other apps (optional).</strong> Only needed if you choose the "Full screen" reminder for an app, so the reminder can appear on top of the app you're scrolling.</p>
 <p><strong>Do Not Disturb access (optional).</strong> Only used if you turn on "Silence notifications while focusing" in the Focus tab. During a focus round the app switches Do Not Disturb to Priority mode, and puts your previous setting back on breaks and when the session ends. It doesn't read your notifications.</p>
 <p><strong>Battery and start-up.</strong> Lets the app keep running in the background, keep the focus timer on time with the screen off, and start again after your phone restarts, so nudges stay reliable. The app doesn't use this for anything else.</p>
-<h2>2. What is stored, and where</h2>
+<p><strong>Internet.</strong> Used only by Google Play Billing, if you choose to make an optional purchase, and by the leaderboard, if you choose to join it.</p>
+
+<h2>2. What is stored on your phone</h2>
 <p>The app saves the following in its own private storage on your phone:</p>
 <ul>
 <li>the apps you chose to watch, and the limits you set</li>
-<li>daily totals of screen time, and your wins, losses and streaks (kept for 60 days)</li>
+<li>daily totals of screen time per app, and your wins, losses and streaks</li>
+<li>your answers to check-ins ("Why did you open it?") and your wake-up time</li>
 <li>your settings (reminder style, theme, Halo's guard hours, focus and break lengths and so on)</li>
 <li>Book Save records, and the reading timer while it's running</li>
-<li>your focus sessions: when they started, how long you focused and how many rounds (kept for 60 days)</li>
+<li>your focus sessions: when they started, how long you focused and how many rounds</li>
 </ul>
-<p>None of this leaves your phone. Android's cloud backup is switched off for the app. If you use <strong>Settings → Your data → Back up</strong>, the app writes a file to a place you choose with the system file picker; that file is yours, and the app never uploads it.</p>
-<h2>3. What we don't do</h2>
+<p>None of this leaves your phone, including when you join the leaderboard. Android's cloud backup is switched off for the app. If you use <strong>Settings → Your data → Back up</strong>, the app writes a file to a place you choose with the system file picker; that file is yours, and the app never uploads it.</p>
+
+<h2>3. The leaderboard (optional)</h2>
+<p>The Ranks tab lets you race friends in a group, and see where you stand among everyone on the leaderboard, by total screen time for the week (lowest first). It stays off until you tap "Continue with Google". Every other part of the app works without an account.</p>
+<p><strong>What's collected when you join:</strong></p>
 <ul>
-<li>We don't collect personal information such as your name, email, contacts, location, photos, messages or browsing history.</li>
+<li><strong>Your first name</strong>, taken from your Google account. You can change it in Settings → Leaderboard.</li>
+<li><strong>Your total screen time for the week</strong>, as one number for the whole phone, and how many days it covers. It's sent a few times a day while you're signed in.</li>
+<li><strong>Your groups:</strong> the names of groups you start, and which groups you're in.</li>
+<li><strong>Your Google account email, name and account ID</strong>, and a user ID. These are kept by Google's Firebase Authentication so you can sign in. They're never shown to other users.</li>
+</ul>
+<p>When you sign in and use the leaderboard, Google's Firebase services also process your IP address and basic device information (such as Android version and phone model) to keep sign-in secure and prevent abuse.</p>
+<p><strong>Never collected:</strong> which apps you use, how long you spend in any app, when you use your phone, or anything else from section 2.</p>
+<p><strong>Who can see it:</strong> people in your groups see your first name and weekly total. Everyone on the leaderboard can see your first name and total if you're in the top 50 for a week. Your total also counts, without your name, in everyone's rank and chart. Nobody can see the bottom of the global list.</p>
+<p><strong>Where it's kept:</strong> on Google Firebase (Cloud Firestore in Google's Mumbai, India region, and Firebase Authentication, which may store sign-in records outside India). Google acts as a service provider and doesn't use this data for advertising.</p>
+<p><strong>How long:</strong> the boards only show this week and last week, and older weekly totals are deleted each time the app syncs. Signing out removes your weekly totals straight away. Your name and group memberships are kept until you leave a group or delete your leaderboard account. If you uninstall without signing out, your last two weekly totals stay stored (no longer shown after two weeks) until you ask me to delete them.</p>
+<p><strong>Security:</strong> data is encrypted in transit, and the server's access rules only let you change your own name, score and memberships. Nobody can browse the list of groups; a group can only be opened with its code.</p>
+
+<h2>4. What we don't do</h2>
+<ul>
+<li>We don't collect your contacts, location, photos, messages or browsing history. Your name, email and account ID are collected only if you join the leaderboard, as described above.</li>
 <li>We don't see what you do inside other apps. The app only knows which app is open and for how long, not what's on the screen.</li>
 <li>We don't use analytics, advertising or tracking tools, and no crash-reporting SDK. If the app crashes, Android may send an anonymous crash report to Google, which the developer sees in Google Play Console (you can turn this off in your phone's settings).</li>
-<li>We don't sell or share data with anyone, because we never have it.</li>
+<li>We don't sell or share your data with anyone. Google processes leaderboard data only to run the service for us.</li>
 </ul>
-<h2>4. Optional purchases</h2>
+
+<h2>5. Optional purchases</h2>
 <p>"Buy me a coffee" purchases are handled entirely by Google Play. The developer doesn't receive your payment details. The app only learns which support tier you bought, so it can show your supporter badge.</p>
-<h2>5. Deleting your data</h2>
-<p>To delete everything the app has stored, go to Settings → Apps → TakeABreak → Storage → Clear data, or uninstall the app. Either one removes it all permanently. You can also take back any permission at any time in your phone's settings.</p>
-<h2>6. Children</h2>
-<p>TakeABreak is meant for adults and isn't aimed at children. Because it collects no personal data, it doesn't collect any from children either.</p>
-<h2>7. Changes to this policy</h2>
+
+<h2 id="delete-account">6. Deleting your data and your leaderboard account</h2>
+<div class="box">
+<p><strong>Data on your phone:</strong> go to Settings → Apps → TakeABreak → Storage → Clear data, or uninstall the app. Either one removes it all permanently. You can also take back any permission at any time in your phone's settings.</p>
+<p><strong>Leaderboard account, in the app:</strong> open the ☰ menu on Home → Settings → Leaderboard → <strong>Delete my leaderboard account</strong>. This removes your name, every weekly total, your group memberships and your sign-in account straight away.</p>
+<p><strong>Leaderboard account, without the app:</strong> email <a href="mailto:anupagarwal199@gmail.com?subject=Delete%20my%20TakeABreak%20account">anupagarwal199@gmail.com</a> with the subject "Delete my TakeABreak account", from the Google account you signed in with. I'll delete the same data within 30 days and reply when it's done.</p>
+<p><strong>Only some of it:</strong> Settings → Leaderboard → <strong>Sign out</strong> removes your weekly totals and stops uploads, but keeps your name and groups for when you sign back in. Leaving a group removes you from it.</p>
+</div>
+
+<h2>7. Your rights</h2>
+<p>You can ask what leaderboard data I hold about you, correct it (you can also change your name in the app) or delete it, by writing to the email below. Depending on where you live, laws such as India's Digital Personal Data Protection Act or the EU GDPR may give you more rights; I'll honour them.</p>
+
+<h2>8. Children</h2>
+<p>TakeABreak is meant for adults and isn't aimed at children. The leaderboard needs a Google account. If you believe a child has joined the leaderboard, write to me and I'll delete their data.</p>
+
+<h2>9. Changes to this policy</h2>
 <p>If this policy changes, the new version will be posted at this same address with a new effective date. If the app ever starts handling data differently, you'll be told in the app before that happens.</p>
-<h2>8. Contact</h2>
+<p class="muted">7 November 2026: added the optional leaderboard (section 3) and how to delete a leaderboard account (section 6). Before this, the app collected no personal data at all.</p>
+
+<h2>10. Contact</h2>
 <p>Questions about privacy? Write to anupagarwal199@gmail.com.</p>
 </main></body></html>
