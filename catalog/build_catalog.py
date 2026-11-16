@@ -5,10 +5,12 @@ TakeABreak book catalog (weekly, GitHub Actions).
 Reads Project Gutenberg's public-domain catalog data (the RDF feed, which Gutenberg offers for this kind of use),
 keeps English books that are free to read in India, and writes small tab-separated files the app downloads:
 
-  books/v1/index.tsv        every book, most read first:  id  title  author  words  tags
-  books/v1/shelves.tsv      the Library's shelves:        key  title  subtitle  ids (comma separated)
-  books/v1/about/<n>.tsv    short descriptions, 100 ids per file (n = id // 100):  id  text
-  books/v1/meta.txt         build date and counts
+  books/v2/index.tsv        every book, most read first:  id  title  author  words  tags  audio  seconds  archive
+                            (audio = LibriVox id when there's an audiobook; audiobook-only entries have id = -audio
+                            and words 0; archive = the Internet Archive item, for audio-only covers)
+  books/v2/shelves.tsv      the Library's shelves:        key  title  subtitle  ids (comma separated)
+  books/v2/about/<n>.tsv    short descriptions, 100 ids per file (n = id // 100):  id  text
+  books/v2/meta.txt         build date and counts
 
 India: copyright lasts 60 years after the author's death (counted from the next 1 January), so every author and
 translator must have died in YEAR - 61 or earlier. Books marked "Copyrighted" by Gutenberg are left out.
@@ -17,6 +19,7 @@ import collections, datetime, io, os, re, sys, tarfile, time, urllib.request
 import xml.etree.ElementTree as ET
 
 RDF_URL = "https://www.gutenberg.org/cache/epub/feeds/rdf-files.tar.bz2"
+LIBRIVOX = "https://librivox.org/api/feed/audiobooks/?format=json&limit=500&offset={}"
 MIRROR = "https://gutenberg.pglaf.org/cache/epub"
 UA = "TakeABreak-catalog/1.0 (+https://trexnugget.github.io/takeabreak/)"
 
@@ -58,6 +61,7 @@ TAGS = {
 # Library shelves: key, title, subtitle, rule.
 SHELVES = [
     ("most", "Most read", "Most downloaded classics", lambda b: True),
+    ("aud", "Audiobooks", "Free, read by volunteers", lambda b: b.get("audio", 0) > 0),
     ("short", "Short reads", "Under 2 hours", lambda b: b["words"] <= 30000),
     ("mys", "Mystery", "Detectives, crimes and thrillers", lambda b: "mys" in b["tags"]),
     ("adv", "Adventure", "Pirates, journeys and daring escapes", lambda b: "adv" in b["tags"]),
@@ -224,13 +228,92 @@ def is_placeholder_pixels(px, w, h):
     return white_top > 0.6 and vivid > 0.85
 
 
+def librivox_all(cache="librivox.json"):
+    """Every LibriVox audiobook (about 20,000), 500 a request, kept in [cache] for the run."""
+    import json
+    if os.path.exists(cache):
+        return json.load(open(cache, encoding="utf-8"))
+    out, offset = [], 0
+    while True:
+        try:
+            data = json.loads(fetch(LIBRIVOX.format(offset), timeout=120))
+        except Exception as e:
+            print("librivox stopped at", offset, e)
+            break
+        page = data.get("books") or []
+        if not page:
+            break
+        for b in page:
+            b.pop("sections", None)
+            b.pop("url_rss", None)
+        out.extend(page)
+        offset += len(page)
+        time.sleep(1)
+    json.dump(out, open(cache, "w", encoding="utf-8"))
+    return out
+
+
+def add_audiobooks(books):
+    """
+    LibriVox (public-domain recordings): English books whose every author died by DIED_BY. A recording of a
+    Gutenberg book in the catalog is attached to it (tag "aud"); others become audiobook-only entries after the
+    books, with id = -(LibriVox id).
+    """
+    by_id = {b["id"]: b for b in books}
+    extra = []
+    seen_audio = set()
+    for a in sorted(librivox_all(), key=lambda a: -int(a.get("id") or 0)):
+        if a.get("language") != "English":
+            continue
+        secs = int(a.get("totaltimesecs") or 0)
+        lid = int(a.get("id") or 0)
+        if secs < 300 or lid <= 0:
+            continue
+        authors = a.get("authors") or []
+        if not authors:
+            continue
+        ok = True
+        for au in authors:
+            dod = (au.get("dod") or "").strip()
+            name = f"{au.get('first_name', '')} {au.get('last_name', '')}".strip()
+            if not dod.isdigit():
+                if name.lower() not in OK_NO_DATES:
+                    ok = False
+            elif int(dod) > DIED_BY:
+                ok = False
+        if not ok:
+            continue
+        m = re.search(r"/compress/([^/]+)/", a.get("url_zip_file") or "")
+        archive = m.group(1) if m else ""
+        g = re.search(r"gutenberg\.org/(?:etext|ebooks|files|cache/epub)/(\d+)", a.get("url_text_source") or "")
+        target = by_id.get(int(g.group(1))) if g else None
+        if target is not None:
+            # Several recordings of one book (or of one story from it): keep the longest, the whole book.
+            if target.get("secs", 0) >= secs:
+                continue
+            target.update(audio=lid, secs=secs, archive=archive)
+            target["tags"] = sorted(set(target["tags"]) | {"aud"})
+            continue
+        if secs < 1800:
+            continue  # single poems and very short pieces stay out of the audio-only list
+        title = clean_title(re.sub(r"\s*\(.*?(version|dramatic reading).*?\)\s*$", "", a.get("title") or "", flags=re.I))
+        if not title or "collection" in title.lower():
+            continue
+        author = " & ".join(f"{au.get('first_name', '')} {au.get('last_name', '')}".strip() for au in authors[:2])
+        desc = re.sub(r"<[^>]+>", " ", a.get("description") or "")
+        extra.append(dict(id=-lid, title=title, author=author, words=0, downloads=0, tags=["aud"], india=False,
+                          about=desc, issued="", audio=lid, secs=secs, archive=archive))
+    books.extend(extra)
+    print(f"audiobooks: {sum(1 for b in books if b.get('audio') and b['id'] > 0)} matched, {len(extra)} audio only")
+
+
 def fetch(url, timeout=30):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read()
 
 
-def main(out_dir, rdf_path=None, check_covers=True):
+def main(out_dir, rdf_path=None, check_covers=True, audio=True):
     if rdf_path is None:
         rdf_path = "rdf-files.tar.bz2"
         if not os.path.exists(rdf_path):
@@ -253,15 +336,21 @@ def main(out_dir, rdf_path=None, check_covers=True):
     books.sort(key=lambda b: (-b["downloads"], b["id"]))
     print(f"{seen} records, {len(books)} books kept")
 
+    if audio:
+        add_audiobooks(books)
+
     os.makedirs(os.path.join(out_dir, "about"), exist_ok=True)
     with open(os.path.join(out_dir, "index.tsv"), "w", encoding="utf-8") as f:
         for b in books:
-            f.write(f"{b['id']}\t{tsv(b['title'])}\t{tsv(b['author'])}\t{b['words']}\t{','.join(b['tags'])}\n")
+            f.write(f"{b['id']}\t{tsv(b['title'])}\t{tsv(b['author'])}\t{b['words']}\t{','.join(b['tags'])}"
+                    f"\t{b.get('audio', 0)}\t{b.get('secs', 0)}\t{b.get('archive', '')}\n")
 
     shards = collections.defaultdict(list)
     for b in books:
         if b["about"]:
-            shards[b["id"] // 100].append((b["id"], short_about(b["about"])))
+            # Audiobook-only entries (negative ids) go in "a<n>.tsv" shards by their LibriVox id.
+            key = f"a{-b['id'] // 100}" if b["id"] < 0 else str(b["id"] // 100)
+            shards[key].append((b["id"], short_about(b["about"])))
     for n, rows in shards.items():
         with open(os.path.join(out_dir, "about", f"{n}.tsv"), "w", encoding="utf-8") as f:
             for bid, text in sorted(rows):
@@ -299,7 +388,7 @@ def main(out_dir, rdf_path=None, check_covers=True):
             same = (re.split(r"[:;(\[]| or,", b["title"].lower())[0].strip(" ,."), b["author"].lower())
             if same in taken:
                 continue
-            if rule(b) and b["tags"] and b["issued"] < fresh and not re.search(r"\bVol(\.|ume)\s|\[Vol", b["title"]) and real_cover(b["id"]):
+            if b["id"] > 0 and rule(b) and b["tags"] and b["issued"] < fresh and not re.search(r"\bVol(\.|ume)\s|\[Vol", b["title"]) and real_cover(b["id"]):
                 ids.append(b["id"])
                 taken.add(same)
         if len(ids) >= 8:
@@ -315,6 +404,8 @@ def main(out_dir, rdf_path=None, check_covers=True):
 
 
 if __name__ == "__main__":
-    out = sys.argv[1] if len(sys.argv) > 1 else "books/v1"
-    rdf = sys.argv[2] if len(sys.argv) > 2 else None
-    main(out, rdf, check_covers="--no-covers" not in sys.argv)
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    out = args[0] if args else "books/v2"
+    rdf = args[1] if len(args) > 1 else None
+    # books/v1 is for app 4.26 (ebooks only); books/v2 adds LibriVox audiobooks (app 4.27+).
+    main(out, rdf, check_covers="--no-covers" not in sys.argv, audio="--no-audio" not in sys.argv)
