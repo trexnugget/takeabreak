@@ -5,7 +5,7 @@ TakeABreak book catalog (weekly, GitHub Actions).
 Reads Project Gutenberg's public-domain catalog data (the RDF feed, which Gutenberg offers for this kind of use),
 keeps English books that are free to read in India, and writes small tab-separated files the app downloads:
 
-  books/v2/index.tsv        every book, most read first:  id  title  author  words  tags  audio  seconds  archive
+  books/v2/index.tsv        every book, most read first:  id  title  author  words  tags  audio  seconds  archive  lang
                             (audio = LibriVox id when there's an audiobook; audiobook-only entries have id = -audio
                             and words 0; archive = the Internet Archive item, for audio-only covers)
   books/v2/shelves.tsv      the Library's shelves:        key  title  subtitle  ids (comma separated)
@@ -36,6 +36,10 @@ RDF_RES = "{%s}resource" % NS["rdf"]
 
 YEAR = datetime.date.today().year
 DIED_BY = YEAR - 61  # India: life + 60, from the following 1 January
+LANG_CODES = {"English": "en", "French": "fr", "German": "de", "Spanish": "es", "Italian": "it", "Portuguese": "pt",
+              "Dutch": "nl", "Russian": "ru", "Chinese": "zh", "Japanese": "ja", "Latin": "la", "Greek": "el",
+              "Ancient Greek": "grc", "Polish": "pl", "Finnish": "fi", "Swedish": "sv", "Danish": "da", "Hebrew": "he",
+              "Tagalog": "tl", "Bulgarian": "bg", "Ukrainian": "uk", "Hungarian": "hu", "Esperanto": "eo", "Czech": "cs"}
 INDIA_RULE = False  # off since 16 Nov 2026: every US public-domain book is shown
 OK_NO_DATES = {"anonymous", "unknown"}
 
@@ -129,19 +133,15 @@ def parse(data):
     typ = ebook.find("dcterms:type/rdf:Description/rdf:value", NS)
     if typ is None or typ.text != "Text":
         return None
-    langs = [v.text for v in ebook.findall("dcterms:language/rdf:Description/rdf:value", NS)]
-    if langs != ["en"]:
-        return None
-    rights = ebook.findtext("dcterms:rights", default="", namespaces=NS)
-    if not rights.startswith("Public domain"):
-        return None
+    # Every language, and Gutenberg's few copyrighted-with-permission books too (Anup, 16 Nov 2026: "we need every
+    # book that is there"). Shelves stay English.
+    langs = [v.text or "" for v in ebook.findall("dcterms:language/rdf:Description/rdf:value", NS)]
+    lang = langs[0] if langs else ""
     title = ebook.findtext("dcterms:title", default="", namespaces=NS)
     if not title:
         return None
     creators = [agent_info(a) for a in ebook.findall("dcterms:creator/pgterms:agent", NS)]
     translators = [agent_info(a) for a in ebook.findall("marcrel:trl/pgterms:agent", NS)]
-    if not creators:
-        return None
     for name, death in (creators + translators) if INDIA_RULE else []:
         if death is None:
             if name.strip().lower() not in OK_NO_DATES:
@@ -150,8 +150,7 @@ def parse(data):
             return None
     shelves = [v.text or "" for v in ebook.findall("pgterms:bookshelf/rdf:Description/rdf:value", NS)]
     subjects = [v.text or "" for v in ebook.findall("dcterms:subject/rdf:Description/rdf:value", NS)]
-    if any("Periodicals" in s for s in subjects) or any("Journals" in s or "Magazine" in s for s in shelves):
-        return None
+    periodical = any("Periodicals" in s for s in subjects) or any("Journals" in s or "Magazine" in s for s in shelves)
     has_epub = False
     txt_bytes = 0
     for f in ebook.findall("dcterms:hasFormat/pgterms:file", NS):
@@ -164,21 +163,21 @@ def parse(data):
             txt_bytes = max(txt_bytes, size)
         elif any(x.startswith("text/plain") for x in fmts) and not txt_bytes:
             txt_bytes = size
-    if not has_epub or txt_bytes <= 0:
-        return None
-    words = int(max(0, txt_bytes - 19000) * WORDS_PER_BYTE)
-    if words < 1200 or words > 700000:
-        return None
+    if not has_epub:
+        return None  # nothing the reader can open
+    words = max(300, int(max(0, txt_bytes - 19000) * WORDS_PER_BYTE))
     downloads = int(ebook.findtext("pgterms:downloads", default="0", namespaces=NS) or 0)
     if "Category: Sexuality & Erotica" in shelves:
-        return None
+        return None  # Google Play doesn't allow sexually explicit content
     tags = {TAGS[s] for s in shelves if s in TAGS}
     if any("Horror" in s or "Ghost stories" in s for s in subjects):
         tags.add("hor")
     if any("Detective and mystery" in s for s in subjects):
         tags.add("mys")
+    if periodical:
+        tags.add("per")
     tags = sorted(tags)
-    author = " & ".join(display_name(n) for n, _ in creators[:2] if n)
+    author = " & ".join(display_name(n) for n, _ in creators[:2] if n) or "Anonymous"
     india = bool(INDIA_AUTHORS.search(" ".join(n for n, _ in creators))) or any(
         re.search(r"\bIndia\b", s) and ("Fiction" in s or "Poetry" in s or "Folklore" in s) for s in subjects)
     if india:
@@ -186,7 +185,7 @@ def parse(data):
     about = ebook.findtext("pgterms:marc520", default="", namespaces=NS) or ""
     issued = ebook.findtext("dcterms:issued", default="", namespaces=NS) or ""
     return dict(id=bid, title=clean_title(title), author=author, words=words, downloads=downloads, tags=tags,
-                india=india, about=about.strip(), issued=issued)
+                india=india, about=about.strip(), issued=issued, lang=lang)
 
 
 def short_about(text):
@@ -265,15 +264,11 @@ def add_audiobooks(books):
     extra = []
     seen_audio = set()
     for a in sorted(librivox_all(), key=lambda a: -int(a.get("id") or 0)):
-        if a.get("language") != "English":
-            continue
         secs = int(a.get("totaltimesecs") or 0)
         lid = int(a.get("id") or 0)
-        if secs < 300 or lid <= 0:
+        if secs <= 0 or lid <= 0:
             continue
         authors = a.get("authors") or []
-        if not authors:
-            continue
         ok = True
         for au in authors if INDIA_RULE else []:
             dod = (au.get("dod") or "").strip()
@@ -296,15 +291,13 @@ def add_audiobooks(books):
             target.update(audio=lid, secs=secs, archive=archive)
             target["tags"] = sorted(set(target["tags"]) | {"aud"})
             continue
-        if secs < 1800:
-            continue  # single poems and very short pieces stay out of the audio-only list
         title = clean_title(re.sub(r"\s*\(.*?(version|dramatic reading).*?\)\s*$", "", a.get("title") or "", flags=re.I))
-        if not title or "collection" in title.lower():
+        if not title:
             continue
-        author = " & ".join(f"{au.get('first_name', '')} {au.get('last_name', '')}".strip() for au in authors[:2])
+        author = " & ".join(f"{au.get('first_name', '')} {au.get('last_name', '')}".strip() for au in authors[:2]) or "Various"
         desc = re.sub(r"<[^>]+>", " ", a.get("description") or "")
         extra.append(dict(id=-lid, title=title, author=author, words=0, downloads=0, tags=["aud"], india=False,
-                          about=desc, issued="", audio=lid, secs=secs, archive=archive))
+                          about=desc, issued="", audio=lid, secs=secs, archive=archive, lang=LANG_CODES.get(a.get("language") or "", "")))
     books.extend(extra)
     print(f"audiobooks: {sum(1 for b in books if b.get('audio') and b['id'] > 0)} matched, {len(extra)} audio only")
 
@@ -320,8 +313,19 @@ def main(out_dir, rdf_path=None, check_covers=True, audio=True):
         rdf_path = "rdf-files.tar.bz2"
         if not os.path.exists(rdf_path):
             print("downloading", RDF_URL)
+            # Gutenberg sometimes answers 503; wait and try again, then a mirror.
+            data = None
+            for attempt, url in enumerate([RDF_URL, RDF_URL, RDF_URL.replace("www.gutenberg.org", "gutenberg.pglaf.org"), RDF_URL]):
+                try:
+                    data = fetch(url, timeout=600)
+                    break
+                except Exception as e:
+                    print("rdf download failed:", url, e)
+                    time.sleep(60 * (attempt + 1))
+            if data is None:
+                raise SystemExit("couldn't download Gutenberg's catalog data")
             with open(rdf_path, "wb") as f:
-                f.write(fetch(RDF_URL, timeout=600))
+                f.write(data)
     books = []
     seen = 0
     with tarfile.open(rdf_path, "r:bz2") as tar:
@@ -345,7 +349,7 @@ def main(out_dir, rdf_path=None, check_covers=True, audio=True):
     with open(os.path.join(out_dir, "index.tsv"), "w", encoding="utf-8") as f:
         for b in books:
             f.write(f"{b['id']}\t{tsv(b['title'])}\t{tsv(b['author'])}\t{b['words']}\t{','.join(b['tags'])}"
-                    f"\t{b.get('audio', 0)}\t{b.get('secs', 0)}\t{b.get('archive', '')}\n")
+                    f"\t{b.get('audio', 0)}\t{b.get('secs', 0)}\t{b.get('archive', '')}\t{b.get('lang', '')}\n")
 
     shards = collections.defaultdict(list)
     for b in books:
@@ -390,7 +394,7 @@ def main(out_dir, rdf_path=None, check_covers=True, audio=True):
             same = (re.split(r"[:;(\[]| or,", b["title"].lower())[0].strip(" ,."), b["author"].lower())
             if same in taken:
                 continue
-            if b["id"] > 0 and rule(b) and b["tags"] and b["issued"] < fresh and not re.search(r"\bVol(\.|ume)\s|\[Vol", b["title"]) and real_cover(b["id"]):
+            if b["id"] > 0 and b.get("lang") == "en" and "per" not in b["tags"] and rule(b) and b["tags"] and b["issued"] < fresh and not re.search(r"\bVol(\.|ume)\s|\[Vol", b["title"]) and real_cover(b["id"]):
                 ids.append(b["id"])
                 taken.add(same)
         if len(ids) >= 8:
