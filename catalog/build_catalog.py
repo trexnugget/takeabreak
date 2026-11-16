@@ -66,7 +66,7 @@ SHELVES = [
     ("hor", "Horror", "Read these with the lights on", lambda b: "hor" in b["tags"]),
     ("phi", "Philosophy", "Old ideas that still hold up", lambda b: "phi" in b["tags"]),
     ("poe", "Poetry", "A few pages at a time", lambda b: "poe" in b["tags"]),
-    ("india", "From India", "Indian authors and stories", lambda b: b.get("india", False)),
+    ("india", "From India", "Indian authors and stories", lambda b: "ind" in b["tags"]),
     ("kid", "Young readers", "Children's classics, for any age", lambda b: "kid" in b["tags"]),
     ("hum", "Humour", "Old books that are still funny", lambda b: "hum" in b["tags"]),
 ]
@@ -175,6 +175,8 @@ def parse(data):
     author = " & ".join(display_name(n) for n, _ in creators[:2] if n)
     india = bool(INDIA_AUTHORS.search(" ".join(n for n, _ in creators))) or any(
         re.search(r"\bIndia\b", s) and ("Fiction" in s or "Poetry" in s or "Folklore" in s) for s in subjects)
+    if india:
+        tags = sorted(set(tags) | {"ind"})
     about = ebook.findtext("pgterms:marc520", default="", namespaces=NS) or ""
     issued = ebook.findtext("dcterms:issued", default="", namespaces=NS) or ""
     return dict(id=bid, title=clean_title(title), author=author, words=words, downloads=downloads, tags=tags,
@@ -290,11 +292,16 @@ def main(out_dir, rdf_path=None, check_covers=True):
     lines = []
     for key, title, sub, rule in SHELVES:
         ids = []
+        taken = set()  # one edition of a book per shelf
         for b in books:
             if len(ids) >= SHELF_SIZE:
                 break
+            same = (re.split(r"[:;(\[]| or,", b["title"].lower())[0].strip(" ,."), b["author"].lower())
+            if same in taken:
+                continue
             if rule(b) and b["tags"] and b["issued"] < fresh and not re.search(r"\bVol(\.|ume)\s|\[Vol", b["title"]) and real_cover(b["id"]):
                 ids.append(b["id"])
+                taken.add(same)
         if len(ids) >= 8:
             lines.append(f"{key}\t{title}\t{sub}\t{','.join(map(str, ids))}")
         print(f"shelf {key}: {len(ids)}")

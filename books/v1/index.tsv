@@ -181,7 +181,7 @@
 45109	The Enchiridion	Epictetus	12532	cla,phi
 8438	The Nicomachean ethics of Aristotle	Aristotle	112509	cla,phi
 4280	The Critique of Pure Reason	Immanuel Kant	223497	phi
-236	The Jungle Book	Rudyard Kipling	49075	adv,kid,sho
+236	The Jungle Book	Rudyard Kipling	49075	adv,ind,kid,sho
 221	The Return of Sherlock Holmes	Arthur Conan Doyle	109480	mys,sho
 48155	History of Ancient Pottery: Greek, Etruscan, and Roman. Volume 2 (of 2)	H. B. Walters & Samuel Birch	250461	
 2527	The Sorrows of Young Werther	Johann Wolfgang von Goethe	41485	cla,nov,rom
@@ -302,7 +302,7 @@
 202	My Bondage and My Freedom	Frederick Douglass	134444	bio
 18857	A Journey to the Centre of the Earth	Jules Verne	86004	adv,cla,nov,sff
 17450	The Part Borne by the Dutch in the Discovery of Australia 1606-1765	J. E. Heeres	64153	
-2500	Siddhartha	Hermann Hesse	38535	nov,phi
+2500	Siddhartha	Hermann Hesse	38535	ind,nov,phi
 59931	The Love-Story of Aliette Brunton	Gilbert Frankau	157667	nov,rom
 26659	The Will to Believe, and Other Essays in Popular Philosophy	William James	104279	phi,rel
 48438	Rizal's own story of his life	José Rizal	13530	bio
@@ -498,7 +498,7 @@
 42486	The Two Magics: The Turn of the Screw, Covering End	Henry James	77763	mys,nov
 44608	The Bābur-nāma in English (Memoirs of Bābur)	Babur	477220	bio
 44833	Chaucer's Works, Volume 2 — Boethius and Troilus	Geoffrey Chaucer	228371	cla,phi,poe,rom
-7164	Gitanjali	Rabindranath Tagore	13703	poe,rel
+7164	Gitanjali	Rabindranath Tagore	13703	ind,poe,rel
 31	Plays of Sophocles: Oedipus the King; Oedipus at Colonus; Antigone	Sophocles	38993	cla
 20476	Hymns for Christian Devotion: Especially Adapted to the Universalist Denomination	John G. Adams & E. H. Chapin	145905	poe,rel
 967	Nicholas Nickleby	Charles Dickens	333135	cla,nov
@@ -611,7 +611,7 @@
 9182	Villette	Charlotte Brontë	195647	nov
 60230	The Natural History of Pliny, Volume 2 (of 6)	Pliny	264250	
 76546	The Corbin necklace	Henry Kitchell Webster	58119	mys,nov
-6524	Stray Birds	Rabindranath Tagore	5629	poe
+6524	Stray Birds	Rabindranath Tagore	5629	ind,poe
 5658	Lord Jim	Joseph Conrad	126348	adv,cla,nov
 26672	Bookbinding, and the Care of Books : A Handbook for Amateurs, Bookbinders & Librarians	Douglas Cockerell	54060	
 1872	The Red House Mystery	A. A. Milne	61418	mys,nov
@@ -1190,7 +1190,7 @@
 383	She Stoops to Conquer; Or, The Mistakes of a Night: A Comedy	Oliver Goldsmith	23366	hum
 4499	Complete Short Works of George Meredith	George Meredith	171013	adv,rom,sho
 66960	The Preaching of Islam: A History of the Propagation of the Muslim Faith	Thomas Walker Arnold	192670	rel
-33525	Stories from Tagore	Rabindranath Tagore	48180	sho
+33525	Stories from Tagore	Rabindranath Tagore	48180	ind,sho
 28375	Poems of Henry Vaughan, Silurist, Volume II	Henry Vaughan	79650	poe
 3741	The Writings of Thomas Paine — Volume 1 (1774-1779): The American Crisis	Thomas Paine	77935	
 25581	Rinkitink in Oz	L. Frank Baum	47920	adv,kid,sff
@@ -1220,12 +1220,12 @@
 22134	Gathering Jewels: The Secret of a Beautiful Life: In Memoriam of Mr. & Mrs. James Knowles. Selected from Their Diaries.	James Knowles & Matilda Darroch Knowles	83407	bio,rel
 22879	Paul Patoff	F. Marion Crawford	150413	nov
 57978	The Curious Lore of Precious Stones : Being a description of their sentiments and folk lore, superstitions, symbolism, mysticism, use in med	George Frederick Kunz	132753	rel
-2226	Kim	Rudyard Kipling	104801	adv,cla
+2226	Kim	Rudyard Kipling	104801	adv,cla,ind
 22925	The Story of Young Abraham Lincoln	Wayne Whipple	52440	bio,kid
 65739	The Bloudy Tenent of Persecution for Cause of Conscience Discussed and Mr. Cotton's Letter Examined and Answered	Roger Williams	166190	phi,rel
 1017	The Soul of Man under Socialism	Oscar Wilde	14583	phi
 3922	The Red Lily — Complete	Anatole France	75994	nov,rom
-49555	The Hermit Doctor of Gaya: A Love Story of Modern India	I. A. R. Wylie	141314	nov,rom
+49555	The Hermit Doctor of Gaya: A Love Story of Modern India	I. A. R. Wylie	141314	ind,nov,rom
 23784	The History of Sir Richard Calmady: A Romance	Lucas Malet	270247	nov,rom
 946	Lady Susan	Jane Austen	22673	nov
 4010	Marmion: A Tale Of Flodden Field	Walter Scott	45558	poe
@@ -1261,8 +1261,8 @@
 15263	The Underground Railroad : A Record of Facts, Authentic Narratives, Letters, &c., Narrating the Hardships, Hair-Breadth Escapes and Death St	William Still	420011	bio
 44520	Pamphlets and Parodies on Political Subjects	William Hone	56513	hum,poe
 3261	News from Nowhere; Or, An Epoch of Rest : Being Some Chapters from a Utopian Romance	William Morris	74411	nov,sff
-40766	Nationalism	Rabindranath Tagore	27105	phi
-43682	The Popular Religion and Folk-Lore of Northern India, Vol. 2 (of 2)	William Crooke	118587	myt,rel
+40766	Nationalism	Rabindranath Tagore	27105	ind,phi
+43682	The Popular Religion and Folk-Lore of Northern India, Vol. 2 (of 2)	William Crooke	118587	ind,myt,rel
 479	Little Lord Fauntleroy	Frances Hodgson Burnett	56350	kid,nov
 51635	Hegel's Lectures on the History of Philosophy: Volume 1 (of 3)	Georg Wilhelm Friedrich Hegel	174991	phi
 28497	Myths of the Norsemen: From the Eddas and Sagas	H. A. Guerber	105674	myt
@@ -1355,7 +1355,7 @@
 56621	Aurora Leigh	Elizabeth Barrett Browning	96518	poe
 27681	The Last of the Mohicans: A Narrative of 1757	James Fenimore Cooper	148708	adv,cla
 50747	The Expositor's Bible: The Book of the Twelve Prophets, Vol. 2 : Commonly Called the Minor	George Adam Smith	167432	rel
-6686	The gardener	Rabindranath Tagore	13705	poe
+6686	The gardener	Rabindranath Tagore	13705	ind,poe
 44	The Song of the Lark	Willa Cather	148967	nov
 26216	The Son of Monte-Cristo	Jules Lermina	104896	adv,nov
 34120	Farthest North, Vol. II : Being the Record of a Voyage of Exploration of the Ship 'Fram' 1893-1896	Fridtjof Nansen	156556	adv,tra
@@ -1574,7 +1574,7 @@
 21637	The Dictator	Justin McCarthy	110648	nov
 33111	The origin of the family, private property, and the state	Friedrich Engels	68505	phi
 22155	The Expressman and the Detective	Allan Pinkerton	71498	mys,nov
-22085	Sir Jagadis Chunder Bose, His Life and Speeches	Jagadis Chandra Bose	60002	bio
+22085	Sir Jagadis Chunder Bose, His Life and Speeches	Jagadis Chandra Bose	60002	bio,ind
 62231	One Thousand Ways to Make a Living; or, An Encyclopædia of Plans to Make Money	Harold Morse Dunphy	539592	
 13476	Experiments with Alternate Currents of High Potential and High Frequency : A Lecture Delivered before the Institution of Electrical Engineer	Nikola Tesla	40040	bio
 26928	Ladies-In-Waiting	Kate Douglas Smith Wiggin	52875	nov
@@ -1590,7 +1590,7 @@
 968	Martin Chuzzlewit	Charles Dickens	338579	cla,nov
 23595	Little Journeys to the Homes of the Great - Volume 11 : Little Journeys to the Homes of Great Businessmen	Elbert Hubbard	93656	bio
 49351	The Pictorial Field-Book of the Revolution, Vol. 1 (of 2) : or, Illustrations, by Pen And Pencil, of the History, Biography, Scenery, Relics	Benson John Lossing	601920	tra
-1937	The Second Jungle Book	Rudyard Kipling	62210	adv,kid,sho
+1937	The Second Jungle Book	Rudyard Kipling	62210	adv,ind,kid,sho
 26481	The Romance of Mathematics : Being the Original Researches of a Lady Professor of Girtham College in Polemical Science, with some Account of	P. H. Ditchfield	23656	
 28299	The Orbis Pictus	Johann Amos Comenius	50204	kid
 60479	1900; or, The last President	Ingersoll Lockwood	11934	nov
@@ -1739,7 +1739,7 @@
 71398	The excavations at Babylon	Robert Koldewey	97176	
 13015	Tales of Old Japan	Algernon Bertram Freeman-Mitford Redesdale	132566	myt
 26334	The Map of Life: Conduct and Character	William Edward Hartpole Lecky	104281	phi
-22217	My Reminiscences	Rabindranath Tagore	60843	bio
+22217	My Reminiscences	Rabindranath Tagore	60843	bio,ind
 43970	Every Day Life in the Massachusetts Bay Colony	George Francis Dow	110620	
 26420	The Convert	Elizabeth Robins	112270	nov
 23284	Impressions of America During the Years 1833, 1834 and 1835. Volume 2 (of 2)	Tyrone Power	85934	tra
@@ -1944,7 +1944,7 @@
 6137	The Home of the Blizzard : Being the Story of the Australasian Antarctic Expedition, 1911-1914	Douglas Mawson	232092	tra
 747	Anomalies and Curiosities of Medicine	George M. Gould & Walter L. Pyle	408840	
 4208	The Journal to Stella	Jonathan Swift	227572	bio
-2400	Vikram and the Vampire: Classic Hindu Tales of Adventure, Magic, and Romance	Richard Francis Burton	79346	adv,myt
+2400	Vikram and the Vampire: Classic Hindu Tales of Adventure, Magic, and Romance	Richard Francis Burton	79346	adv,ind,myt
 4943	The River War: An Account of the Reconquest of the Sudan	Winston Churchill	131957	
 43089	Chaucer's Works, Volume 1 — Romaunt of the Rose; Minor Poems	Geoffrey Chaucer	260359	cla,poe
 69300	Korea and her neighbors : A narrative of travel, with an account of the recent vicissitudes and present position of the country	Isabella L. Bird	170326	tra
@@ -2002,7 +2002,7 @@
 22071	Marjorie Dean, College Sophomore	Josephine Chase	59680	kid,nov
 24430	Nights With Uncle Remus	Joel Chandler Harris	101033	kid,myt,sho
 26330	Frenzied Finance, Vol. 1: The Crime of Amalgamated	Thomas William Lawson	206868	
-1858	Plain tales from the hills	Rudyard Kipling	71247	sho
+1858	Plain tales from the hills	Rudyard Kipling	71247	ind,sho
 37539	The International Jew, the world's foremost problem [volume I] : being a reprint of a series of articles appearing in the Dearborn Independe	William John Cameron & Henry Ford	82449	
 25852	The Letters of Charles Dickens. Vol. 1, 1833-1856	Charles Dickens	142407	bio
 2587	Life Is a Dream	Calderón de la Barca	20117	cla
@@ -2021,7 +2021,7 @@
 6635	A Romance of Billy-Goat Hill	Alice Caldwell Hegan Rice	82146	nov,rom
 6626	Theresa Raquin	Émile Zola	71661	nov
 40367	The Decoration of Houses	Edith Wharton & Ogden Codman	68245	
-8197	India's Love Lyrics	Laurence Hope	23858	poe,rom
+8197	India's Love Lyrics	Laurence Hope	23858	ind,poe,rom
 12582	The History of Rome, Books 27 to 36	Livy	238455	
 19690	Apologia pro vita sua	John Henry Newman	133694	bio,rel
 25185	Mysteries of Bee-keeping Explained	M. Quinby	110166	
@@ -2220,7 +2220,7 @@
 3608	The Ragged Trousered Philanthropists	Robert Tressell	249834	nov
 21957	The Psychology of Singing: A Rational Method of Voice Culture Based on a Scientific Analysis of All Systems, Ancient and Modern	David C. Taylor	72697	psy
 21125	The Boy Patriot	Edward Sylvester Ellis	24744	kid,nov
-35997	The Jungle Book	Rudyard Kipling	50468	adv,kid,nov
+35997	The Jungle Book	Rudyard Kipling	50468	adv,ind,kid,nov
 316	The Golden Road	L. M. Montgomery	75429	kid,nov
 27201	Woman on Her Own, False Gods and The Red Robe : Three Plays By Brieux	Eugène Brieux	86574	
 27690	Nobody's Girl: (En Famille)	Hector Malot	71247	kid,nov
@@ -2453,7 +2453,7 @@
 37431	Pride and Prejudice, a play founded on Jane Austen's novel	Steele MacKaye & Jane Austen	29107	
 52654	The Autobiography of Goethe: Truth and Poetry: From My Own Life	Johann Wolfgang von Goethe	286219	bio
 49038	The Underground Railroad from Slavery to Freedom: A comprehensive history	Wilbur Henry Siebert	205103	
-35690	Omens and Superstitions of Southern India	Edgar Thurston	96141	myt
+35690	Omens and Superstitions of Southern India	Edgar Thurston	96141	ind,myt
 79261	Under the Yankee ensign	Ralph Henry Barbour	65482	
 22461	Union and Democracy	Allen Johnson	100240	
 48870	Early Lives of Charlemagne by Eginhard and the Monk of St Gall edited by Prof. A. J. Grant	Einhard & Balbulus Notker	44317	bio
@@ -2501,11 +2501,11 @@
 16895	Oscar Wilde, His Life and Confessions. Volume 2 (of 2)	Frank Harris	77855	bio
 6406	The Monastery	Walter Scott	177927	nov
 9404	The Story of the Malakand Field Force: An Episode of Frontier War	Winston Churchill	90794	
-23245	Ancient Ballads and Legends of Hindustan	Toru Dutt	24527	myt,poe
+23245	Ancient Ballads and Legends of Hindustan	Toru Dutt	24527	ind,myt,poe
 27320	St. John's College, Cambridge	Robert Forsyth Scott	22152	
 32325	The Adventures of Huckleberry Finn (Tom Sawyer's Comrade)	Mark Twain	103487	adv,cla,nov
 26995	Montezuma's Castle, and Other Weird Tales	Charles B. Cory	33990	adv,myt,sho
-32528	The Lusiad; Or, The Discovery of India, an Epic Poem	Luís de Camões	176968	adv,cla,myt,poe
+32528	The Lusiad; Or, The Discovery of India, an Epic Poem	Luís de Camões	176968	adv,cla,ind,myt,poe
 213	The Man from Snowy River	A. B. Paterson	24818	adv,poe
 1325	Twenty Years at Hull House; with Autobiographical Notes	Jane Addams	109165	bio
 5803	Not that it Matters	A. A. Milne	45240	hum
@@ -2658,7 +2658,7 @@
 40438	Plato and the Other Companions of Sokrates, 3rd ed. Volume 4	George Grote	272852	phi
 53967	Memoirs of the life, exile, and conversations of the Emperor Napoleon. (Vol. I)	Emmanuel-Auguste-Dieudonné Las Cases	152572	bio
 5434	The Physiology of Taste; Or, Transcendental Gastronomy	Brillat-Savarin	70846	phi
-6522	Fruit-Gathering	Rabindranath Tagore	9937	poe
+6522	Fruit-Gathering	Rabindranath Tagore	9937	ind,poe
 19781	Sketches	Benjamin Disraeli	48022	nov,rom
 23215	Old Ebenezer	Opie Percival Read	60509	hum,nov
 23650	Ten Boys from History	Kate Dickinson Sweetser	54759	bio,kid
@@ -2717,7 +2717,7 @@
 50115	Struggles and Triumphs: or, Forty Years' Recollections of P. T. Barnum	P. T. Barnum	257834	bio
 54587	The Pope, the Kings and the People: A History of the Movement to Make the Pope Governor of the World by a Universal Reconstruction of Societ	William Arthur	310451	
 3795	Under the Lilacs	Louisa May Alcott	77534	adv,kid,nov
-6842	Sadhana : the realisation of life	Rabindranath Tagore	36574	phi,rel
+6842	Sadhana : the realisation of life	Rabindranath Tagore	36574	ind,phi,rel
 21608	The Dawn of Reason; or, Mental Traits in the Lower Animals	James Weir	60382	psy
 26760	Memories of Bethany	John R. Macduff	53303	rel
 8714	Four Plays of Aeschylus	Aeschylus	42835	cla,myt
@@ -2852,7 +2852,7 @@
 23798	Daniel Boone: The Pioneer of Kentucky	John S. C. Abbott	75620	adv,bio
 59637	Index of the Project Gutenberg Works of O. Henry	O. Henry	2013	sho
 7333	Sidelights on Relativity	Albert Einstein	9256	
-23136	Creative Unity	Rabindranath Tagore	38702	phi,rel
+23136	Creative Unity	Rabindranath Tagore	38702	ind,phi,rel
 51173	The Stately Homes of England	Llewellynn Frederick William Jewitt & S. C. Hall	254766	
 4761	The Cossacks: A Tale of 1852	Leo Tolstoy	62955	nov
 25608	A Child's Garden of Verses	Robert Louis Stevenson	9800	kid,poe
@@ -3250,7 +3250,7 @@
 4511	The Life of the Bee	Maurice Maeterlinck	60945	phi
 11057	The Wife of his Youth and Other Stories of the Color Line, and Selected Essays	Charles W. Chesnutt	80549	sho
 482	The Woodlanders	Thomas Hardy	136127	nov
-6145	Tales of the Punjab: Folklore of India	Flora Annie Webster Steel	78344	myt
+6145	Tales of the Punjab: Folklore of India	Flora Annie Webster Steel	78344	ind,myt
 11562	Inquiries into human faculty and its development	Francis Galton	109410	psy
 26107	Maxims for Revolutionists	Bernard Shaw	3954	
 41633	A Christian Directory, Part 1: Christian Ethics	Richard Baxter	519816	phi,rel
@@ -3558,7 +3558,7 @@
 3810	The Man-Eaters of Tsavo, and Other East African Adventures	J. H. Patterson	65231	adv
 4275	Ruth	Elizabeth Cleghorn Gaskell	154854	nov
 26640	The Humbugs of the World : An Account of Humbugs, Delusions, Impositions, Quackeries, Deceits and Deceivers Generally, in All Ages	P. T. Barnum	117286	hum
-57520	Folk Lore Notes. Vol. II—Konkan	A. M. T. Jackson	76826	myt,rel
+57520	Folk Lore Notes. Vol. II—Konkan	A. M. T. Jackson	76826	ind,myt,rel
 650	Pictures from Italy	Charles Dickens	73513	tra
 40552	Aristotle and Ancient Educational Ideals	Thomas Davidson	70537	phi
 51403	Cicero: Letters to Atticus, Vol. 3 of 3	Marcus Tullius Cicero	130906	bio
@@ -3621,7 +3621,7 @@
 41359	The Golden Bough: A Study in Comparative Religion (Vol. 2 of 2)	James George Frazer	149516	myt,rel
 42607	The Shepheard's Calender: Twelve Aeglogues Proportionable to the Twelve Monethes	Edmund Spenser	25490	poe
 50637	The works of John Dryden, now first collected in eighteen volumes. Volume 18	John Dryden	98978	
-7166	The Home and the World	Rabindranath Tagore	65068	nov
+7166	The Home and the World	Rabindranath Tagore	65068	ind,nov
 13211	The Pearl : A Middle English Poem, A Modern Version in the Metre of the Original	Sophie Jewett	9283	cla,poe,rel
 25082	The Yellow Horde	Hal G. Evarts	35975	adv,nov
 48702	English Grammar and Composition for Public Schools	G. H. Armstrong	47649	
@@ -3720,7 +3720,7 @@
 43774	The Expeditions of Zebulon Montgomery Pike, Volume 1 (of 3) : To Headwaters of the Mississippi River Through Louisiana Territory, and in New	Zebulon Montgomery Pike	224021	bio,tra
 423	Round the Red Lamp: Being Facts and Fancies of Medical Life	Arthur Conan Doyle	66287	sho
 54169	A History of North American Birds; Land Birds; Vol. 3 of 3	Spencer Fullerton Baird & T. M. Brewer	330214	
-56144	Folk Lore Notes. Vol. I—Gujarat	A. M. T. Jackson	106393	myt
+56144	Folk Lore Notes. Vol. I—Gujarat	A. M. T. Jackson	106393	ind,myt
 3533	Sunshine Sketches of a Little Town	Stephen Leacock	57808	hum,sho
 9804	Stones of Venice [introductions]	John Ruskin	73549	
 15900	His Masterpiece	Émile Zola	146405	nov
@@ -3732,7 +3732,7 @@
 21850	A Little Norsk; Or, Ol' Pap's Flaxen	Hamlin Garland	29601	nov
 21958	Frank Merriwell's Races	Burt L. Standish	68908	adv,nov
 25986	Tongues of Conscience	Robert Hichens	80288	nov
-43681	The Popular Religion and Folk-Lore of Northern India, Vol. 1 (of 2)	William Crooke	105959	myt,rel
+43681	The Popular Religion and Folk-Lore of Northern India, Vol. 1 (of 2)	William Crooke	105959	ind,myt,rel
 241	Clotelle; Or, The Colored Heroine, a tale of the Southern States; Or, The President's Daughter	William Wells Brown	45843	nov
 44494	History of Civilization in England, Vol. 2 of 3	Henry Thomas Buckle	277344	
 52538	Galicia, the Switzerland of Spain	Annette M. B. Meakin	169771	tra
@@ -3901,7 +3901,7 @@
 247	Webster's Unabridged Dictionary (1st 100 Pages)	Noah Webster	264466	
 8082	Canyons of the Colorado	John Wesley Powell	88007	tra
 10633	The History of the Rise, Progress and Accomplishment of the Abolition of the African Slave-Trade, by the British Parliament (1839)	Thomas Clarkson	241261	
-40461	Indian Home Rule	Mahatma Gandhi	29461	phi,rel
+40461	Indian Home Rule	Mahatma Gandhi	29461	ind,phi,rel
 58834	London City	Walter Besant	267181	
 4061	The Fifteen Decisive Battles of the World: from Marathon to Waterloo	Edward Shepherd Creasy	175092	
 41838	The Art of Logical Thinking; Or, The Laws of Reasoning	William Walker Atkinson	36180	phi
@@ -4063,7 +4063,7 @@
 16565	History of the Expedition under the Command of Captains Lewis and Clark, Vol. 1. : To the Sources of the Missouri, Thence Across the Rocky M	Meriwether Lewis & William Clark	174409	adv,tra
 26364	Reincarnation and the Law of Karma: A Study of the Old-New World-Doctrine of Rebirth, and Spiritual Cause and Effect	William Walker Atkinson	46770	phi,rel
 2014	The Lodger	Marie Belloc Lowndes	78664	mys,nov
-5777	Life's Handicap: Being Stories of Mine Own People	Rudyard Kipling	105144	sho
+5777	Life's Handicap: Being Stories of Mine Own People	Rudyard Kipling	105144	ind,sho
 15100	The Voyage of Governor Phillip to Botany Bay : With an Account of the Establishment of the Colonies of Port Jackson and Norfolk Island (1789	Arthur Phillip	74658	
 19831	The Rise and Fall of the Confederate Government, Volume 1	Jefferson Davis	314943	
 23462	More Russian Picture Tales	Valerian Viliamovich Karrik	6880	kid,myt
@@ -4119,7 +4119,7 @@
 14517	France and England in North America, Part VI : Montcalm and Wolfe	Francis Parkman	274101	
 26341	On The Structure of Greek Tribal Society: An Essay	Hugh E. Seebohm	47431	
 43271	The Works of Alexander Pope, Volume 2 (of 10): Poetry - Volume 2	Alexander Pope	242166	poe
-2518	The Hungry Stones, and Other Stories	Rabindranath Tagore	46431	sho
+2518	The Hungry Stones, and Other Stories	Rabindranath Tagore	46431	ind,sho
 5700	Love and Life: An Old Story in Eighteenth Century Costume	Charlotte M. Yonge	104491	nov,rom
 28199	Louis Philippe: Makers of History Series	John S. C. Abbott	75136	bio
 41209	Venice and Its Story	Thomas Okey	111237	
@@ -4331,7 +4331,7 @@
 59603	Three Stories & Ten Poems	Ernest Hemingway	10138	poe,sho
 73403	The dissolution of the monasteries : As illustrated by the suppression of the religious houses of Staffordshire	Francis Aidan Hibbert	100861	
 2801	The Commonwealth of Oceana	James Harrington	112695	phi
-8649	Indian Tales	Rudyard Kipling	162075	adv,sho
+8649	Indian Tales	Rudyard Kipling	162075	adv,ind,sho
 11431	Character Sketches of Romance, Fiction and the Drama, Vol. 1 : A Revised American Edition of the Reader's Handbook	Ebenezer Cobham Brewer	230227	cla
 17451	Sign Language Among North American Indians Compared With That Among Other Peoples And Deaf-Mutes : First Annual Report of the Bureau of Ethn	Garrick Mallery	130918	
 20782	Triplanetary	E. E. Smith	59618	adv,nov,sff
@@ -4611,7 +4611,7 @@
 42817	Lord Randolph Churchill	Winston Churchill	320540	bio
 52897	The Colonial Clippers	Basil Lubbock	157127	
 72171	How music grew, from prehistoric times to the present day	Marion Bauer & Ethel R. Peyser	192968	
-2502	Chitra, a Play in One Act	Rabindranath Tagore	7455	myt
+2502	Chitra, a Play in One Act	Rabindranath Tagore	7455	ind,myt
 2865	Otto of the Silver Hand	Howard Pyle	26938	
 12910	Early Britain—Roman Britain	John William Edward Conybeare	77298	
 29363	Henry Esmond; The English Humourists; The Four Georges	William Makepeace Thackeray	333402	nov
@@ -4884,7 +4884,7 @@
 46702	Rhymes for the Young Folk	William Allingham	18213	kid,poe
 49867	The Learned Lady in England, 1650-1760	Myra Reynolds	194652	
 55070	The Memoirs of François René Vicomte de Chateaubriand sometime Ambassador to England. volume 5 (of 6): Mémoires d'outre-tombe volume 5	François-René Chateaubriand	186213	bio
-323	Verses 1889-1896	Rudyard Kipling	56884	poe
+323	Verses 1889-1896	Rudyard Kipling	56884	ind,poe
 26630	A Cousin's Conspiracy; Or, A Boy's Struggle for an Inheritance	Horatio Alger	50432	adv,nov
 51664	Palace and Mosque at Ukhaidir: A Study in Early Mohammadan Architecture	Gertrude Lowthian Bell	99741	
 56507	The Geographical Distribution of Animals, Volume 2 : With a study of the relations of living and extinct faunas as elucidating the past chan	Alfred Russel Wallace	260615	
@@ -5654,7 +5654,7 @@
 67071	The Star	H. G. Wells	4614	nov,sff
 2092	The Writings of Samuel Adams - Volume 2	Samuel Adams	129682	
 4520	Aaron's Rod	D. H. Lawrence	113500	nov
-7951	Glimpses of Bengal : Selected from the letters of Sir Rabindranath Tagore, 1885 to 1895	Rabindranath Tagore	24266	
+7951	Glimpses of Bengal : Selected from the letters of Sir Rabindranath Tagore, 1885 to 1895	Rabindranath Tagore	24266	ind
 11951	A Popular History of France from the Earliest Times, Volume 1	François Guizot	148034	
 19870	Illuminated Manuscripts	John William Bradley	79481	
 28536	The Astronomy of the Bible : An Elementary Commentary on the Astronomical References of Holy Scripture	E. Walter Maunder	108178	rel
@@ -5970,7 +5970,7 @@
 46451	Nasby in Exile : or, Six Months of Travel in England, Ireland, Scotland, France, Germany, Switzerland and Belgium, with many things not of t	David Ross Locke	194842	hum,tra
 46954	The Story of Siena and San Gimignano	Edmund G. Gardner	122369	tra
 47757	A Manual of Philippine Birds	Richard C. McGregor	350759	
-680	The Golden Threshold	Sarojini Naidu	8603	poe
+680	The Golden Threshold	Sarojini Naidu	8603	ind,poe
 1599	Cinderella; Or, The Little Glass Slipper, and Other Stories	Anonymous	18987	kid,myt
 16847	Hinduism and Buddhism, An Historical Sketch, Vol. 3	Charles Eliot	227750	
 22546	The reign of Mary Tudor	James Anthony Froude	171858	
@@ -6076,7 +6076,7 @@
 349	The Harvester	Gene Stratton-Porter	140363	nov
 1182	Dope	Sax Rohmer	92538	mys,nov
 1711	Child of Storm	H. Rider Haggard	89894	adv,nov
-10366	Freedom's Battle: Being a Comprehensive Collection of Writings and Speeches on the Present Situation	Mahatma Gandhi	79190	rel
+10366	Freedom's Battle: Being a Comprehensive Collection of Writings and Speeches on the Present Situation	Mahatma Gandhi	79190	ind,rel
 26023	The League of Nations and Its Problems: Three Lectures	L. Oppenheim	25750	
 28359	Applied Psychology: Making Your Own World: Being the Second of a Series of Twelve Volumes on the: Applications of Psychology to the Problems	Warren Hilton	7556	psy
 29734	Experiments and Observations on Different Kinds of Air	Joseph Priestley	75299	
@@ -6209,7 +6209,7 @@
 27923	Betty Leicester: A Story For Girls	Sarah Orne Jewett	54681	kid,nov
 39266	Theological Essays	Charles Bradlaugh	112773	phi,rel
 41646	Emmeline, the Orphan of the Castle	Charlotte Smith	215152	nov,rom
-44881	Confessions of a Thug	Meadows Taylor	211079	mys
+44881	Confessions of a Thug	Meadows Taylor	211079	ind,mys
 45170	Palæography : Notes upon the History of Writing and the Medieval Art of Illumination	Bernard Quaritch	34949	
 46752	History of the Jews, Vol. 6 (of 6) : Containing a Memoir of the Author by Dr. Philip Bloch, a Chronological Table of Jewish History, an Inde	Heinrich Graetz	271991	bio
 53267	The corset and the crinoline : A book of modes and costumes from remote periods to the present time	William Barry Lord	47233	
@@ -6846,7 +6846,7 @@
 71812	Miscellanies	Ralph Waldo Emerson	131590	phi,rel
 897	The Rose and the Ring	William Makepeace Thackeray	30010	hum,nov,sff
 2655	The Papers and Writings of Abraham Lincoln — Volume 3: The Lincoln-Douglas Debates	Abraham Lincoln	44148	
-7846	Departmental ditties and Ballads and Barrack-room ballads	Rudyard Kipling	30418	hum,poe
+7846	Departmental ditties and Ballads and Barrack-room ballads	Rudyard Kipling	30418	hum,ind,poe
 11018	Samuel F. B. Morse, His Letters and Journals: In Two Volumes, Volume II	Samuel Finley Breese Morse	171650	bio
 14496	Charles the Bold, Last Duke of Burgundy, 1433-1477	Ruth Putnam	125599	bio
 17332	History of Egypt From 330 B.C. To the Present Time, Volume 12 (of 12)	A. S. Rappoport	91952	
@@ -7079,7 +7079,7 @@
 20987	Story of the War in South Africa, 1899-1900	A. T. Mahan	63583	
 21116	The easiest way : a story of metropolitan life	Eugene Walter & Arthur Hornblow	67563	nov
 23169	The Diamond Lens	Fitz James O'Brien	9451	sff,sho
-34757	Mashi, and Other Stories	Rabindranath Tagore	36036	sho
+34757	Mashi, and Other Stories	Rabindranath Tagore	36036	ind,sho
 40483	These Twain	Arnold Bennett	152379	nov
 42538	The Round Towers of Ireland; or, The History of the Tuath-De-Danaans	Henry O'Brien	201734	myt,rel
 48840	Life of Napoleon Bonaparte, Volume IV.	Walter Scott	209064	bio
@@ -7194,7 +7194,7 @@
 19362	In the year 2889	Michel Verne & Jules Verne	6016	sff
 21931	Sea urchins	W. W. Jacobs	49933	adv,hum,sho
 27514	A Handful of Stars: Texts That Have Moved Great Minds	Frank Boreham	58216	rel
-37364	The Second Jungle Book	Rudyard Kipling	61822	adv,kid,sff,sho
+37364	The Second Jungle Book	Rudyard Kipling	61822	adv,ind,kid,sff,sho
 42925	The Conquest: The True Story of Lewis and Clark	Eva Emery Dye	144600	
 45206	The Call of the South	Robert Lee Durham	120199	nov
 46400	Revolutionary Reader: Reminiscences and Indian Legends	Sophie Lee Foster	122162	myt
@@ -7563,7 +7563,7 @@
 41350	Stories from the Faerie Queen, Told to the Children	Edmund Spenser & Jean Lang	21440	adv,kid,myt
 41432	The Tale of a Field Hospital	Frederick Treves	25501	
 45099	The Rise of the Russian Empire	Saki	124925	
-48511	Vikram and the Vampire; or, Tales of Hindu Devilry	Richard Francis Burton	80134	myt,sho
+48511	Vikram and the Vampire; or, Tales of Hindu Devilry	Richard Francis Burton	80134	ind,myt,sho
 52132	Sunshine and Storm in Rhodesia: Being a Narrative of Events in Matabeleland Both Before and During the Recent Native Insurrection Up to the	Frederick Courteney Selous	115221	
 54703	Things to be Remembered in Daily Life : With Personal Experiences and Recollections	John Timbs	117137	phi
 54964	The Desert Mounted Corps : An Account of the Cavalry Operations in Palestine and Syria 1917-1918	R. M. P. Preston	109510	
@@ -7749,7 +7749,7 @@
 8689	The Eleven Comedies, Volume 2	Aristophanes	106231	cla,myt
 16933	Joan of Arc	Ronald Sutherland Gower	85223	bio
 24654	Chaldea: From the Earliest Times to the Rise of Assyria	Zénaïde A. Ragozin	97716	
-40045	Voices in the Night	Flora Annie Webster Steel	137510	nov
+40045	Voices in the Night	Flora Annie Webster Steel	137510	ind,nov
 41759	International Law	George Grafton Wilson & George Fox Tucker	128735	
 45866	The Spider's Web	Reginald Wright Kauffman	88328	mys,nov
 46716	The Great North Road, the Old Mail Road to Scotland: London to York	Charles G. Harper	71872	tra
@@ -8311,7 +8311,7 @@
 616	Prayers Written At Vailima, and A Lowden Sabbath Morn	Robert Louis Stevenson	4335	poe,rel
 1542	The Two Noble Kinsmen	John Fletcher & William Shakespeare	25603	cla
 2381	Actions and reactions	Rudyard Kipling	68217	sho
-6066	King--of the Khyber Rifles: A Romance of Adventure	Talbot Mundy	101471	adv,nov
+6066	King--of the Khyber Rifles: A Romance of Adventure	Talbot Mundy	101471	adv,ind,nov
 16259	The Surprising Adventures of the Magical Monarch of Mo and His People	L. Frank Baum	31043	hum,kid,nov,sff
 24664	Fairy Fingers: A Novel	Anna Cora Ogden Mowatt Ritchie	188542	nov
 26978	Salem Witchcraft and Cotton Mather: A Reply	Charles Wentworth Upham	89969	
@@ -8516,7 +8516,7 @@
 14477	The Inside Story of the Peace Conference	Emile Joseph Dillon	169067	
 15098	Diderot and the Encyclopædists (Vol. 1 of 2)	John Morley	101292	
 18934	My Lady Nicotine: A Study in Smoke	J. M. Barrie	49952	hum,nov
-18986	Response in the Living and Non-Living	Jagadis Chandra Bose	50065	
+18986	Response in the Living and Non-Living	Jagadis Chandra Bose	50065	ind
 21334	The Beaux-Stratagem	George Farquhar	31095	hum
 25487	Peck's Bad Boy and His Pa: 1883	George W. Peck	45188	hum,nov
 33000	A New History of the United States : The greater republic, embracing the growth and achievements of our country from the earliest days of di	Charles Morris	250151	
@@ -8545,7 +8545,7 @@
 18752	Undine	Friedrich Heinrich Karl La Motte-Fouqué	21090	nov,sff
 21530	The Angel of Terror	Edgar Wallace	61897	mys,nov
 33636	Stand Up, Ye Dead	Norman Maclean	34549	rel
-35555	Kim	Rudyard Kipling	102912	adv
+35555	Kim	Rudyard Kipling	102912	adv,ind
 42215	A Pilgrimage to Nejd, the Cradle of the Arab Race. Vol. 1 [of 2] : A Visit to the Court of the Arab Emir, and "our Persian Campaign."	Anne Blunt	75151	tra
 42518	Talks to Farmers	C. H. Spurgeon	90301	rel
 43510	The Ethnology of Europe	R. G. Latham	69306	
@@ -9010,7 +9010,7 @@
 30323	The Book of Religions : Comprising the Views, Creeds, Sentiments, or Opinions, of All the Principal Religious Sects in the World, Particular	John Hayward	154181	rel
 32158	Rural Wealth and Welfare: Economic Principles Illustrated and Applied in Farm Life	Geo. T. Fairchild	103933	
 35060	Santal folk tales	A. Campbell	41416	myt
-36039	The Giant Crab, and Other Tales from Old India	W. H. D. Rouse	21075	kid,myt,sho
+36039	The Giant Crab, and Other Tales from Old India	W. H. D. Rouse	21075	ind,kid,myt,sho
 37702	The Life Of Thomas Paine, Vol. 2. (of 2) : With A History of His Literary, Political and Religious Career in America France, and England	Moncure Daniel Conway	153931	bio
 39384	Letters of Felix Mendelssohn Bartholdy from Italy and Switzerland	Felix Mendelssohn-Bartholdy	92986	bio,tra
 40924	The Invention of Lithography	Alois Senefelder	87446	bio
@@ -9377,7 +9377,7 @@
 34479	The History of Painting in Italy, Vol. 1 (of 6) : From the Period of the Revival of the Fine Arts to the End of the Eighteenth Century	Luigi Lanzi	137922	
 34838	The Life of Napoleon Bonaparte. Vol. 4 (of 4)	William Milligan Sloane	229164	bio
 36923	Pawnee Hero Stories and Folk-Tales: With notes on the origin, customs and character of the Pawnee people	George Bird Grinnell	81369	myt
-40140	On the Face of the Waters: A Tale of the Mutiny	Flora Annie Webster Steel	171820	nov
+40140	On the Face of the Waters: A Tale of the Mutiny	Flora Annie Webster Steel	171820	ind,nov
 40606	The Legal Position of the Clergy	Philip Vernon Smith	62274	rel
 40900	A Literary and Historical Atlas of Asia	J. G. Bartholomew	96854	
 42046	Ireland under the Tudors, with a Succinct Account of the Earlier History. Vol. 1 (of 3)	Richard Bagwell	184112	
@@ -10396,7 +10396,7 @@
 42179	Constitutional History of England, Henry VII to George II. Volume 2 of 3	Henry Hallam	224773	
 42860	The Andes of Southern Peru: Geographical Reconnaissance along the Seventy-Third Meridian	Isaiah Bowman	125612	tra
 44123	Jessie's Parrot	Joanna H. Mathews	38190	kid,nov
-45430	Tara: A Mahratta Tale	Meadows Taylor	253819	nov
+45430	Tara: A Mahratta Tale	Meadows Taylor	253819	ind,nov
 46869	The Royal Institution: Its Founder and First Professors	Bence Jones	150492	bio
 47269	Over the Canadian Battlefields: Notes of a Little Journey in France, in March, 1919	John Wesley Dafoe	12811	
 47337	The Expositor's Bible: The General Epistles of St. James and St. Jude	Alfred Plummer	147381	rel
@@ -10681,7 +10681,7 @@
 5159	Celtic Literature	Matthew Arnold	42226	
 7318	The Bravest of the Brave — or, with Peterborough in Spain	G. A. Henty	87925	adv
 7430	Familiar Spanish Travels	William Dean Howells	99746	tra
-10667	Snake and Sword: A Novel	Percival Christopher Wren	80090	nov
+10667	Snake and Sword: A Novel	Percival Christopher Wren	80090	ind,nov
 15547	The Life of Robert Louis Stevenson for Boys and Girls	Jacqueline Overton	30184	bio,kid
 16387	Pinnock's improved edition of Dr. Goldsmith's History of Rome to which is prefixed an introduction to the study of Roman history, and a grea	Oliver Goldsmith	162509	
 17331	History of Egypt From 330 B.C. To the Present Time, Volume 11 (of 12)	A. S. Rappoport	95658	
@@ -11008,7 +11008,7 @@
 78376	Knots : A study of marlinespike seamanship which embraces bends, hitches, ties, fastenings and splices and their practical application. With	Arthur F. Aldridge	20755	
 536	A Footnote to History: Eight Years of Trouble in Samoa	Robert Louis Stevenson	62533	
 1109	Love's Labour's Lost	William Shakespeare	22766	
-2821	The story of the Gadsbys	Rudyard Kipling	24466	nov
+2821	The story of the Gadsbys	Rudyard Kipling	24466	ind,nov
 6982	Hawthorne and His Circle	Julian Hawthorne	100819	bio
 7671	What Will He Do with It? — Complete	Edward Bulwer Lytton Lytton	334158	nov
 8826	Tales and Novels — Volume 01 : Moral Tales	Maria Edgeworth	161696	kid,sho
@@ -11519,7 +11519,7 @@
 50653	Travels in the interior of Brazil : with notices on its climate, agriculture, commerce, population, mines, manners, and customs: and a parti	John Mawe	127210	tra
 54641	The Charm of Gardens	Dion Clayton Calthrop	68605	
 56059	Old Crosses and Lychgates	Aymer Vallance	43982	
-58816	Simla Village Tales; Or, Folk Tales from the Himalayas	Alice Dracott	39011	myt,sho
+58816	Simla Village Tales; Or, Folk Tales from the Himalayas	Alice Dracott	39011	ind,myt,sho
 65103	Legendary Islands of the Atlantic: A Study of Medieval Geography	William Henry Babcock	69743	myt
 70790	The spiritual exercises of St. Ignatius : adapted to an eight days retreat and six triduums in preparation for the semi-annual renovation of	Ignatius & Charles Coppens	59860	rel
 79416	Boswell's life of Johnson	Charles Joseph Finger	15428	
@@ -11753,7 +11753,7 @@
 71695	Calvin Wilson Mateer, forty-five years a missionary in Shantung, China : a biography	D. W. Fisher	92305	bio,rel
 75324	The early history of the Hebrews	A. H. Sayce	190500	
 687	A Personal Record	Joseph Conrad	44707	bio
-2163	The Bridge-Builders	Rudyard Kipling	12416	sho
+2163	The Bridge-Builders	Rudyard Kipling	12416	ind,sho
 3638	The Devil's Disciple	Bernard Shaw	28260	
 3803	File No. 113	Emile Gaboriau	148191	mys,nov
 3819	The Euahlayi Tribe: A Study of Aboriginal Life in Australia	K. Langloh Parker	52279	myt
@@ -11875,7 +11875,7 @@
 1136	King Henry VIII	William Shakespeare	25678	
 2461	The Lady of Lyons; Or, Love and Pride	Edward Bulwer Lytton Lytton	17431	
 2528	The Women of the French Salons	Amelia Gere Mason	93701	
-2828	Under the Deodars	Rudyard Kipling	42895	sho
+2828	Under the Deodars	Rudyard Kipling	42895	ind,sho
 4349	Wisdom and Destiny	Maurice Maeterlinck	54327	phi
 4607	Love Me Little, Love Me Long	Charles Reade	140247	nov,rom
 6962	Military Reminiscences of the Civil War, Volume 2: November 1863-June 1865	Jacob D. Cox	222203	bio
@@ -12528,7 +12528,7 @@
 2918	The First and the Last: A Drama in Three Scenes	John Galsworthy	7277	
 3170	Chants for Socialists	William Morris	3528	poe
 5601	Jan of the Windmill: A Story of the Plains	Juliana Horatia Ewing	84080	kid,nov
-6521	The King of the Dark Chamber	Rabindranath Tagore	18510	
+6521	The King of the Dark Chamber	Rabindranath Tagore	18510	ind
 11605	The Appetite of Tyranny: Including Letters to an Old Garibaldian	G. K. Chesterton	18194	phi
 13853	New National First Reader	Charles J. Barnes & Harlan Hoge Ballard	7869	kid
 14499	The Religions of India : Handbooks on the History of Religions, Volume 1, Edited by Morris Jastrow	Edward Washburn Hopkins	235133	rel
@@ -12813,7 +12813,7 @@
 10673	The Principal Navigations, Voyages, Traffiques and Discoveries of the English Nation — Volume 09 : Asia, Part II	Richard Hakluyt	140361	tra
 15715	My adventures as a spy	Baden-Powell of Gilwell	23558	bio
 23506	Chance: A Tale in Two Parts	Joseph Conrad	136223	nov
-24461	Third class in Indian railways	Mahatma Gandhi	9556	
+24461	Third class in Indian railways	Mahatma Gandhi	9556	ind
 24500	Shakespeare's Lost Years in London, 1586-1592	Arthur Acheson	84056	bio
 26449	Rambles of an archæologist among old books and in old places : Being papers on art, in relation to archæology, painting, art-decoration, and	F. W. Fairholt	53224	
 26596	Anna the Adventuress	E. Phillips Oppenheim	62917	nov
@@ -12972,7 +12972,7 @@
 4934	The Natural History of Wiltshire	John Aubrey	72940	
 5109	Ragnarok : the Age of Fire and Gravel	Ignatius Donnelly	127068	
 6014	West Wind Drift	George Barr McCutcheon	100180	adv,nov
-8155	Colonel Thorndyke's Secret	G. A. Henty	122681	adv,mys
+8155	Colonel Thorndyke's Secret	G. A. Henty	122681	adv,ind,mys
 11399	The Pirates of Malabar, and an Englishwoman in India Two Hundred Years Ago	J. Biddulph	73391	
 16982	Bunny Rabbit's Diary	Mary Frances Blaisdell	15427	kid,nov
 18868	With Kitchener in the Soudan: A Story of Atbara and Omdurman	G. A. Henty	132830	adv
@@ -13376,7 +13376,7 @@
 14957	The Brimming Cup	Dorothy Canfield Fisher	128639	nov,rom
 16930	A Short History of Russia	Mary Platt Parmele	62589	
 18819	Hume: (English Men of Letters Series)	Thomas Henry Huxley	67371	bio,phi
-18833	With Clive in India; Or, The Beginnings of an Empire	G. A. Henty	119497	adv
+18833	With Clive in India; Or, The Beginnings of an Empire	G. A. Henty	119497	adv,ind
 19494	Bell's Cathedrals: The Cathedral Church of Saint Albans: With an Account of the Fabric & a Short History of the Abbey	Thomas Perkins	35131	
 19606	Illustrated Catalogue of the Collections Obtained from the Pueblos of Zuñi, New Mexico, and Wolpi, Arizona, in 1881 : Third Annual Report of	James Stevenson	34133	
 19706	Brood of the Witch-Queen	Sax Rohmer	65709	mys,nov,sff
@@ -13390,7 +13390,7 @@
 38508	Empires and Emperors of Russia, China, Korea, and Japan: Notes and Recollections by Monsignor Count Vay de Vaya and Luskod	Péter Vay	99838	tra
 40385	Rutledge	Miriam Coles Harris	157904	nov
 41409	Old Rome: A Handbook to the Ruins of the City and the Campagna	Robert Burn	96475	tra
-41954	The Wheel of Fortune	Mahatma Gandhi	26005	phi,rel
+41954	The Wheel of Fortune	Mahatma Gandhi	26005	ind,phi,rel
 44671	Jack in the Rockies: A Boy's Adventures with a Pack Train	George Bird Grinnell	69765	adv,kid,nov
 44765	'Round the Year in Myth and Song	Florence Holbrook	29494	kid,myt,poe
 47912	The Burning Wheel	Aldous Huxley	5720	poe
@@ -13683,7 +13683,7 @@
 3779	The world war : a history of the nations and empires involved and a study of the events culminating in the great conflict	Logan Marshall	105727	
 5612	The Arabian Nights Entertainments - Volume 01	Anonymous	222509	cla,myt
 7196	The Adventures of Tom Sawyer, Part 4.	Mark Twain	10474	adv,nov
-7971	The fugitive	Rabindranath Tagore	19423	poe
+7971	The fugitive	Rabindranath Tagore	19423	ind,poe
 8108	Literary and Social Essays	George William Curtis	61566	
 12560	Port O' Gold : A History-Romance of the San Francisco Argonauts	Louis J. Stellman	110778	nov
 14201	The Golden Scarecrow	Hugh Walpole	54900	kid,nov
@@ -13807,7 +13807,7 @@
 4603	In the Wilderness	Robert Hichens	225345	nov
 5976	Thomas Wingfold, Curate	George MacDonald	157305	nov
 10659	Three More John Silence Stories	Algernon Blackwood	47637	hor,mys,sff,sho
-11167	Deccan Nursery Tales; or, Fairy Tales from the South	C. A. Kincaid	25238	kid,myt
+11167	Deccan Nursery Tales; or, Fairy Tales from the South	C. A. Kincaid	25238	ind,kid,myt
 13926	An History of Birmingham (1783)	William Hutton	91950	
 15221	A New Conscience and an Ancient Evil	Jane Addams	41855	
 19766	Young Lucretia and Other Stories	Mary Eleanor Wilkins Freeman	49167	kid,sho
@@ -14893,7 +14893,7 @@
 50318	After the Pardon	Matilde Serao	72353	nov,rom
 51238	The Pride of Jennico: Being a Memoir of Captain Basil Jennico	Agnes Castle & Egerton Castle	73759	nov,rom
 51568	Some Haunted Houses of England & Wales.	Elliott O'Donnell	46526	mys,sho
-53372	Star of India	Alice Perrin	77893	nov
+53372	Star of India	Alice Perrin	77893	ind,nov
 53824	Heart Songs	Jean Blewett	41644	poe
 54914	His Glorious Appearing: An Exposition of Matthew Twenty-Four	James White	26930	rel
 57813	How to Master the Spoken Word : Designed as a Self-Instructor for all who would Excel in the Art of Public Speaking	Edwin Gordon Lawrence	137283	
@@ -14958,7 +14958,7 @@
 2244	As You Like It	William Shakespeare	22204	cla
 3138	Ballades & Rhymes from Ballades in Blue China and Rhymes a la Mode	Andrew Lang	25770	poe
 4354	By the Ionian Sea: Notes of a Ramble in Southern Italy	George Gissing	40181	tra
-5972	A Fascinating Traitor: An Anglo-Indian Story	Richard Savage	123070	adv,nov
+5972	A Fascinating Traitor: An Anglo-Indian Story	Richard Savage	123070	adv,ind,nov
 7949	The Historical Nights' Entertainment: Second Series	Rafael Sabatini	74710	
 8070	Expositions of Holy Scripture: St. John Chapters I to XIV	Alexander Maclaren	227892	rel
 8885	The Works of Aphra Behn, Volume II	Aphra Behn	134204	
@@ -15071,7 +15071,7 @@
 2903	Studies and Essays: The Inn of Tranquility, and Others	John Galsworthy	16718	
 4234	Correspondence of Wagner and Liszt — Volume 2	Richard Wagner & Franz Liszt	90371	bio
 4892	Life and Death of John of Barneveld, Advocate of Holland : with a view of the primary causes and movements of the Thirty Years' War — Comple	John Lothrop Motley	124249	bio
-5153	Rung Ho! A Novel	Talbot Mundy	86452	adv,nov
+5153	Rung Ho! A Novel	Talbot Mundy	86452	adv,ind,nov
 5852	Memoirs of General W. T. Sherman, Volume II., Part 3	William T. Sherman	60543	bio
 7149	The Poetical Works of Henry Kirk White : With a Memoir by Sir Harris Nicolas	Henry Kirke White	59502	bio,poe
 7368	Lifted Masks; stories	Susan Glaspell	59399	sho
@@ -15538,7 +15538,7 @@
 35369	The Highlands of Ethiopia	William Cornwallis Harris	306971	tra
 37703	About The Holy Bible: A Lecture	Robert Green Ingersoll	12662	phi,rel
 39324	The Literary Sense	E. Nesbit	56272	rom,sho
-40136	The Mercy of the Lord	Flora Annie Webster Steel	88880	nov
+40136	The Mercy of the Lord	Flora Annie Webster Steel	88880	ind,nov
 40224	Evolution of Life and Form : Four lectures delivered at the twenty-third anniversary meeting of the Theosophical Society at Adyar, Madras, 1	Annie Besant	36650	phi,rel
 41107	The Second Fiddle	Phyllis Bottome	62610	nov
 41365	The Colonial Cavalier; or, Southern Life before the Revolution	Maud Wilder Goodwin	56727	
@@ -15963,7 +15963,7 @@
 20626	Torchy	Sewell Ford	66006	hum,nov
 20839	The Mountain Chant, A Navajo Ceremony : Fifth Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1883	Washington Matthews	45546	myt,rel
 27981	The Plant Hunters: Adventures Among the Himalaya Mountains	Mayne Reid	86756	adv,nov
-30635	The Talking Thrush, and Other Tales from India	William Crooke & W. H. D. Rouse	44316	myt,sho
+30635	The Talking Thrush, and Other Tales from India	William Crooke & W. H. D. Rouse	44316	ind,myt,sho
 31557	The Works of Robert Louis Stevenson - Swanston Edition, Vol. 18	Robert Louis Stevenson	144883	tra
 32226	The Flower Princess	Abbie Farwell Brown	20709	kid,sff
 34501	Wolf and Coyote Trapping: An Up-to-Date Wolf Hunter's Guide : Giving the Most Successful Methods of Experienced "Wolfers" for Hunting and Tr	A. R. Harding	45157	
@@ -16036,7 +16036,7 @@
 44182	The Red Tavern	C. R. Macauley	76454	adv,nov
 45343	The Adventure Girls at Happiness House	Clair Blank	42139	adv,kid,mys,nov
 45684	My Mamie Rose: The Story of My Regeneration	Owen Kildare	56882	bio
-45719	Arundel	E. F. Benson	102727	nov
+45719	Arundel	E. F. Benson	102727	ind,nov
 46087	Drawings of Rossetti	T. Martin Wood	6515	
 47691	Canadian Scenery, Volume 2 (of 2)	Nathaniel Parker Willis	62269	tra
 48313	Phaeton Rogers: A Novel of Boy Life	Rossiter Johnson	69143	adv,kid,nov
@@ -16549,7 +16549,7 @@
 13748	Have faith in Massachusetts; 2d ed.: A Collection of Speeches and Messages	Calvin Coolidge	41962	
 17022	The First Discovery of Australia and New Guinea : Being The Narrative of Portuguese and Spanish Discoveries in the Australasian Regions, bet	George Collingridge	28372	
 17954	Critical Miscellanies (Vol. 3 of 3), Essay 4: The Life of George Eliot	John Morley	11299	bio
-18051	Hilda: A Story of Calcutta	Sara Jeannette Duncan	85713	nov
+18051	Hilda: A Story of Calcutta	Sara Jeannette Duncan	85713	ind,nov
 20400	On the Heels of De Wet	Lionel James	65149	
 24980	William Pitt and the Great War	J. Holland Rose	259773	
 36497	The Happy Hypocrite: A Fairy Tale for Tired Men	Max Beerbohm	11499	nov,sff
@@ -17033,7 +17033,7 @@
 32357	Lulu's Library, Volume 2 (of 3)	Louisa May Alcott	50451	kid,myt,sho
 32626	Thomas Carlyle	Hector Macpherson	37652	bio,phi
 38782	Inventors	Philip Gengembre Hubert	66958	bio
-40142	Miss Stuart's Legacy	Flora Annie Webster Steel	103795	nov
+40142	Miss Stuart's Legacy	Flora Annie Webster Steel	103795	ind,nov
 40238	A Thousand Miles in the Rob Roy Canoe on Rivers and Lakes of Europe	John MacGregor	79802	adv,tra
 40567	The Mercenary: A Tale of The Thirty Years' War	W. J. Eccott	94039	nov
 40911	The Ether of Space	Oliver Lodge	38305	
@@ -17355,7 +17355,7 @@
 73524	The butterfly guide : A pocket manual for the ready identification of the commoner species found in the United States and Canada	W. J. Holland	51349	
 74163	The Tenth (Irish) Division in Gallipoli	Bryan Cooper	70715	
 75835	Legal antiquities : A collection of essays upon ancient laws and customs	Edward J. White	108766	
-78356	The Andaman Islanders : A study in social anthropology	A. R. Radcliffe-Brown	196906	
+78356	The Andaman Islanders : A study in social anthropology	A. R. Radcliffe-Brown	196906	ind
 877	Little Britain	Washington Irving	5346	hum,nov
 1099	The Riverman	Stewart Edward White	106353	adv,nov
 2310	In the Carquinez Woods	Bret Harte	38375	nov
@@ -17404,7 +17404,7 @@
 45262	The Bungalow Boys in the Great Northwest	John Henry Goldfrap	54226	adv,nov
 45659	Girls New and Old	L. T. Meade	79499	kid,nov
 48404	The Hero of Manila: Dewey on the Mississippi and the Pacific	Rossiter Johnson	33730	bio
-48744	The Missionary: An Indian Tale; vol. III	Sydney Morgan	28354	rom
+48744	The Missionary: An Indian Tale; vol. III	Sydney Morgan	28354	ind,rom
 48976	Once Upon a Time in Delaware	Katharine Pyle	28986	kid
 50374	The Life and Labors of Elias Hicks	Henry Watson Wilbur	79022	bio,rel
 51062	New Lights on Old Paths	Charles Foster	48230	sho
@@ -17572,7 +17572,7 @@
 37224	Popular Books on Natural Science: For Practical Use in Every Household, for Readers of All Classes	Aaron David Bernstein	38917	
 37330	Aileen Aroon, A Memoir: With other Tales of Faithful Friends and Favourites	Gordon Stables	102365	bio,hum
 38343	Harding of Allenwood	Harold Bindloss	87026	nov
-39832	In the Permanent Way	Flora Annie Webster Steel	89315	nov
+39832	In the Permanent Way	Flora Annie Webster Steel	89315	ind,nov
 40529	The Complete Works of Nathaniel Hawthorne, Appendix to Volume XII: Tales, Sketches, and other Papers by Nathaniel Hawthorne with a Biographi	George Parsons Lathrop	39957	bio,sho
 40668	A Quarter-Back's Pluck: A Story of College Football	Lester Chadwick	63991	adv,nov
 40712	The White House (Novels of Paul de Kock Volume XII)	Paul de Kock	147869	nov
@@ -17618,12 +17618,12 @@
 4073	Ex Voto: An Account of the Sacro Monte or New Jerusalem at Varallo-Sesia : With Some Notice of Tabachetti's Remaining Work at the Sanctuary	Samuel Butler	62064	rel,tra
 4286	Mastery of Self for Wealth, Power, Success	Frank C. Haddock	22998	
 4970	There Are Crimes and Crimes	August Strindberg	22014	
-7229	Rujub, the Juggler	G. A. Henty	141286	adv,kid
+7229	Rujub, the Juggler	G. A. Henty	141286	adv,ind,kid
 8153	The Young Engineers in Arizona; or, Laying Tracks on the Man-killer Quicksand	H. Irving Hancock	48675	adv,nov
 10356	Travels in Morocco, Volume 2.	James Richardson	54430	tra
 12453	Miriam Monfort: A Novel	Catherine A. Warfield	156991	nov
 12973	Personal Recollections of Pardee Butler	Pardee Butler	98212	bio,rel
-13340	Mr. Isaacs, A Tale of Modern India	F. Marion Crawford	79267	adv,nov
+13340	Mr. Isaacs, A Tale of Modern India	F. Marion Crawford	79267	adv,ind,nov
 14297	The Congo and Coasts of Africa	Richard Harding Davis	42961	tra
 14356	The Emperor of Portugallia	Selma Lagerlöf	58495	nov
 17745	The Courage of Marge O'Doone	James Oliver Curwood	82775	adv,nov
@@ -17814,7 +17814,7 @@
 3971	Jacqueline — Complete	Th. Bentzon	82175	nov
 5907	The History of Don Quixote, Volume 1, Part 05	Miguel de Cervantes Saavedra	5889	cla,nov
 7280	My Boyhood	John Burroughs	44427	bio
-7964	The mystery of Cloomber	Arthur Conan Doyle	47608	mys,nov
+7964	The mystery of Cloomber	Arthur Conan Doyle	47608	ind,mys,nov
 12139	The Gringos : A Story Of The Old California Days In 1849	B. M. Bower	75506	adv,nov
 13483	The Drama	Henry Irving	28675	
 14299	Native Races and the War	Josephine Elizabeth Grey Butler	49013	
@@ -18408,7 +18408,7 @@
 8900	The London and Country Brewer	Anonymous	28892	
 10318	Damon and Delia: A Tale	William Godwin	28777	nov,rom
 13319	The Return of Peter Grimm	David Belasco	35903	
-14087	The Jungle Girl	Gordon Casserly	73898	adv,nov
+14087	The Jungle Girl	Gordon Casserly	73898	adv,ind,nov
 14611	A General History and Collection of Voyages and Travels — Volume 15 : Forming A Complete History Of The Origin And Progress Of Navigation, D	Robert Kerr	221892	adv,tra
 14662	Around the Tea-Table	T. De Witt Talmage	84211	hum
 17155	About orchids : a chat	Frederick Boyle	56807	
@@ -18568,7 +18568,7 @@
 42729	Stand Fast, Craig-Royston! (Volume I)	William Black	55690	nov
 43110	Tell Me a Story	Mrs. Molesworth	32168	kid,nov
 43263	The Arrow of Fire: A Mystery Story for Boys	Roy J. Snell	44220	mys,nov
-44306	A Noble Queen: A Romance of Indian History (Volume 1 of 3)	Meadows Taylor	70907	adv
+44306	A Noble Queen: A Romance of Indian History (Volume 1 of 3)	Meadows Taylor	70907	adv,ind
 45592	Reflections on the Rise and Fall of the Ancient Republicks: Adapted to the Present State of Great Britain	Edward Wortley Montagu	90668	
 45709	Montrose	Mowbray Morris	67124	bio
 46269	Mark Tidd in Business	Clarence Budington Kelland	46958	kid,nov
@@ -18861,7 +18861,7 @@
 70203	The story of chamber music	N. Kilburn	49350	
 71372	Tarzan triumphant	Edgar Rice Burroughs	75826	adv,nov
 71634	In quest of the perfect book : Reminiscences & reflections of a bookman	William Dana Orcutt	64705	bio
-72368	Jnâna Yoga, Part II: Seven Lectures	Swami Vivekananda	31923	phi,rel
+72368	Jnâna Yoga, Part II: Seven Lectures	Swami Vivekananda	31923	ind,phi,rel
 72737	Travels into North America, Volume 3 (of 3)	Pehr Kalm	67798	tra
 73131	Unhuman tour : (Kusamakura)	Soseki Natsume	42323	nov
 74726	History of the World War, Volume 1 (of 7) : An authentic narrative of the world's greatest war	Francis A. March & Richard J. Beamish	44399	
@@ -18885,7 +18885,7 @@
 10702	The History of Rome, Book II : From the Abolition of the Monarchy in Rome to the Union of Italy	Theodor Mommsen	112950	
 11151	The Lost Trail	Edward Sylvester Ellis	35396	adv,nov
 12555	The tragedy of the Korosko	Arthur Conan Doyle	46358	adv,nov
-12959	Newton Forster	Frederick Marryat	135530	adv,nov
+12959	Newton Forster	Frederick Marryat	135530	adv,ind,nov
 13225	A General History and Collection of Voyages and Travels — Volume 06 : Arranged in Systematic Order: Forming a Complete History of the Origin	Robert Kerr	218863	tra
 13494	Fables for the Times	Henry Wallace Phillips	3105	hum,myt
 13664	Selections from the Writings of Lord Dunsany	Lord Dunsany	22837	myt,sff
@@ -19304,7 +19304,7 @@
 78670	The first philosophers of Greece : An edition and translation of the remaining fragments of the pre-Sokratic philosophers, together with a t	Arthur Fairbanks	104006	
 79389	The two brothers; vol. 2 [of 3]	Emily Ponsonby	42670	
 79428	The libertine; vol. 4 [of 4]	Charlotte Dacre	29251	hor
-1168	The Pool in the Desert	Sara Jeannette Duncan	68273	nov
+1168	The Pool in the Desert	Sara Jeannette Duncan	68273	ind,nov
 1420	London's Underworld	Thomas Holmes	65518	
 2113	History of Friedrich II of Prussia — Volume 13	Thomas Carlyle	63360	
 2460	The Madonna of the Future	Henry James	15089	nov
@@ -19849,7 +19849,7 @@
 50066	War Services of the 62nd West Riding Divisional Artillery	Austin Thomas Anderson	41781	
 54239	Mistress Nancy Molesworth: A Tale of Adventure	Joseph Hocking	103530	adv,nov
 54453	Beyond the Hills of Dream	Wilfred Campbell	21101	poe
-62346	In Black and White	Rudyard Kipling	90166	sho
+62346	In Black and White	Rudyard Kipling	90166	ind,sho
 67829	A floating city, and The blockade runners	Jules Verne	61435	adv,nov
 69482	The cats' Arabian nights, or, King Grimalkum	Abby Morton Diaz	28021	hum,kid,nov
 72960	Shipwrecks on Cape Cod : the story of a few of the many hundred shipwrecks which have occurred on Cape Cod	Isaac M. Small	25390	
@@ -20033,7 +20033,7 @@
 39053	Electric Bells and All About Them: A Practical Book for Practical Men	Selimo Romeo Bottone	47225	
 39200	The English Novel and the Principle of its Development	Sidney Lanier	97107	
 39542	The Alps	William Martin Conway	66369	tra
-40050	Life Movements in Plants, Volume II	Jagadis Chandra Bose	94487	
+40050	Life Movements in Plants, Volume II	Jagadis Chandra Bose	94487	ind
 40464	The Mystery of Lincoln's Inn	Robert Machray	85080	mys,nov
 40922	Pietro Ghisleri	F. Marion Crawford	147979	nov
 41049	The Onslaught from Rigel	Fletcher Pratt	66679	nov,sff
@@ -20276,7 +20276,7 @@
 19119	Cerberus, the dog of Hades: The history of an idea	Maurice Bloomfield	7818	myt
 20342	Grace Harlowe's Problem	Josephine Chase	55056	kid,nov
 20716	The tale of Timothy Turtle	Arthur Scott Bailey	14291	hum,kid
-21557	Newton Forster; Or, The Merchant Service	Frederick Marryat	135870	adv,nov
+21557	Newton Forster; Or, The Merchant Service	Frederick Marryat	135870	adv,ind,nov
 26878	The Repairing & Restoration of Violins: 'The Strad' Library, No. XII.	Horace Petherick	67345	
 29494	King Philip: Makers of History	John S. C. Abbott	82303	
 30855	The Wife of Sir Isaac Harman	H. G. Wells	133805	nov
@@ -20999,7 +20999,7 @@
 42967	Moscow: A Story of the French Invasion of 1812	Frederick Whishaw	54757	nov
 43837	The Man Who Was Good	Leonard Merrick	62672	nov
 44066	Wanderings in Ireland	Michael Myers Shoemaker	77065	tra
-44789	A Noble Queen: A Romance of Indian History (Volume 3 of 3)	Meadows Taylor	69984	rom
+44789	A Noble Queen: A Romance of Indian History (Volume 3 of 3)	Meadows Taylor	69984	ind,rom
 47558	Pen Pictures, of Eventful Scenes and Struggles of Life	B. F. Craig	25657	nov
 47842	Queen Moo's Talisman: The Fall of the Maya Empire	Alice D. Le Plongeon	14924	myt,poe
 49933	The Mentor: Two Early German Painters, Dürer and Holbein, Vol. 1, Num. 48, Serial No. 48	Frank Jewett Mather	6475	
@@ -21038,7 +21038,7 @@
 17741	Pieces of Eight : Being the Authentic Narrative of a Treasure Discovered in the Bahama Islands in the Year 1903	Richard Le Gallienne	66543	adv,nov
 17762	The Burglar's Fate, and The Detectives	Allan Pinkerton	58930	mys,nov
 18158	The Butterfly House	Mary Eleanor Wilkins Freeman	53248	nov
-18813	The Tiger of Mysore: A Story of the War with Tippoo Saib	G. A. Henty	129453	adv
+18813	The Tiger of Mysore: A Story of the War with Tippoo Saib	G. A. Henty	129453	adv,ind
 19063	Little Alice's Palace; or, The Sunny Heart	Anonymous	8167	kid,rel
 24423	Fifty years with the Revere Copper Co.: A Paper Read at the Stockholders' Meeting held on Monday 24 March 1890	S. T. Snow	6503	bio
 29106	A Bride of the Plains	Emmuska Orczy Orczy	84042	nov,rom
@@ -21049,7 +21049,7 @@
 36684	Molly Brown's Freshman Days	Nell Speed	53985	kid,nov
 37430	The Sin of Monsieur Pettipon, and other humorous tales	Richard Edward Connell	66838	hum,sho
 38985	My Lady Rotha: A Romance	Stanley John Weyman	126676	rom
-39991	The Hosts of the Lord	Flora Annie Webster Steel	115797	nov
+39991	The Hosts of the Lord	Flora Annie Webster Steel	115797	ind,nov
 40353	The Datchet Diamonds	Richard Marsh	52249	mys,nov
 40676	This Man's Wife	George Manville Fenn	149922	nov,rom
 43112	Sweet Content	Mrs. Molesworth	34601	nov
@@ -21090,7 +21090,7 @@
 4224	Mr. Hogarth's Will	Catherine Helen Spence	148544	nov
 4266	A Woman's Way Through Unknown Labrador	Mina Hubbard	76644	adv,bio,tra
 4754	The Philosophy of Despair	David Starr Jordan	6864	phi
-5102	The Path of a Star	Sara Jeannette Duncan	86844	nov
+5102	The Path of a Star	Sara Jeannette Duncan	86844	ind,nov
 6434	A Brief History of the United States	Joel Dorman Steele	123521	
 6628	The Life, Crime, and Capture of John Wilkes Booth	George Alfred Townsend	42952	bio,mys
 6897	The Little Savage	Frederick Marryat	91467	adv,nov
@@ -21117,7 +21117,7 @@
 25441	The Reckoning	Robert W. Chambers	100433	nov
 27985	Marjorie Dean, High School Sophomore	Josephine Chase	64543	kid,nov
 28361	British Socialism: An Examination of Its Doctrines, Policy, Aims and Practical Proposals	J. Ellis Barker	170836	
-28537	Soldier Stories	Rudyard Kipling	46851	sho
+28537	Soldier Stories	Rudyard Kipling	46851	ind,sho
 29693	A Waif of the Mountains	Edward Sylvester Ellis	68610	adv,hum,nov
 30087	Amaryllis at the Fair	Richard Jefferies	70612	nov
 31545	Studies in Spermatogenesis (Part 1 of 2)	N. M. Stevens	10240	
@@ -21499,7 +21499,7 @@
 54432	Isabel Clarendon, Vol. 2 (of 2)	George Gissing	65668	nov
 54647	Sam Steele's Adventures in Panama	L. Frank Baum	51729	adv,nov
 54887	Beaufort Chums	Edwin L. Sabin	61769	adv,kid,nov
-56513	The Simple Adventures of a Memsahib	Sara Jeannette Duncan	88536	nov
+56513	The Simple Adventures of a Memsahib	Sara Jeannette Duncan	88536	ind,nov
 64752	The Life of Cervantes	Albert Frederick Calvert	40118	bio
 66734	The collected works of William Hazlitt, Vol. 10 (of 12)	William Hazlitt	214930	
 67453	A Treatise on the Plague and Yellow Fever : With an Appendix, containing histories of the plague at Athens in the time of the Peloponnesian	James Tytler	233187	
@@ -21724,7 +21724,7 @@
 45403	The Flying Horseman	Gustave Aimard	59759	adv
 45824	Social Comptabilism : The Cheque and Clearing Service in the Austrian Postal Savings Bank. Proposed Law laid before the Chamber of Represent	Ernest Solvay & Hector Denis	36311	
 46064	The Deep Lake Mystery	Carolyn Wells	68357	mys,nov
-48280	Life Movements in Plants, Volume I	Jagadis Chandra Bose	67795	
+48280	Life Movements in Plants, Volume I	Jagadis Chandra Bose	67795	ind
 48283	Forest, Rock, and Stream: A series of twenty steel line-engravings	Nathaniel Parker Willis	25386	poe,tra
 48319	Lincoln and the Sleeping Sentinel: The True Story	L. E. Chittenden	7144	bio
 49186	Flaxie Growing Up: Flaxie Frizzle Stories	Sophie May	27324	kid,nov
@@ -21779,7 +21779,7 @@
 38664	The Four Corners of the World	A. E. W. Mason	97116	mys,nov
 38718	Lawrence Clavering	A. E. W. Mason	96016	
 39745	Folle-Farine	Ouida	182848	nov
-39795	In the Guardianship of God	Flora Annie Webster Steel	70229	nov
+39795	In the Guardianship of God	Flora Annie Webster Steel	70229	ind,nov
 39945	Peeps at People: Being Certain Papers from the Writings of Anne Warrington Witherup	John Kendrick Bangs	26058	hum
 40001	An English Girl's First Impressions of Burmah	Beth Ellis	43370	tra
 40114	Fashion and Famine	Ann S. Stephens	142704	nov
@@ -21822,7 +21822,7 @@
 4287	The Red Planet	William John Locke	98807	nov
 4402	The Shaving of Shagpat; an Arabian entertainment — Volume 2	George Meredith	14220	adv,nov,sff
 5129	The Prodigal Judge	Vaughan Kester	117258	nov
-5315	Told in the East	Talbot Mundy	65307	nov
+5315	Told in the East	Talbot Mundy	65307	ind,nov
 6476	Himalayan Journals — Volume 1 : Or, Notes of a Naturalist in Bengal, the Sikkim and Nepal Himalayas, the Khasia Mountains, etc.	Joseph Dalton Hooker	129472	tra
 7749	The Parisians — Complete	Edward Bulwer Lytton Lytton	257802	nov
 8171	Modern Italian Poets; Essays and Versions	William Dean Howells	93520	
@@ -21965,7 +21965,7 @@
 11211	A Minstrel in France	Harry Lauder	75829	bio
 11585	The Young Emigrants; Madelaine Tube; the Boy and the Book; and Crystal Palace	Susan Anne Livingston Ridley Sedgwick	44163	adv,kid,nov
 12450	The Reason Why	Elinor Glyn	101063	nov,rom
-12516	The Way of an Eagle	Ethel M. Dell	102127	adv,nov
+12516	The Way of an Eagle	Ethel M. Dell	102127	adv,ind,nov
 14045	At a Winter's Fire	Bernard Capes	55580	sho
 14750	Bowdoin Boys in Labrador : An Account of the Bowdoin College Scientific Expedition to Labrador led by Prof. Leslie A. Lee of the Biological	Jonathan Prince Cilley	25949	adv,tra
 15274	The Girl from Montana	Grace Livingston Hill	60266	adv,nov
@@ -22067,7 +22067,7 @@
 38510	Discipline	Mary Brunton	155786	nov
 38635	Delilah of the Snows	Harold Bindloss	101234	nov
 39701	Heroines of the Crusades	C. A. Bloss	161765	bio
-39821	From the Five Rivers	Flora Annie Webster Steel	46855	nov
+39821	From the Five Rivers	Flora Annie Webster Steel	46855	ind,nov
 40151	Constance Sherwood: An Autobiography of the Sixteenth Century	Georgiana Fullerton	179006	nov
 40541	Brother Against Brother; or, The Tompkins Mystery. : A Story of the Great American Rebellion.	John R. Musick	87334	nov
 40593	School-Room Humour	T. J. Macnamara	26565	hum
@@ -22286,7 +22286,7 @@
 39574	The Radio Boys on Secret Service Duty	Gerald Breckenridge	44762	adv,kid,nov
 39629	Irma in Italy: A Travel Story	Helen Leah Reed	63378	kid,nov,tra
 39684	Albania : A narrative of recent travel	E. F. Knight	74698	tra
-39987	The Flower of Forgiveness	Flora Annie Webster Steel	79926	nov
+39987	The Flower of Forgiveness	Flora Annie Webster Steel	79926	ind,nov
 40869	True Bear Stories	Joaquin Miller	40287	hum,kid,sho
 44574	The Missouri Outlaws	Gustave Aimard	50243	adv
 45919	Grif: A Story of Australian Life	B. L. Farjeon	112540	adv,nov
@@ -22453,7 +22453,7 @@
 42435	Alcohol and the Human Brain	Joseph Cook	6949	
 42600	Under St Paul's: A Romance	Richard Dowling	99688	nov,rom
 43066	Griselda: a society novel in rhymed verse	Wilfrid Scawen Blunt	19048	nov,poe
-44583	A Noble Queen: A Romance of Indian History (Volume 2 of 3)	Meadows Taylor	68776	nov,rom
+44583	A Noble Queen: A Romance of Indian History (Volume 2 of 3)	Meadows Taylor	68776	ind,nov,rom
 48200	The Rake's Progress	Marjorie Bowen	84165	nov
 48754	The Dardanelles: Colour Sketches From Gallipoli	Norman Wilkinson	14554	
 49130	Hovey's Handbook of the Mammoth Cave of Kentucky : A Practical Guide to the Regulation Routes	Horace Carver Hovey	15620	tra
@@ -22563,10 +22563,10 @@
 11581	From out the Vasty Deep	Marie Belloc Lowndes	71020	mys,nov
 12773	Mr. Prohack	Arnold Bennett	119980	nov
 13123	The Great Prince Shan	E. Phillips Oppenheim	63539	mys,nov
-14076	The Elephant God	Gordon Casserly	91248	adv,nov
+14076	The Elephant God	Gordon Casserly	91248	adv,ind,nov
 14202	Little Prudy's Sister Susy	Sophie May	24135	hum,kid,nov
 15834	The Book of Joyous Children	James Whitcomb Riley	12072	kid,poe
-19017	Tales of Destiny	Edmund Mitchell	47662	sho
+19017	Tales of Destiny	Edmund Mitchell	47662	ind,sho
 19053	Theory of circulation by respiration : synopsis of its principles and history	Emma Willard	9967	
 19977	The Blue Pavilions	Arthur Quiller-Couch	64206	nov
 20555	What Is and What Might Be: A Study of Education in General and Elementary Education in Particular	Edmond Holmes	88452	phi
@@ -22574,7 +22574,7 @@
 21256	Travels through the South of France and the Interior of Provinces of Provence and Languedoc in the Years 1807 and 1808	Pinkney	68452	tra
 21845	The tale of Peter Mink	Arthur Scott Bailey	13312	hum,kid,nov
 22475	Tortoises	D. H. Lawrence	3781	poe
-27629	Captain Desmond, V.C.	Maud Diver	116186	adv,nov
+27629	Captain Desmond, V.C.	Maud Diver	116186	adv,ind,nov
 28562	Wild Life on the Rockies	Enos A. Mills	42857	tra
 30717	East Anglia: Personal Recollections and Historical Associations	J. Ewing Ritchie	75291	bio
 33359	The Unveiling of Lhasa	Edmund Candler	76149	
@@ -22625,7 +22625,7 @@
 3563	Memoirs of Napoleon Bonaparte — Volume 13	Louis Antoine Fauvelet de Bourrienne	27888	bio
 3878	Memoirs of the Courts of Louis XV and XVI. — Volume 3 : Being secret memoirs of Madame Du Hausset, lady's maid to Madame de Pompadour, and o	Mme. Du Hausset & Marie Thérèse Louise de Savoie-Carignan Lamballe	15448	bio
 4126	Diary of Samuel Pepys — Volume 09: January/February/March 1660-61	Samuel Pepys	18367	bio
-5125	Last Poems: Translations from the Book of Indian Love	Laurence Hope	13657	poe,rom
+5125	Last Poems: Translations from the Book of Indian Love	Laurence Hope	13657	ind,poe,rom
 6105	Their Yesterdays	Harold Bell Wright	64552	nov,phi
 6429	Many Ways for Cooking Eggs	S. T. Rorer	12924	
 7487	Count Alarcos; a Tragedy	Benjamin Disraeli	33079	
@@ -22665,7 +22665,7 @@
 38558	The White Crystals: Being an Account of the Adventures of Two Boys	Howard Roger Garis	58598	adv,kid,nov
 38968	First at the North Pole; Or, Two Boys in the Arctic Circle	Edward Stratemeyer	60407	adv,kid,nov
 39802	Tommy Wideawake	H. H. Bashford	25758	kid,nov
-39985	The Potter's Thumb	Flora Annie Webster Steel	123593	nov
+39985	The Potter's Thumb	Flora Annie Webster Steel	123593	ind,nov
 40237	By the Sea, and Other Verses	H. Lavinia Baily	13041	poe
 40259	Charles Auchester, Volume 2 (of 2)	Elizabeth Sara Sheppard	91860	nov
 40554	Journal of a Horticultural Tour through Germany, Belgium, and part of France, in the Autumn of 1835 : To which is added, a Catalogue of the	James Forbes	60799	tra
@@ -22896,7 +22896,7 @@
 42944	A Rainy June, and Other Stories	Ouida	62634	rom,sho
 43067	In the Hands of the Cave-Dwellers	G. A. Henty	29618	adv
 43189	The Harlequin Opal: A Romance. Vol. 3 (of 3)	Fergus Hume	43548	adv,nov,rom
-48742	The Missionary: An Indian Tale; vol. I	Sydney Morgan	27257	nov
+48742	The Missionary: An Indian Tale; vol. I	Sydney Morgan	27257	ind,nov
 51611	The Silent Call	Edwin Milton Royle	95883	nov
 53182	The Sorceress, v. 3 of 3	Mrs. Oliphant	48289	nov
 53452	The History of the Life and Death of Sultan Solyman the Magnificent, Emperor of the Turks, and of His son Mustapha	Unknown	6554	
@@ -23483,7 +23483,7 @@
 65965	The Jade Story Book; Stories from the Orient	Penrhyn Wingfield Coussens	65678	kid,myt
 72140	The home-maker	Dorothy Canfield Fisher	69211	nov
 72823	A journey to Central Africa : Or, Life and landscapes from Egypt to the Negro kingdoms of the White Nile	Bayard Taylor	154356	tra
-1935	The Tremendous Adventures of Major Gahagan	William Makepeace Thackeray	28756	hum,nov
+1935	The Tremendous Adventures of Major Gahagan	William Makepeace Thackeray	28756	hum,ind,nov
 2052	Everybody's Business Is Nobody's Business : Or, Private Abuses, Public Grievances; Exemplified in the Pride, Insolence, and Exorbitant Wages	Daniel Defoe	7593	hum
 2109	History of Friedrich II of Prussia — Volume 09	Thomas Carlyle	59607	
 2254	King Henry VI, Part 1	William Shakespeare	23279	cla
@@ -23727,7 +23727,7 @@
 3713	Aaron Trow	Anthony Trollope	11429	mys,nov
 4595	Heart-Histories and Life-Pictures	T. S. Arthur	69613	nov,sho
 5944	The History of Don Quixote, Volume 2, Part 41	Miguel de Cervantes Saavedra	4203	cla,nov
-6428	The Surgeon's Daughter	Walter Scott	68919	nov
+6428	The Surgeon's Daughter	Walter Scott	68919	ind,nov
 6947	The Rangers; or, The Tory's Daughter : A Tale Illustrative of the Revolutionary History of Vermont and the Northern Campaign of 1777	Daniel P. Thompson	140139	nov
 8202	Sermons on National Subjects	Charles Kingsley	150321	rel
 8996	Practical Suggestions for Mother and Housewife	Marion Mills Miller	45257	
@@ -24117,7 +24117,7 @@
 16925	Sally Bishop : A romance	E. Temple Thurston	113549	nov,rom
 18086	A Dozen Ways Of Love	L. Dougall	78291	rom,sho
 19660	Man of Many Minds	E. Everett Evans	66686	nov,sff
-21304	Begumbagh: A Tale of the Indian Mutiny	George Manville Fenn	57662	adv
+21304	Begumbagh: A Tale of the Indian Mutiny	George Manville Fenn	57662	adv,ind
 21495	To The West	George Manville Fenn	136273	adv,nov
 25547	The Sundering Flood	William Morris	87213	nov,sff
 25822	Illustrated Science for Boys and Girls	Anonymous	37919	kid
@@ -24498,7 +24498,7 @@
 12918	Iranian Influence on Moslem Literature, Part I	Konstantin Aleksandrovich Inostrantzev	49359	myt,rel
 13107	The New South: A Chronicle of Social and Industrial Evolution	Holland Thompson	56153	
 14914	Narrative of Services in the Liberation of Chili, Peru and Brazil,: from Spanish and Portuguese Domination, Volume 1	Thomas Cochrane Dundonald	89757	bio
-15704	Far to seek : A romance of England and India	Maud Diver	151095	nov
+15704	Far to seek : A romance of England and India	Maud Diver	151095	ind,nov
 15992	Come Rack! Come Rope!	Robert Hugh Benson	131574	
 16217	Prince Fortunatus	William Black	169761	nov
 16720	Marzio's Crucifix, and Zoroaster	F. Marion Crawford	130472	nov
@@ -24570,7 +24570,7 @@
 9775	Treasure and Trouble Therewith: A Tale of California	Geraldine Bonner	106902	adv,mys
 9782	Female Scripture Biography, Volume I	F. A. Cox	119782	bio,rel
 11915	The Adventures of Mr. Mocker	Thornton W. Burgess	14477	kid,nov
-13763	The Lamp in the Desert	Ethel M. Dell	118775	nov,rom
+13763	The Lamp in the Desert	Ethel M. Dell	118775	ind,nov,rom
 14548	The Laws of Candy: Beaumont & Fletcher's Works (3 of 10)	Francis Beaumont & John Fletcher	21027	
 14908	Recollections of Bytown and Its Old Inhabitants	William Pittman Lett	21074	poe
 15124	The Lighthouse	R. M. Ballantyne	86842	adv,nov
@@ -25616,13 +25616,13 @@
 44631	The Dare Boys with General Greene	Stephen Angus Douglas Cox	33874	adv,kid
 45037	Hebrew Humor and Other Essays	J. Chotzner	65437	hum
 47654	The Monster	Edgar Saltus	44811	nov
-48743	The Missionary: An Indian Tale; vol. II	Sydney Morgan	30723	nov,rom
+48743	The Missionary: An Indian Tale; vol. II	Sydney Morgan	30723	ind,nov,rom
 49319	An Essay on Contagious Diseases : more particularly on the small-pox, measles, putrid, malignant, and pestilential fevers	Clifton Wintringham	11399	
 49566	Canada and the British immigrant	Emily P. Weaver	75096	bio
 50531	On Sulphonfluoresceïn and Some of Its Derivatives	C. W. Hayes	8967	
 51063	John Call Dalton, M.D., U.S.V.	John Call Dalton	20576	bio
 52261	A record of St. Cybi's Church, Holyhead : and the sermon preached after its restoration, 1879	Arthur Penrhyn Stanley	9944	rel
-53036	His Honour, and a Lady	Sara Jeannette Duncan	61776	nov
+53036	His Honour, and a Lady	Sara Jeannette Duncan	61776	ind,nov
 54986	March Hares	Harold Frederic	48352	nov
 59754	The Cavaliers of Fortune; Or, British Heroes in Foreign Wars	James Grant	145286	bio
 64654	Harvesting Ants and Trap-Door Spiders: Notes and Observations on Their Habits and Dwellings	John Traherne Moggridge	49068	
@@ -26114,7 +26114,7 @@
 39003	Money: Speech of Hon. John P. Jones, of Nevada, on the Free Coinage of Silver; in the United States Senate, May 12 and 13, 1890	John P. Jones	74842	
 39547	Beaumaroy Home from the Wars	Anthony Hope	50941	nov
 40875	Adventurings in the Psychical	H. Addington Bruce	60110	psy
-41190	Chronicles of Dustypore: A Tale of Modern Anglo-Indian Society	H. S. Cunningham	79239	nov,rom
+41190	Chronicles of Dustypore: A Tale of Modern Anglo-Indian Society	H. S. Cunningham	79239	ind,nov,rom
 41532	Swift	Leslie Stephen	65790	bio
 47727	The different modes of cultivating the pine-apple : From its first introduction into Europe to the late improvements of T.A. Knight, esq.	J. C. Loudon	46174	
 50121	Fifteen New Ways for Oysters	S. T. Rorer	2548	
@@ -26624,7 +26624,7 @@
 37788	Judith Shakespeare: Her love affairs and other adventures	William Black	141155	nov
 37954	Maid of the Mist	John Oxenham	92691	nov
 38861	My Lords of Strogue, Vol. 1 (of 3) : A Chronicle of Ireland, from the Convention to the Union	Lewis Wingfield	72977	nov
-40517	A Bottle in the Smoke: A Tale of Anglo-Indian Life	Janet Milne Rae	101815	nov
+40517	A Bottle in the Smoke: A Tale of Anglo-Indian Life	Janet Milne Rae	101815	ind,nov
 41498	Our Girls	Dio Lewis	54334	
 41693	Lays and Legends (Second Series)	E. Nesbit	20460	myt,poe
 43150	The Constant Prince	Christabel R. Coleridge	48743	adv
@@ -26799,7 +26799,7 @@
 64854	Little Dinners With the Sphinx, and Other Prose Fancies	Richard Le Gallienne	39930	
 65995	The Mine with the Iron Door	Harold Bell Wright	81043	adv,nov,rom
 66518	Labour and the Popular Welfare	W. H. Mallock	85618	
-69383	In Old Madras	B. M. Croker	91684	nov
+69383	In Old Madras	B. M. Croker	91684	ind,nov
 69840	The Piccinino, Volume 2 (of 2); The last of Aldinis	George Sand	121821	nov
 71454	Guide to the study of animal ecology	Charles C. Adams	55250	
 71843	Nature readers : Seaside and wayside No. 2	Julia McNair Wright	33838	kid
@@ -27061,7 +27061,7 @@
 32446	Waldfried: A Novel	Berthold Auerbach	139296	nov
 32502	What happened to Inger Johanne, as told by herself	Dikken Zwilgmeyer	45591	kid,nov
 33007	Edelweiss: A Story	Berthold Auerbach	98071	nov
-33131	The Spirit of Japan	Rabindranath Tagore	7110	phi
+33131	The Spirit of Japan	Rabindranath Tagore	7110	ind,phi
 33321	Two plays for dancers	W. B. Yeats	7081	myt
 33431	The Dangerous Classes of New York, and Twenty Years' Work Among Them	Charles Loring Brace	119183	
 33464	Roses and Rose Growing	Rose Georgina Kingsley	42803	
@@ -27970,7 +27970,7 @@
 66962	In Texas with Davy Crockett	John T. McIntyre	29832	adv
 68176	Angola and the River Congo, vol. 2	Joachim John Monteiro	67795	tra
 68652	Into Mexico with General Scott : When attached to the Fourth United States Infantry, Division of Major-General William J. Worth, Corps of th	Edwin L. Sabin	81880	adv
-68996	Angel: A sketch in Indian ink	B. M. Croker	94607	nov
+68996	Angel: A sketch in Indian ink	B. M. Croker	94607	ind,nov
 69973	Ingleside; or, Without Christ and with Him	Madeline Leslie	70951	nov,rel
 74183	My heart and my flesh	Elizabeth Madox Roberts	74346	nov
 74345	The Aldine speller, part two : for grades three and four	Catherine T. Bryce & Frank J. Sherman	13711	kid
@@ -27992,7 +27992,7 @@
 8553	The Seaboard Parish Volume 3	George MacDonald	49192	nov
 9998	Poems	Matilda Betham	12940	poe
 10447	October Vagabonds	Richard Le Gallienne	25151	tra
-10755	The Broken Road	A. E. W. Mason	94003	nov
+10755	The Broken Road	A. E. W. Mason	94003	ind,nov
 12013	My Year of the War : Including an Account of Experiences with the Troops in France and the Record of a Visit to the Grand Fleet Which is Her	Frederick Palmer	120332	
 13423	Zarlah the Martian	R. Norman Grisewood	34921	nov,sff
 14360	The Dawn and the Day; Or, The Buddha and the Christ, Part I	Henry Thayer Niles	40419	rel
@@ -28521,7 +28521,7 @@
 17973	The World of Romance: being Contributions to The Oxford and Cambridge Magazine, 1856	William Morris	33018	rom,sff
 18149	Conjuror's House: A Romance of the Free Forest	Stewart Edward White	36460	adv,nov,rom
 18248	Lucy Raymond; Or, The Children's Watchword	Agnes Maule Machar	56804	kid,nov,rel
-18970	Caves of Terror	Talbot Mundy	43905	adv,nov
+18970	Caves of Terror	Talbot Mundy	43905	adv,ind,nov
 19113	The Emigrant Trail	Geraldine Bonner	115518	nov
 20579	The Frog Who Would A Wooing Go	Charles H. Bennett	1770	kid
 21121	A Houseful of Girls	George de Horne Vaizey	76652	nov
@@ -28659,7 +28659,7 @@
 67430	Cricket	Elizabeth Weston Timlow	55647	kid,nov
 67577	We Women and Our Authors	Laura Marholm	53301	
 69790	The Three Just Men	Edgar Wallace	94072	mys,nov
-70459	"To let"	B. M. Croker	42146	hor,nov
+70459	"To let"	B. M. Croker	42146	hor,ind,nov
 70871	Picciola : The prisoner of Fenestrella or, captivity captive	X.-B. Saintine	67861	nov
 72267	Westward hoboes : ups and downs of frontier motoring	Winifred Hawkridge Dixon	107845	adv,hum,tra
 72826	The foster-sisters : A story in the days of Wesley and Whitfield	Lucy Ellen Guernsey	126937	
@@ -29414,7 +29414,7 @@
 36007	Ethel Morton and the Christmas Ship	Mabell S. C. Smith	56995	kid,nov
 36511	The Weight of the Crown	Fred M. White	82657	adv,nov,rom
 37582	The Coast of Adventure	Harold Bindloss	87586	adv,nov
-38195	The Outcaste	F. E. Penny	102006	nov
+38195	The Outcaste	F. E. Penny	102006	ind,nov
 38372	The Character of the Jew Books : Being, a Defence of the Natural Innocence of Man, Against Kings and Priests or Tyrants and Impostors	Richard Carlile	3355	phi,rel
 38653	Such Things Are: A Play, in Five Acts	Mrs. Inchbald	19947	
 41505	Picture-Work	Walter Lowrie Hervey	18356	rel
@@ -30103,7 +30103,7 @@
 75773	Two years' captivity in German East Africa : being the personal experiences of Surgeon E. C. H., Royal Navy	E. C. H.	60158	bio
 76854	Letters from a living dead man	David Patterson Hatch	53296	rel
 77412	Some famous buildings and their story : being the results of recent research in London and elsewhere	Alfred William Clapham & Walter H. Godfrey	61490	
-77892	Red oleanders : A drama in one act	Rabindranath Tagore	22738	
+77892	Red oleanders : A drama in one act	Rabindranath Tagore	22738	ind
 79156	Tomina in retreat	Amy Le Feuvre	76507	
 1807	The Lost House	Richard Harding Davis	19042	mys,nov
 2177	Thankful Blossom	Bret Harte	19523	rom
@@ -30136,7 +30136,7 @@
 21487	The Boy who sailed with Blake	William Henry Giles Kingston	48287	adv
 23119	A Forgotten Hero; Or, Not for Him	Emily Sarah Holt	51506	
 23142	In Search of El Dorado	Harry Collingwood	92087	adv,nov
-24607	The Cycle of Spring	Rabindranath Tagore	13636	
+24607	The Cycle of Spring	Rabindranath Tagore	13636	ind
 26044	Peter and Jane; Or, The Missing Heir	S. Macnaughtan	79656	nov
 29183	Partners of the Out-Trail	Harold Bindloss	84805	adv,nov
 29545	The Spanish Jade	Maurice Hewlett	38084	adv,nov,rom
@@ -30307,7 +30307,7 @@
 33273	Lives of Celebrated Women	Samuel G. Goodrich	96094	bio
 34096	The Ship-Dwellers: A Story of a Happy Cruise	Albert Bigelow Paine	99985	hum,nov,tra
 34338	Monsieur Cherami	Paul de Kock	121043	hum,nov
-34813	Caravans By Night: A Romance of India	Harry Hervey	96763	adv,nov,rom
+34813	Caravans By Night: A Romance of India	Harry Hervey	96763	adv,ind,nov,rom
 37413	The Duke Decides	Headon Hill	61873	mys,nov
 41340	Mount Royal: A Novel. Volume 2 of 3	M. E. Braddon	51551	nov
 41802	Frank in the Mountains	Harry Castlemon	49969	adv,nov
@@ -30926,7 +30926,7 @@
 13809	Mountain Idylls, and Other Poems	Alfred Castner King	18222	poe
 14495	De Carmine Pastorali : Prefixed to Thomas Creech's translation of the Idylliums of Theocritus (1684)	René Rapin	18510	poe
 15878	The Stepmother, A Drama in Five Acts	Honoré de Balzac	30606	
-15956	Vellenaux : a novel	E. W. Forrest	73543	nov
+15956	Vellenaux : a novel	E. W. Forrest	73543	ind,nov
 16597	Square Deal Sanderson	Charles Alden Seltzer	65112	adv,nov
 17091	Oliver Cromwell: A Play	John Drinkwater	15702	
 18270	Confession and Absolution	T. J. Capel	12809	rel
@@ -31161,7 +31161,7 @@
 16753	The Noble Spanish Soldier	Thomas Dekker	19819	
 17581	The Romancers: A Comedy in Three Acts	Edmond Rostand	10310	rom
 19014	Nibsy's Christmas	Jacob A. Riis	8354	sho
-20370	Rhymes of the East and Re-collected Verses	Dum-Dum	13374	hum,poe
+20370	Rhymes of the East and Re-collected Verses	Dum-Dum	13374	hum,ind,poe
 20576	Two Suffolk Friends	Francis Hindes Groome	28455	bio
 21069	For Treasure Bound	Harry Collingwood	99116	adv,nov
 21396	The Three Lieutenants	William Henry Giles Kingston	180090	adv
@@ -31501,7 +31501,7 @@
 36746	The Mountains of Oregon	W. G. Steel	27407	adv,tra
 36853	A Very Naughty Girl	L. T. Meade	91117	kid,nov
 37284	Dickens As an Educator	James L. Hughes	121634	bio
-38306	A Galahad of the Creeks; The Widow Lamport	S. Levett Yeats	54504	adv,nov,rom
+38306	A Galahad of the Creeks; The Widow Lamport	S. Levett Yeats	54504	adv,ind,nov,rom
 50925	A Visit to Newfoundland	Mary Lydia Branch	3716	tra
 52210	The Hispaniola Plate (1683-1893)	John Bloundelle-Burton	88741	adv,nov
 52863	The New Sunday Liquor Law Vindicated	J. Ewing Ritchie	2848	
@@ -31600,7 +31600,7 @@
 76846	The three sphinxes, and other poems	George Sylvester Viereck	10771	poe
 77434	The anatomy of plants : With an idea of a philosophical history of plants, and several other lectures, read before the Royal Society	Nehemiah Grew	184274	
 78411	A warrior who fought Custer	Wooden Leg	88846	
-79906	By Allah who made tigers	Talbot Mundy	28944	
+79906	By Allah who made tigers	Talbot Mundy	28944	ind
 5143	The Auction Block	Rex Beach	105704	nov
 5234	The Confessions of Harry Lorrequer — Volume 1	Charles Lever	41447	adv,hum,nov
 5363	The Inside of the Cup — Volume 08	Winston Churchill	16097	nov,rel
@@ -31761,7 +31761,7 @@
 17956	Recreation by Viscount Grey of Fallodon, K.G.	Grey of Fallodon	6733	phi
 18667	Doctor Rabbit and Brushtail the Fox	Thomas C. Hinkle	15272	hum,kid,nov
 19479	Roughing it De Luxe	Irvin S. Cobb	30804	hum,tra
-19970	Son of Power	Will Levington Comfort & Zamin Ki Dost	81458	adv,nov
+19970	Son of Power	Will Levington Comfort & Zamin Ki Dost	81458	adv,ind,nov
 20345	Old Man Savarin, and Other Stories	Edward William Thomson	45513	sho
 21475	Peter Trawl; Or, The Adventures of a Whaler	William Henry Giles Kingston	102951	adv,nov
 24134	Mushrooms on the Moor	Frank Boreham	58702	
@@ -31800,7 +31800,7 @@
 67680	Cutie: A Warm Mamma	Ben Hecht & Maxwell Bodenheim	7822	hum,nov
 67921	Poseidon's paradise: the romance of Atlantis	Elizabeth G. Birkmaier	78694	myt,nov
 68941	The book of Evelyn	Geraldine Bonner	66087	nov
-69198	A bird of passage	B. M. Croker	130095	nov
+69198	A bird of passage	B. M. Croker	130095	ind,nov
 70282	Ella, a little schoolgirl of the sixties : A book for children and for grown-ups who remember	Eva March Tappan	41741	kid,nov
 71615	Loaves and fishes	Bernard Capes	88514	adv,nov
 71626	Granny Maumee; The rider of dreams; Simon the Cyrenian : Plays for a negro theater	Ridgely Torrence	17246	
@@ -31965,7 +31965,7 @@
 65170	Antonia	George Sand	84869	nov,rom
 65351	The Story of the Indian Mutiny	A. R. Hope Moncrieff	52992	
 66166	The Wounded Name	D. K. Broster	146278	nov
-66471	Like Another Helen	Sydney C. Grier	182374	nov
+66471	Like Another Helen	Sydney C. Grier	182374	ind,nov
 66522	Learning and Other Essays	John Jay Chapman	49238	
 66807	On the Border with Andrew Jackson	John T. McIntyre	29359	adv
 67374	Caleb Conover, Railroader	Albert Payson Terhune	67989	nov
@@ -32172,7 +32172,7 @@
 69202	The cost of wings, and other stories	Richard Dehan	91429	sho
 69435	Rhoda of the Underground	Florence Finch Kelly	87124	nov
 70150	An A. B. C. of every-day people : Good, bad & indifferent	G. E. Farrow	1515	kid,poe
-74298	In furthest Ind : The narrative of Mr Edward Carlyon of the honourable East India Company's service	Sydney C. Grier	116460	adv,nov
+74298	In furthest Ind : The narrative of Mr Edward Carlyon of the honourable East India Company's service	Sydney C. Grier	116460	adv,ind,nov
 74806	Queenie's whim, Volume 2 (of 3) : A novel	Rosa Nouchette Carey	57181	nov,rom
 75879	Essay and speech on Jewish disabilities	Thomas Babington Macaulay Macaulay	14863	rel
 76029	The pearl of days : or, The advantages of the Sabbath to the working classes	Barbara H. Farquhar	20873	rel
@@ -32266,7 +32266,7 @@
 16870	The golden west boys, Injun and Whitey to the rescue	William S. Hart	55701	adv,kid,nov
 19691	Dead Man's Plack and an Old Thorn	W. H. Hudson	33893	myt
 19812	The South and the National Government	William H. Taft	4841	
-20238	The great amulet	Maud Diver	142957	nov,rom
+20238	The great amulet	Maud Diver	142957	ind,nov,rom
 20330	The black wolf's breed : A story of France in the Old world and the New, happening in the reign of Louis XIV	Harris Dickson	70159	nov
 21276	The Wars Between England and America	Theodore Clarke Smith	57698	
 21713	The Young Trawler	R. M. Ballantyne	86422	adv,kid,nov
@@ -32576,7 +32576,7 @@
 6738	The Four Canadian Highwaymen; Or, The Robbers of Markham Swamp	J. E. Collins	42274	adv,mys,nov
 6904	Boy Scouts in an Airship; Or, The Warning from the Sky	G. Harvey Ralphson	45687	adv,kid,nov
 7339	An Account of Sa-Go-Ye-Wat-Ha, or Red Jacket, and His People, 1750-1830	John Niles Hubbard	78137	bio
-7940	The Native Born; or, the Rajah's People	I. A. R. Wylie	104000	nov
+7940	The Native Born; or, the Rajah's People	I. A. R. Wylie	104000	ind,nov
 9206	The Toll Gatherer's Day (From "Twice Told Tales")	Nathaniel Hawthorne	2531	sho
 10323	The Rover Boys at College; Or, The Right Road and the Wrong	Edward Stratemeyer	52756	adv,kid,nov
 10570	For Better or Worse: Ship's Company, Part 10.	W. W. Jacobs	3686	hum,sho
@@ -32636,7 +32636,7 @@
 67749	The Story of a Siberian Exile; Followed by a Narrative of Recent Events in Poland	Rufin Piotrowski	80689	bio
 68205	John Jasper: The unmatched Negro philosopher and preacher	William E. Hatcher	41790	bio,rel
 69193	Children of destiny	Molly Elliot Seawell	91971	nov
-69586	Om: The secret of Ahbor Valley	Talbot Mundy	123939	adv,nov
+69586	Om: The secret of Ahbor Valley	Talbot Mundy	123939	adv,ind,nov
 70848	A godly medytacyon of the christen sowle, concerninge a loue towardes God and hys Christe	Queen Marguerite	19290	phi,rel
 71945	Frank Merriwell's brother : Or, The greatest triumph of all	Burt L. Standish	64444	adv,hum,nov
 73099	The hidden treasure : or, Found at last	Lucy Ellen Guernsey	76915	
@@ -32856,7 +32856,7 @@
 55717	In the days of Queen Mary	E. E. Crake	59727	
 56603	A boy in the Peninsular War : the services, adventures and experiences of Robert Blakeney	Robert Blakeney	119035	bio
 56872	Minerva's Manoeuvres: The Cheerful Facts of a "Return to Nature"	Charles Battell Loomis	82793	hum,nov
-58486	The Rajah's Heir: A Novel in 3 volumes	C. Despard	183668	nov
+58486	The Rajah's Heir: A Novel in 3 volumes	C. Despard	183668	ind,nov
 59522	Biltmore House and Gardens: Biltmore Estate, Biltmore-Asheville North Carolina	Anonymous	2682	
 60631	A Modern Zoroastrian	S. Laing	84809	phi,rel
 61932	Come and Find Me	Elizabeth Robins	145377	nov
@@ -33133,7 +33133,7 @@
 27912	Gloucester Moors and Other Poems	William Vaughn Moody	16945	poe
 28763	Imaginary Interviews	William Dean Howells	103876	
 28896	Stories and Tales of the Irish: A Linked Index to the Project Gutenberg Editions	William Carleton	3110	myt,sho
-31399	Banked Fires	E. W. Savi	111912	nov
+31399	Banked Fires	E. W. Savi	111912	ind,nov
 33201	The Complete Club Book for Women : Including Subjects, Material and References for Study Programs; together with a Constitution and By-Laws;	Caroline French Benton	53369	
 33958	A Sister's Love: A Novel	W. Heimburg	89023	nov
 34191	John Knox	William M. Taylor	60865	bio
@@ -33457,7 +33457,7 @@
 57663	Historical record of the Sixty-Seventh, or the South Hampshire Regiment : Containing an account of the formation of the regiment in 1758, an	Richard Cannon	22898	
 57740	Kingsford, Quarter	Ralph Henry Barbour	56400	hum,kid,nov
 59032	The Newmarket, Bury, Thetford and Cromer Road: Sport and history on an East Anglian turnpike	Charles G. Harper	76193	tra
-61272	The Woman in the Bazaar	Alice Perrin	46315	nov,rom
+61272	The Woman in the Bazaar	Alice Perrin	46315	ind,nov,rom
 61663	The philosophy of biology	James Johnstone	124832	phi
 62072	Frank Merriwell's Marriage; Or, Inza's Happiest Day	Burt L. Standish	77441	nov
 62223	Plain Parochial Sermons, preached in the Parish Church of Bolton-le-Moors	James Slade	73296	rel
@@ -33741,7 +33741,7 @@
 67947	A Handy Guide for Beggars: Especially Those of the Poetic Fraternity : Being Sundry Explorations, Made While Afoot and Penniless in Florida,	Vachel Lindsay	36827	poe,tra
 69954	The Cameron pride; or, purified by suffering : A novel	Mary Jane Holmes	154545	nov
 69998	Essays in medical sociology, Volume 2 (of 2)	Elizabeth Blackwell	58605	
-70300	Legendary & romantic tales of Indian history	Hobart Caunter	191786	myt
+70300	Legendary & romantic tales of Indian history	Hobart Caunter	191786	ind,myt
 70502	On the red staircase	Mary Imlay Taylor	68544	nov
 71037	The gamblers	William Le Queux	77592	mys,nov
 72919	The gold hunters : A first-hand picture of life in California mining camps in the early fifties	John David Borthwick	98111	adv
@@ -33862,7 +33862,7 @@
 34724	Lola	Owen Davis	57778	nov
 35668	The Struggle between President Johnson and Congress over Reconstruction	Charles E. Chadsey	47471	
 35756	The Knight Of Gwynne, Vol. 2 (of 2)	Charles Lever	146147	nov
-36478	The Red Year: A Story of the Indian Mutiny	Louis Tracy	82150	nov
+36478	The Red Year: A Story of the Indian Mutiny	Louis Tracy	82150	ind,nov
 36698	History of the Discovery of the Northwest by John Nicolet in 1634: With a Sketch of his Life	Consul Willshire Butterfield	36720	
 36830	The Badger: A Monograph	Alfred E. Pease	21310	
 36906	Marjorie Dean, College Senior	Josephine Chase	52125	kid,nov
@@ -33908,7 +33908,7 @@
 7135	The Great Conspiracy, Volume 3	John Alexander Logan	48330	
 8953	The Norsk Nightingale; Being the Lyrics of a "Lumberyack"	William Frederick Kirk	6772	hum,poe
 9851	Love at Second Sight	Ada Leverson	57481	nov
-10899	Olivia in India	O. Douglas	49567	hum,nov,tra
+10899	Olivia in India	O. Douglas	49567	hum,ind,nov,tra
 12156	The three sisters [Night watches, Part 6.]	W. W. Jacobs	3034	nov
 12193	The gentleman from everywhere	James Henry Foss	60141	nov
 13275	The Gibson Upright	Booth Tarkington & Harry Leon Wilson	20265	
@@ -33957,7 +33957,7 @@
 63431	Trail and Trading Post; or, The Young Hunters of the Ohio	Edward Stratemeyer	67757	adv
 64888	In Trust: The Story of a Lady and Her Lover	Mrs. Oliphant	151078	nov,rom
 65182	Grey Wethers: A Romantic Novel	Sackville-West	80391	nov,rom
-65195	Quicksands	B. M. Croker	83805	nov,rom
+65195	Quicksands	B. M. Croker	83805	ind,nov,rom
 65763	Billy Whiskers at the Fair	Frances Trego Montgomery	29914	adv,hum,kid
 66751	The Heir	Sydney C. Grier	100250	adv,nov
 68895	A soldier's mother in France	Rheta Childe Dorr	61190	bio
@@ -34221,7 +34221,7 @@
 68917	Modern literature: a novel, Volume 3 (of 3)	Robert Bisset	43477	nov
 68944	Lost on the Orinoco; or, American boys in Venezuela	Edward Stratemeyer	60290	adv,kid,nov
 69044	The story of Ida: epitaph on an Etrurian tomb	Francesca Alexander	16881	bio
-69721	The flame-gatherers	Margaret Horton Potter	107627	nov
+69721	The flame-gatherers	Margaret Horton Potter	107627	ind,nov
 70283	Is it I? A book for every man.	Horatio Robinson Storer	34688	psy
 70520	Naomi : or the last days of Jerusalem	J. B. Webb	164084	nov
 70675	Chicago by day and night : the pleasure seeker's guide to the Paris of America	Harold R. Vynne	54628	tra
@@ -34492,7 +34492,7 @@
 51904	Poems	Henry Reed Conant	8303	poe
 58709	When Scout Meets Scout; or, The Aeroplane Spy	H. L. Sayler	46921	adv,kid,nov
 58778	Index of the Project Gutenberg Works of Francis Parkman	Francis Parkman	12499	
-59333	Harold's Bride: A Tale	A. L. O. E.	52678	nov
+59333	Harold's Bride: A Tale	A. L. O. E.	52678	ind,nov
 64435	First Base Faulkner	Christy Mathewson	67313	kid,nov
 66114	Keeban	Edwin Balmer	56712	mys,nov
 67352	The congressman's wife, a story of American politics	John D. Barry	65944	nov
@@ -34592,7 +34592,7 @@
 7606	Zicci: A Tale — Volume 01	Edward Bulwer Lytton Lytton	14435	mys,nov,rom,sff
 8586	Roughing It, Part 5.	Mark Twain	21712	hum,tra
 10067	The Mystery of the Boule Cabinet: A Detective Story	Burton Egbert Stevenson	66636	mys,nov
-11691	Driftwood Spars : The Stories of a Man, a Boy, a Woman, and Certain Other People Who Strangely Met Upon the Sea of Life	Percival Christopher Wren	78014	nov
+11691	Driftwood Spars : The Stories of a Man, a Boy, a Woman, and Certain Other People Who Strangely Met Upon the Sea of Life	Percival Christopher Wren	78014	ind,nov
 12102	Darrel of the Blessed Isles	Irving Bacheller	67420	nov
 12581	Elbow-Room: A Novel Without a Plot	Charles Heber Clark	80379	hum,nov
 12827	The Rising of the Red Man: A Romance of the Louis Riel Rebellion	John Mackie	56594	adv,rom
@@ -34629,7 +34629,7 @@
 57875	Anne Hereford: A Novel	Henry Wood	157164	nov
 57966	Index of the Project Gutenberg Works of Thackeray	William Makepeace Thackeray	8877	
 59178	Midwinter: Certain Travellers in Old England	John Buchan	85814	
-59401	Oral tradition from the Indus : comprised in tales, to which are added explanatory notes	John Frederick Adolphus McNair & Thomas Lambert Barlow	43401	myt
+59401	Oral tradition from the Indus : comprised in tales, to which are added explanatory notes	John Frederick Adolphus McNair & Thomas Lambert Barlow	43401	ind,myt
 60065	Wings and Stings: A Tale for the Young	A. L. O. E.	20954	kid
 60066	Kiana: a Tradition of Hawaii	James Jackson Jarves	69226	adv
 60078	The White Heart of Mojave: An Adventure with the Outdoors of the Desert	Edna Brush Perkins	40751	adv,tra
@@ -34761,7 +34761,7 @@
 4851	History of the United Netherlands, 1587a	John Lothrop Motley	16491	
 6028	Opening a Chestnut Burr	Edward Payson Roe	128592	nov
 6512	The suppressed Gospels and Epistles of the original New Testament of Jesus the Christ, Volume 6, Clement	William Wake	16314	rel
-6751	The Winds of the World	Talbot Mundy	50277	adv,nov
+6751	The Winds of the World	Talbot Mundy	50277	adv,ind,nov
 6776	History of the Revolt of the Netherlands — Volume 01	Friedrich Schiller	31381	
 7017	A Study in Tinguian Folk-Lore	Fay-Cooper Cole	24155	myt
 7709	"My Novel" — Volume 08	Edward Bulwer Lytton Lytton	28097	nov
@@ -35144,7 +35144,7 @@
 61376	The Historical Geography of Europe, Vol. II, Maps	Edward A. Freeman	1557	
 61530	Outland	Mary Austin	57208	nov
 63202	Margaret Maliphant	Alice Vansittart Strettel Carr	146354	nov
-63487	Wee Willie Winkie, and Other Stories. Volume 2 (of 2)	Rudyard Kipling	45429	adv,sho
+63487	Wee Willie Winkie, and Other Stories. Volume 2 (of 2)	Rudyard Kipling	45429	adv,ind,sho
 63689	On the Eve of Redemption	S. M. Melamed	29736	phi,rel
 64242	The Carcellini Emerald, With Other Tales	Burton Harrison	63542	nov,sho
 64281	How to make pottery	Mary White	29420	
@@ -35497,7 +35497,7 @@
 67546	In the Name of a Woman: A Romance	Arthur W. Marchmont	99869	adv,nov,rom
 68077	Observations on the Operation and Use of Mercury in the Venereal Disease	Andrew Duncan	23597	
 68248	My twin kitties	Edna Groff Deihl	1647	adv,kid
-68330	The Great White Hand; Or, the Tiger of Cawnpore: A story of the Indian Mutiny	J. E. Muddock	94663	adv
+68330	The Great White Hand; Or, the Tiger of Cawnpore: A story of the Indian Mutiny	J. E. Muddock	94663	adv,ind
 68790	A haunted life	James Grant	51311	hor,nov
 69114	Our Wonderful Selves	Roland Pertwee	81939	nov
 69227	Sir John Everett Millais	A. L. Baldry	12954	bio
@@ -35514,7 +35514,7 @@
 3115	The Indeterminate Sentence: What Shall Be Done with the Criminal Class?	Charles Dudley Warner	5720	
 5375	A Modern Chronicle — Volume 02	Winston Churchill	23045	nov
 5393	The Crisis — Volume 06	Winston Churchill	24896	
-5606	Guns of the Gods: A Story of Yasmini's Youth	Talbot Mundy	85804	adv,nov
+5606	Guns of the Gods: A Story of Yasmini's Youth	Talbot Mundy	85804	adv,ind,nov
 6508	The suppressed Gospels and Epistles of the original New Testament of Jesus the Christ, Volume 2, the Protevanglion	William Wake	7415	rel
 6774	The Thirty Years War — Volume 05	Friedrich Schiller	22026	
 6778	History of the Revolt of the Netherlands — Volume 03	Friedrich Schiller	17888	
@@ -35735,7 +35735,7 @@
 16736	Books and Culture	Hamilton Wright Mabie	36157	
 17952	Great Possessions	Wilfrid Ward	101484	nov
 20572	Marie Claire	Marguerite Audoux	36734	nov
-21485	The Young Rajah	William Henry Giles Kingston	67836	adv
+21485	The Young Rajah	William Henry Giles Kingston	67836	adv,ind
 21641	April's Lady: A Novel	Duchess	116752	nov
 23502	The New Forest Spy	George Manville Fenn	34378	adv,nov
 27849	Th' History o' Haworth Railway : fra' th' beginnin' to th' end, wi' an ackaant o' th' oppnin' serrimony	Bill o'th' Hoylus End	7407	hum
@@ -35752,7 +35752,7 @@
 34628	I, Thou, and the Other One: A Love Story	Amelia E. Barr	80922	nov,rom
 34790	Perverted Proverbs: A Manual of Immorals for the Many	Harry Graham	5052	hum,poe
 34886	St. George for England: A Tale of Cressy and Poitiers	G. A. Henty	98928	adv
-35179	The Three Sapphires	William Alexander Fraser	73006	adv,nov
+35179	The Three Sapphires	William Alexander Fraser	73006	adv,ind,nov
 35673	Our Own Set: A Novel	Ossip Schubin	59264	nov
 35931	Sir Noel's Heir: A Novel	May Agnes Fleming	35048	nov,rom
 36625	The Cup of Trembling, and Other Stories	Mary Hallock Foote	51342	sho
@@ -35841,7 +35841,7 @@
 71347	Wrecked on the Feejees	William S. Cary	25205	adv
 72008	Illustrations of political economy, Volume 5 (of 9)	Harriet Martineau	118842	nov
 75015	Flood waters	Leland Jamieson	6876	adv,nov
-75402	Her own people	B. M. Croker	102463	nov,rom
+75402	Her own people	B. M. Croker	102463	ind,nov,rom
 76242	The beloved of Hathor, and The shrine of the Golden Hawk	Florence Farr & Olivia Shakespear	11175	myt
 78235	Sea whispers	W. W. Jacobs	46375	
 2672	The Complete Writings of Charles Dudley Warner — Volume 2	Charles Dudley Warner	85099	tra
@@ -35900,7 +35900,7 @@
 65022	Remarks on the Present System of Road Making: With Observations, Deduced from Practice and Experience, With a View to a Revision of the Exis	John Loudon McAdam	65546	
 65463	The End: How the Great War Was Stopped. A Novelistic Vagary	L. P. Gratacap	60835	nov
 65794	Primer of Ohio Archaeology: The Mound Builders and the Indians	H. C. Shetrone	8714	
-66229	The Warden of the Marches	Sydney C. Grier	122245	nov
+66229	The Warden of the Marches	Sydney C. Grier	122245	ind,nov
 67204	The Memoirs of a Failure: with an Account of the Man and His Manuscript	Daniel Wright Kittredge	31775	nov
 67227	The King's Own Borderers: A Military Romance, Volume 2 (of 3)	James Grant	70095	nov,rom
 68101	Yermah the Dorado: The story of a lost race	Frona Eunice Wait	115397	nov,sff
@@ -36458,7 +36458,7 @@
 71100	Memoirs of a griffin : Or, A cadet's first year in India	Francis John Bellew	129415	adv,bio,hum
 71192	Five thousand pounds	Agnes Giberne	24120	nov
 71751	In the swim : A story of currents and under-currents in gayest New York	Richard Savage	99116	nov
-72300	Mr. Jervis, Vol. 1 (of 3)	B. M. Croker	41200	nov
+72300	Mr. Jervis, Vol. 1 (of 3)	B. M. Croker	41200	ind,nov
 72307	The quare women : A story of the Kentucky mountains	Lucy S. Furman	49047	nov
 72432	Penelope : or, Love's labour lost. A novel. Volume 1 (of 3)	William Pitt Scargill	60107	nov
 73377	Life and bloody career of the executed criminal, James Copeland, the great Southern land pirate	J. R. S. Pitts	76715	bio,mys
@@ -36505,7 +36505,7 @@
 60074	The Mysterious Stranger and Other Cartoons	John T. McCutcheon	18868	hum
 60346	I Pose	Stella Benson	76651	hum,nov
 61092	Nat the Navigator. A Life of Nathaniel Bowditch. For Young Persons	Henry I. Bowditch	35519	bio,kid
-61624	The Fall of Ulysses: An Elephant Story	Charles Dwight Willard	6239	nov
+61624	The Fall of Ulysses: An Elephant Story	Charles Dwight Willard	6239	ind,nov
 61947	Edinburgh Papers. Edinburgh Merchants and Merchandise in Old Times	Robert Chambers	13132	
 64301	Golden Fleece: The American Adventures of a Fortune Hunting Earl	David Graham Phillips	67097	nov
 64613	Buffalo Bill's weird warning : or, Dauntless Dell's rival	Prentiss Ingraham	86231	adv,nov
@@ -36791,7 +36791,7 @@
 74763	Lost Gip	Hesba Stretton	29823	nov
 75350	The education and employment of women	Josephine Elizabeth Grey Butler	9804	
 75955	Lolla : or,The sin of greediness	Lucy Ellen Guernsey	12939	kid,nov,rel
-77653	Asoka's alibi	Talbot Mundy	31727	
+77653	Asoka's alibi	Talbot Mundy	31727	ind
 78434	The Negroland of the Arabs examined and explained : or, an inquiry into the early history and geography of Central Africa	William Desborough Cooley	65165	
 4451	The Adventures of Harry Richmond — Volume 8	George Meredith	21788	nov
 4454	Beauchamp's Career — Volume 2	George Meredith	28389	nov
@@ -37036,7 +37036,7 @@
 62907	The White Kami: A Novel	Edward Alden Jewell	96130	nov
 64033	Betty Wales, Junior: A Story for Girls	Edith K. Dunton	59843	kid,nov
 64635	Frank Merriwell's First Job; Or, At the Foot of the Ladder	Burt L. Standish	54735	nov
-65561	Jungle Tales	B. M. Croker	39048	adv,sho
+65561	Jungle Tales	B. M. Croker	39048	adv,ind,sho
 65615	The Master of Aberfeldie, Volume 1 (of 3)	James Grant	42176	nov,rom
 67346	The Meccas of the World : The Play of Modern Life in New York, Paris, Vienna, Madrid and London	Ruth Cranston	64767	tra
 67432	An Experiment in Altruism	Margaret Pollock Sherwood	33863	nov
@@ -37104,7 +37104,7 @@
 66697	The Fighter	Albert Payson Terhune	90426	nov
 68169	Sir John Dering: A romantic comedy	Jeffery Farnol	111821	adv,hum,nov,rom
 69006	Blindfold	Orrick Johns	57897	nov
-69142	Given in Marriage	B. M. Croker	94303	adv,rom
+69142	Given in Marriage	B. M. Croker	94303	adv,ind,rom
 70197	Captain Kodak : A camera story (third edition)	Alexander Black	51473	adv,nov
 71035	The Hampstead mystery: a novel. Volume 3 (of 3)	Florence Marryat	43977	nov
 71676	Edwin, the young rabbit fancier, and other stories	Anonymous	7125	kid,sho
@@ -38086,7 +38086,7 @@
 70522	For the freedom of the seas	Ralph Henry Barbour	62180	adv
 71517	Refraction and muscular imbalance, as simplified through the use of the ski-optometer	Daniel Woolf	26340	
 71823	Percy's holidays : or, borrowing trouble.	Lucy Ellen Guernsey	13727	kid,nov
-72313	Mr. Jervis, Vol. 2 (of 3)	B. M. Croker	39164	nov
+72313	Mr. Jervis, Vol. 2 (of 3)	B. M. Croker	39164	ind,nov
 73476	The subaltern	G. R. Gleig	90537	
 73528	Ready, aye ready!	Agnes Giberne	39671	nov
 73649	Ye butcher, ye baker, ye candlestick-maker : Being sundry amusing and instructive verses for both old and young, adorned with numerous woodc	Robert Seaver	1975	hum,kid,poe
@@ -38393,7 +38393,7 @@
 8839	Weymouth New Testament in Modern Speech, Colossians	Richard Francis Weymouth	2830	rel
 12989	The Lady of Big Shanty	F. Berkeley Smith	53752	adv,nov
 21795	Fred Fearnot's New Ranch : and How He and Terry Managed It	H. K. Shackleford	25945	adv,nov,rom
-24535	The Path to Honour	Sydney C. Grier	97888	nov,rom
+24535	The Path to Honour	Sydney C. Grier	97888	ind,nov,rom
 25076	Between the Lines	Boyd Cable	55246	
 25681	The Quadrupeds' Pic-Nic	Anonymous	5165	myt,poe
 32132	"Long Live the King!"	Guy Boothby	78669	adv
@@ -38544,7 +38544,7 @@
 34348	The Drama of Glass	Kate Field	4676	
 34495	Rob Nixon, the Old White Trader: A Tale of Central British North America	William Henry Giles Kingston	23741	adv
 35364	Ethel Morton at Sweetbrier Lodge	Mabell S. C. Smith	53910	kid,nov
-35644	The Taming of the Jungle	C. W. Doyle	31607	adv,nov
+35644	The Taming of the Jungle	C. W. Doyle	31607	adv,ind,nov
 35810	Captain Kyd; or, The Wizard of the Sea. Vol. II	J. H. Ingraham	68861	adv,nov,rom
 37089	The Locusts' Years	Mary H. Fee	73641	nov
 56834	The Polly Page Yacht Club	Izola L. Forrester	67095	adv,kid,nov
@@ -38891,7 +38891,7 @@
 69544	The exploits of Captain O'Hagan	Sax Rohmer	35359	adv,hum,nov
 69814	Campaign and battle of Lynchburg, Va.	Charles Minor Blackford	20745	
 70642	Historical vignettes, 1st series	Bernard Capes	56272	sho
-72342	Mr. Jervis, Vol. 3 (of 3)	B. M. Croker	45174	nov,rom
+72342	Mr. Jervis, Vol. 3 (of 3)	B. M. Croker	45174	ind,nov,rom
 72870	The crystal claw	William Le Queux	64254	mys,nov
 74179	A royal son and mother	Pauline Hügel	13018	bio
 74189	Guy Falconer : or, The chronicles of the old Moat House	Lucy Ellen Guernsey	59442	nov
@@ -39333,7 +39333,7 @@
 34016	Unc' Edinburg: A Plantation Echo	Thomas Nelson Page	9933	nov
 35614	Palos of the Dog Star Pack	J. U. Giesy	69675	sff
 36601	A Vendetta of the Desert	W. C. Scully	51309	nov
-36605	The Sirdar's Oath: A Tale of the North-West Frontier	Bertram Mitford	53630	adv
+36605	The Sirdar's Oath: A Tale of the North-West Frontier	Bertram Mitford	53630	adv,ind
 36623	Dorrien of Cranston	Bertram Mitford	117895	nov
 37294	The Red Cross Barge	Marie Belloc Lowndes	36056	nov
 57483	The Napoleon Gallery : or, Illustrations of the life and times of the emperor of France	Etienne Achille Réveil	18472	
@@ -39492,7 +39492,7 @@
 77311	Six lectures on painting : delivered to the students of the Royal Academy of Arts in London, January, 1904	George Clausen	24106	
 77775	Sworn to silence : or, Aline Rodney's secret	Alex. McVeigh Miller	82080	
 78216	The Dashwoods : a sequel to "On an Australian farm"	Steele Rudd	29996	
-78836	Awakening : A study in possibilities	Maud Diver	125476	
+78836	Awakening : A study in possibilities	Maud Diver	125476	ind
 4416	Sandra Belloni — Volume 4	George Meredith	26643	nov,rom
 4858	History of the United Netherlands, 1588d	John Lothrop Motley	17735	
 5550	In the Fire of the Forge: A Romance of Old Nuremberg — Volume 08	Georg Ebers	21353	rom
@@ -39562,7 +39562,7 @@
 70270	In exitu Israel : an historical novel, volume 2 (of 2)	S. Baring-Gould	73409	
 70758	An account of some kjoekkenmoeddings, or shell-heaps, in Maine and Massachusetts	Jeffries Wyman	8197	
 71353	The four Corners in California	Amy Ella Blanchard	68028	adv,kid,nov
-73588	The crow's-nest	Sara Jeannette Duncan	43417	nov
+73588	The crow's-nest	Sara Jeannette Duncan	43417	ind,nov
 77686	My tussle with the devil, and other stories	O. Henry	17108	
 77957	The dragon	M. P. Shiel	117446	
 78420	Bush studies	Barbara Baynton	30447	
@@ -40409,7 +40409,7 @@
 6239	The Lane That Had No Turning, Volume 3	Gilbert Parker	17092	nov
 7661	What Will He Do with It? — Volume 03	Edward Bulwer Lytton Lytton	41576	nov
 8844	Weymouth New Testament in Modern Speech, Titus	Richard Francis Weymouth	1466	rel
-16752	Caste	William Alexander Fraser	65646	nov
+16752	Caste	William Alexander Fraser	65646	ind,nov
 34142	By Birth a Lady	George Manville Fenn	106356	nov
 34491	Ralph Clavering; Or, We Must Try Before We Can Do	William Henry Giles Kingston	16415	kid,nov
 37154	Songs of Heroic Days	Thomas O'Hagan	4091	poe
@@ -40602,7 +40602,7 @@
 60906	Sappho	T. G. Tucker	9109	bio,poe
 64082	Morley Ashton: A Story of the Sea. Volume 3 (of 3)	James Grant	56857	adv,nov
 66404	Historic Litchfield: address delivered at the bi-centennial celebration of the town of Litchfield, August 1, 1920	M. W. Seymour	4669	
-68640	The chutney lyrics: A collection of comic pieces in verse on Indian subjects	Robert C. Caldwell	10974	hum,poe
+68640	The chutney lyrics: A collection of comic pieces in verse on Indian subjects	Robert C. Caldwell	10974	hum,ind,poe
 69056	John de Lancaster: a novel; vol. II.	Richard Cumberland	39551	nov
 72695	Mammy's baby	Amy Ella Blanchard	1948	kid,poe
 76791	Euthanasia : or, Medical treatment in aid of an easy death	William Munk	16811	phi
