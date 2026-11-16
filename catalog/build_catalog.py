@@ -10,6 +10,7 @@ keeps English books that are free to read in India, and writes small tab-separat
                             and words 0; archive = the Internet Archive item, for audio-only covers)
   books/v2/shelves.tsv      the Library's shelves:        key  title  subtitle  ids (comma separated)
   books/v2/about/<n>.tsv    short descriptions, 100 ids per file (n = id // 100):  id  text
+  books/v2/collections.tsv  curated reading lists:       key  title  subtitle  credit  ids
   books/v2/meta.txt         build date and counts
 
 Every English book Gutenberg marks "Public domain in the USA" is kept (books marked "Copyrighted" are left out).
@@ -81,6 +82,33 @@ SHELVES = [
     ("hum", "Humour", "Old books that are still funny", lambda b: "hum" in b["tags"]),
 ]
 SHELF_SIZE = 30
+
+# Collections (4.27.1): Gutenberg's reading lists, plus our own. key, title, subtitle, credit, rule.
+def _on(*names):
+    return lambda b: any(n in b.get("lists", []) for n in names)
+COLLECTIONS = [
+    ("harvard", "Harvard Classics", "The Five-Foot Shelf: the 1909 set meant to give anyone a liberal education, fifteen minutes a day.",
+     "From Project Gutenberg's Harvard Classics reading list", _on("Harvard Classics")),
+    ("best", "Best Books Ever", "The classics people never stop recommending.",
+     "From Project Gutenberg's Best Books Ever reading list", _on("Best Books Ever Listings")),
+    ("banned", "Banned Books", "Books someone once tried to stop you reading.",
+     "From Project Gutenberg's banned books lists (Anne Haight; American Library Association)",
+     _on("Banned Books from Anne Haight's list", "Banned Books List from the American Library Association")),
+    ("movies", "Read before the movie", "Classics that became films.", "From Project Gutenberg's Movie Books reading list", _on("Movie Books")),
+    ("start", "Start here: under 2 hours", "Short, famous and easy to finish in one sitting.", "Picked by TakeABreak",
+     lambda b: b["words"] <= 30000 and b["tags"] and "poe" not in b["tags"]),
+    ("detective", "Detective fiction", "Sherlock Holmes and the sleuths around him.", "From Project Gutenberg's Detective Fiction reading list", _on("Detective Fiction")),
+    ("gothic", "Gothic fiction", "Castles, curses and candlelight.", "From Project Gutenberg's Gothic Fiction reading list", _on("Gothic Fiction")),
+    ("scifi", "Where sci-fi began", "The books that invented the genre.", "From Project Gutenberg's Precursors of Science Fiction reading list",
+     _on("Precursors of Science Fiction")),
+    ("ancient", "Ancient Greece and Rome", "Homer, Plato, Virgil and friends.", "From Project Gutenberg's Classical Antiquity reading list",
+     _on("Classical Antiquity")),
+    ("bestsellers", "Bestsellers, 1895–1923", "What everyone was reading a century ago.",
+     "From Project Gutenberg's American Bestsellers reading list", _on("Bestsellers, American, 1895-1923")),
+    ("india", "India", "Stories, scriptures, history and travels from India.", "From Project Gutenberg's India and Hinduism reading lists",
+     lambda b: _on("India", "Hinduism")(b) or "ind" in b["tags"]),
+]
+COLLECTION_SIZE = 200
 INDIA_AUTHORS = re.compile(r"Tagore|Naidu, Sarojini|Dutt, Toru|Dutt, Romesh|Chattopadhyay|Chatterjee, Bankim|Vivekananda|"
                            r"Kalidasa|K[aā]lid[aā]sa|Valmiki|Vyasa|Premchand|Aurobindo|Gandhi, Mahatma|Ramakrishna|Bose, Jagadis")
 
@@ -185,7 +213,8 @@ def parse(data):
     about = ebook.findtext("pgterms:marc520", default="", namespaces=NS) or ""
     issued = ebook.findtext("dcterms:issued", default="", namespaces=NS) or ""
     return dict(id=bid, title=clean_title(title), author=author, words=words, downloads=downloads, tags=tags,
-                india=india, about=about.strip(), issued=issued, lang=lang)
+                india=india, about=about.strip(), issued=issued, lang=lang,
+                lists=[x for x in shelves if not x.startswith("Category:")])
 
 
 def short_about(text):
@@ -402,6 +431,27 @@ def main(out_dir, rdf_path=None, check_covers=True, audio=True):
         print(f"shelf {key}: {len(ids)}")
     with open(os.path.join(out_dir, "shelves.tsv"), "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
+    # Collections: most read first, one edition of a book, English; the first four (the app's cover tile) real covers.
+    col_lines = []
+    for key, title, sub, credit, rule in COLLECTIONS:
+        ids, taken = [], set()
+        for b in books:
+            if len(ids) >= COLLECTION_SIZE:
+                break
+            if b["id"] <= 0 or b.get("lang") != "en" or "per" in b["tags"] or not rule(b):
+                continue
+            same = (re.split(r"[:;(\[]| or,", b["title"].lower())[0].strip(" ,."), b["author"].lower())
+            if same in taken:
+                continue
+            if len(ids) < 4 and not real_cover(b["id"]):
+                continue
+            ids.append(b["id"])
+            taken.add(same)
+        if len(ids) >= 6:
+            col_lines.append(f"{key}\t{title}\t{sub}\t{credit}\t{','.join(map(str, ids))}")
+        print(f"collection {key}: {len(ids)}")
+    with open(os.path.join(out_dir, "collections.tsv"), "w", encoding="utf-8") as f:
+        f.write("\n".join(col_lines) + "\n")
     with open(cover_cache_path, "w", encoding="utf-8") as f:
         for bid in sorted(cache):
             f.write(f"{bid}\t{cache[bid]}\n")
