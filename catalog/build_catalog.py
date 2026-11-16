@@ -12,8 +12,9 @@ keeps English books that are free to read in India, and writes small tab-separat
   books/v2/about/<n>.tsv    short descriptions, 100 ids per file (n = id // 100):  id  text
   books/v2/meta.txt         build date and counts
 
-India: copyright lasts 60 years after the author's death (counted from the next 1 January), so every author and
-translator must have died in YEAR - 61 or earlier. Books marked "Copyrighted" by Gutenberg are left out.
+Every English book Gutenberg marks "Public domain in the USA" is kept (books marked "Copyrighted" are left out).
+India's life + 60 rule (every author and translator died in YEAR - 61 or earlier) can be switched back on with
+INDIA_RULE = True; it was turned off on 16 Nov 2026 (Anup: show all the books).
 """
 import collections, datetime, io, os, re, sys, tarfile, time, urllib.request
 import xml.etree.ElementTree as ET
@@ -35,6 +36,7 @@ RDF_RES = "{%s}resource" % NS["rdf"]
 
 YEAR = datetime.date.today().year
 DIED_BY = YEAR - 61  # India: life + 60, from the following 1 January
+INDIA_RULE = False  # off since 16 Nov 2026: every US public-domain book is shown
 OK_NO_DATES = {"anonymous", "unknown"}
 
 # Gutenberg's "Category:" bookshelves -> the app's tags (short codes).
@@ -140,7 +142,7 @@ def parse(data):
     translators = [agent_info(a) for a in ebook.findall("marcrel:trl/pgterms:agent", NS)]
     if not creators:
         return None
-    for name, death in creators + translators:
+    for name, death in (creators + translators) if INDIA_RULE else []:
         if death is None:
             if name.strip().lower() not in OK_NO_DATES:
                 return None
@@ -273,7 +275,7 @@ def add_audiobooks(books):
         if not authors:
             continue
         ok = True
-        for au in authors:
+        for au in authors if INDIA_RULE else []:
             dod = (au.get("dod") or "").strip()
             name = f"{au.get('first_name', '')} {au.get('last_name', '')}".strip()
             if not dod.isdigit():
