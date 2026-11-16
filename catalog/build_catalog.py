@@ -86,6 +86,8 @@ SHELF_SIZE = 30
 # Collections (4.27.1): Gutenberg's reading lists, plus our own. key, title, subtitle, credit, rule.
 def _on(*names):
     return lambda b: any(n in b.get("lists", []) for n in names)
+def _by(*names):
+    return lambda b: any(n in b["author"] for n in names)
 COLLECTIONS = [
     ("harvard", "Harvard Classics", "The Five-Foot Shelf: the 1909 set meant to give anyone a liberal education, fifteen minutes a day.",
      "From Project Gutenberg's Harvard Classics reading list", _on("Harvard Classics")),
@@ -97,16 +99,34 @@ COLLECTIONS = [
     ("movies", "Read before the movie", "Classics that became films.", "From Project Gutenberg's Movie Books reading list", _on("Movie Books")),
     ("start", "Start here: under 2 hours", "Short, famous and easy to finish in one sitting.", "Picked by TakeABreak",
      lambda b: b["words"] <= 30000 and b["tags"] and "poe" not in b["tags"]),
+    ("nobel", "Nobel Prize winners", "Books by writers who won the Nobel Prize in Literature.",
+     "From Project Gutenberg's Nobel Prizes in Literature reading list", _on("Nobel Prizes in Literature")),
+    ("doyle", "Arthur Conan Doyle", "Sherlock Holmes, and the rest of Doyle's adventures.", "Picked by TakeABreak", _by("Arthur Conan Doyle")),
     ("detective", "Detective fiction", "Sherlock Holmes and the sleuths around him.", "From Project Gutenberg's Detective Fiction reading list", _on("Detective Fiction")),
+    ("historical", "Historical fiction", "Other centuries, told as stories.", "From Project Gutenberg's Historical Fiction reading list", _on("Historical Fiction")),
+    ("fantasy", "Fantasy", "Dragons, fairies and other worlds.", "From Project Gutenberg's Fantasy reading list", _on("Fantasy")),
     ("gothic", "Gothic fiction", "Castles, curses and candlelight.", "From Project Gutenberg's Gothic Fiction reading list", _on("Gothic Fiction")),
     ("scifi", "Where sci-fi began", "The books that invented the genre.", "From Project Gutenberg's Precursors of Science Fiction reading list",
      _on("Precursors of Science Fiction")),
+    ("pirates", "Pirates!", "Buccaneers, treasure and the open sea.", "From Project Gutenberg's Pirates reading list", _on("Pirates, Buccaneers, Corsairs, etc.")),
+    ("western", "Westerns", "Cowboys, outlaws and the open range.", "From Project Gutenberg's Western reading list", _on("Western")),
+    ("christmas", "Christmas stories", "Snow, ghosts and goodwill.", "From Project Gutenberg's Christmas reading list", _on("Christmas")),
+    ("children", "Children's classics", "Books to read with kids, or for yourself.", "From Project Gutenberg's Children's Literature reading list",
+     _on("Children's Literature")),
+    ("animals", "Animal stories", "Dogs, horses, wild things and the people who loved them.", "From Project Gutenberg's Animal reading list", _on("Animal")),
     ("ancient", "Ancient Greece and Rome", "Homer, Plato, Virgil and friends.", "From Project Gutenberg's Classical Antiquity reading list",
      _on("Classical Antiquity")),
+    ("ww1", "The First World War", "Letters, memoirs and stories from 1914–1918.", "From Project Gutenberg's World War I reading list", _on("World War I")),
     ("bestsellers", "Bestsellers, 1895–1923", "What everyone was reading a century ago.",
      "From Project Gutenberg's American Bestsellers reading list", _on("Bestsellers, American, 1895-1923")),
     ("india", "India", "Stories, scriptures, history and travels from India.", "From Project Gutenberg's India and Hinduism reading lists",
      lambda b: _on("India", "Hinduism")(b) or "ind" in b["tags"]),
+    ("tagore", "Rabindranath Tagore", "Poems, stories and plays by India's Nobel laureate.", "Picked by TakeABreak", _by("Rabindranath Tagore")),
+    ("shakespeare", "Shakespeare", "Every play and poem.", "Picked by TakeABreak", _by("William Shakespeare")),
+    ("dickens", "Charles Dickens", "From Oliver Twist to Great Expectations.", "Picked by TakeABreak", _by("Charles Dickens")),
+    ("austen", "Jane Austen", "All six novels, and the rest.", "Picked by TakeABreak", _by("Jane Austen")),
+    ("cooking", "Old cookbooks", "Recipes from a century or two ago.", "From Project Gutenberg's Cookbooks and Cooking reading list",
+     _on("Cookbooks and Cooking")),
 ]
 COLLECTION_SIZE = 200
 INDIA_AUTHORS = re.compile(r"Tagore|Naidu, Sarojini|Dutt, Toru|Dutt, Romesh|Chattopadhyay|Chatterjee, Bankim|Vivekananda|"
