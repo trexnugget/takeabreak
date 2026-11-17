@@ -5,7 +5,7 @@ TakeABreak book catalog (weekly, GitHub Actions).
 Reads Project Gutenberg's public-domain catalog data (the RDF feed, which Gutenberg offers for this kind of use),
 keeps English books that are free to read in India, and writes small tab-separated files the app downloads:
 
-  books/v2/index.tsv        every book, most read first:  id  title  author  words  tags  audio  seconds  archive  lang
+  books/v2/index.tsv        every book, most read first:  id  title  author  words  tags  audio  seconds  archive  lang  kb
                             (audio = LibriVox id when there's an audiobook; audiobook-only entries have id = -audio
                             and words 0; archive = the Internet Archive item, for audio-only covers)
   books/v2/shelves.tsv      the Library's shelves:        key  title  subtitle  ids (comma separated)
@@ -69,6 +69,7 @@ TAGS = {
 SHELVES = [
     ("most", "Most read", "Most downloaded classics", lambda b: True),
     ("aud", "Audiobooks", "Free, read by volunteers", lambda b: b.get("audio", 0) > 0),
+    ("ill", "Illustrated", "Books with their original pictures", lambda b: "ill" in b["tags"]),
     ("short", "Short reads", "Under 2 hours", lambda b: b["words"] <= 30000),
     ("mys", "Mystery", "Detectives, crimes and thrillers", lambda b: "mys" in b["tags"]),
     ("adv", "Adventure", "Pirates, journeys and daring escapes", lambda b: "adv" in b["tags"]),
@@ -201,12 +202,17 @@ def parse(data):
     periodical = any("Periodicals" in s for s in subjects) or any("Journals" in s or "Magazine" in s for s in shelves)
     has_epub = False
     txt_bytes = 0
+    img_bytes = 0
+    noimg_bytes = 0
     for f in ebook.findall("dcterms:hasFormat/pgterms:file", NS):
         about = f.get(RDF_ABOUT, "")
         fmts = [v.text or "" for v in f.findall("dcterms:format/rdf:Description/rdf:value", NS)]
         size = int(f.findtext("dcterms:extent", default="0", namespaces=NS) or 0)
         if about.endswith(".epub.noimages") or ("application/epub+zip" in fmts and "noimages" in about):
             has_epub = True
+            noimg_bytes = size
+        elif about.endswith(".epub.images"):
+            img_bytes = size
         if any(x.startswith("text/plain") for x in fmts) and "utf-8" in " ".join(fmts).lower():
             txt_bytes = max(txt_bytes, size)
         elif any(x.startswith("text/plain") for x in fmts) and not txt_bytes:
@@ -224,6 +230,10 @@ def parse(data):
         tags.add("mys")
     if periodical:
         tags.add("per")
+    # 4.28.1: illustrated: the edition with pictures is 1 MB+ bigger than the text-only one (more than a cover,
+    # a map or a few ornaments).
+    if img_bytes - noimg_bytes > 1_000_000:
+        tags.add("ill")
     tags = sorted(tags)
     author = " & ".join(display_name(n) for n, _ in creators[:2] if n) or "Anonymous"
     india = bool(INDIA_AUTHORS.search(" ".join(n for n, _ in creators))) or any(
@@ -233,7 +243,7 @@ def parse(data):
     about = ebook.findtext("pgterms:marc520", default="", namespaces=NS) or ""
     issued = ebook.findtext("dcterms:issued", default="", namespaces=NS) or ""
     return dict(id=bid, title=clean_title(title), author=author, words=words, downloads=downloads, tags=tags,
-                india=india, about=about.strip(), issued=issued, lang=lang,
+                india=india, about=about.strip(), issued=issued, lang=lang, kb=(img_bytes or noimg_bytes) // 1024,
                 lists=[x for x in shelves if not x.startswith("Category:")])
 
 
@@ -398,7 +408,7 @@ def main(out_dir, rdf_path=None, check_covers=True, audio=True):
     with open(os.path.join(out_dir, "index.tsv"), "w", encoding="utf-8") as f:
         for b in books:
             f.write(f"{b['id']}\t{tsv(b['title'])}\t{tsv(b['author'])}\t{b['words']}\t{','.join(b['tags'])}"
-                    f"\t{b.get('audio', 0)}\t{b.get('secs', 0)}\t{b.get('archive', '')}\t{b.get('lang', '')}\n")
+                    f"\t{b.get('audio', 0)}\t{b.get('secs', 0)}\t{b.get('archive', '')}\t{b.get('lang', '')}\t{b.get('kb', 0)}\n")
 
     shards = collections.defaultdict(list)
     for b in books:
