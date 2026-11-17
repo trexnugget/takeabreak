@@ -11,6 +11,7 @@ keeps English books that are free to read in India, and writes small tab-separat
   books/v2/shelves.tsv      the Library's shelves:        key  title  subtitle  ids (comma separated)
   books/v2/about/<n>.tsv    short descriptions, 100 ids per file (n = id // 100):  id  text
   books/v2/collections.tsv  curated reading lists:       key  title  subtitle  credit  ids
+  books/v2/voices.tsv       other recordings of an audiobook (4.29): book  librivox  seconds  archive  kind  readers
   books/v2/meta.txt         build date and counts
 
 Every English book Gutenberg marks "Public domain in the USA" is kept (books marked "Copyrighted" are left out).
@@ -313,16 +314,66 @@ def librivox_all(cache="librivox.json"):
     return out
 
 
-def add_audiobooks(books):
+VERSION_MARK = re.compile(r"\s*\((?:[^()]*?\b(?:version|dramatic|abridged|unabridged|solo|dramatised|dramatized)\b[^()]*)\)", re.I)
+
+
+def base_title(t):
+    """A recording's title without LibriVox's "(version 2)", "(Dramatic Reading)", "(abridged)" marks."""
+    return re.sub(r"\s+", " ", VERSION_MARK.sub("", t or "")).strip()
+
+
+def voice_kind(title, names):
+    t = (title or "").lower()
+    if "dramatic" in t or "dramati" in t:
+        return "drama"
+    if "abridged" in t and "unabridged" not in t:
+        return "abridged"
+    return "solo" if len(names) == 1 else "group"
+
+
+def fetch_readers(lids, known):
+    """Reader names for LibriVox recordings (one small request each, 8 at a time); [known] = earlier results."""
+    import json
+    from concurrent.futures import ThreadPoolExecutor
+    todo = [l for l in lids if l not in known]
+
+    def one(lid):
+        url = f"https://librivox.org/api/feed/audiobooks/?id={lid}&extended=1&format=json&fields=%7Bid,sections%7D"
+        for attempt in range(3):
+            try:
+                book = json.loads(fetch(url, timeout=60))["books"][0]
+                count = collections.Counter()
+                for sec in book.get("sections") or []:
+                    for r in sec.get("readers") or []:
+                        name = re.sub(r"\s*\(.*?\)\s*$", "", (r.get("display_name") or "").strip())
+                        if name:
+                            count[name] += int(sec.get("playtime") or 0) or 1
+                return lid, [n for n, _ in count.most_common()]
+            except Exception:
+                time.sleep(2 + attempt * 3)
+        return lid, None
+
+    with ThreadPoolExecutor(8) as pool:
+        for lid, names in pool.map(one, todo):
+            if names is not None:
+                known[lid] = names
+    print(f"readers: {len(lids)} recordings, {len(todo)} looked up")
+    return known
+
+
+def add_audiobooks(books, out_dir):
     """
-    LibriVox (public-domain recordings): English books whose every author died by DIED_BY. A recording of a
-    Gutenberg book in the catalog is attached to it (tag "aud"); others become audiobook-only entries after the
-    books, with id = -(LibriVox id).
+    LibriVox (public-domain recordings). A recording of a Gutenberg book in the catalog is attached to it (tag
+    "aud"); others become audiobook-only entries after the books, with id = -(LibriVox id).
+
+    4.29: a book can have several recordings ("voices"): other volunteers' versions, dramatic readings. They're
+    grouped (same Gutenberg book, or same title and author once the "(version 2)" marks are taken off); the longest
+    is the book's main recording, as before, and the others whole enough to be the same book (at least 60% as long)
+    go in voices.tsv:  book id  LibriVox id  seconds  archive  kind (solo/group/drama/abridged)  readers (|)
     """
     by_id = {b["id"]: b for b in books}
-    extra = []
-    seen_audio = set()
-    for a in sorted(librivox_all(), key=lambda a: -int(a.get("id") or 0)):
+    recs = []
+    for a in librivox_all():
         secs = int(a.get("totaltimesecs") or 0)
         lid = int(a.get("id") or 0)
         if secs <= 0 or lid <= 0:
@@ -340,25 +391,67 @@ def add_audiobooks(books):
         if not ok:
             continue
         m = re.search(r"/compress/([^/]+)/", a.get("url_zip_file") or "")
-        archive = m.group(1) if m else ""
         g = re.search(r"gutenberg\.org/(?:etext|ebooks|files|cache/epub)/(\d+)", a.get("url_text_source") or "")
-        target = by_id.get(int(g.group(1))) if g else None
-        if target is not None:
-            # Several recordings of one book (or of one story from it): keep the longest, the whole book.
-            if target.get("secs", 0) >= secs:
+        gid = int(g.group(1)) if g and int(g.group(1)) in by_id else 0
+        last = (authors[0].get("last_name") or "").strip().lower() if authors else ""
+        tkey = (base_title(a.get("title")).lower(), last, a.get("language") or "")
+        recs.append(dict(lid=lid, secs=secs, archive=m.group(1) if m else "", gid=gid, tkey=tkey, raw=a))
+
+    # Groups: a Gutenberg book's recordings, then recordings without a Gutenberg link join the group with the same
+    # title and author, or make their own.
+    groups, by_tkey = collections.defaultdict(list), {}
+    for r in recs:
+        if r["gid"]:
+            groups[("g", r["gid"])].append(r)
+            by_tkey.setdefault(r["tkey"], ("g", r["gid"]))
+    for r in recs:
+        if not r["gid"]:
+            key = by_tkey.setdefault(r["tkey"], ("t",) + r["tkey"])
+            groups[key].append(r)
+
+    extra, voices = [], []
+    for key, rs in groups.items():
+        rs.sort(key=lambda r: (-r["secs"], r["lid"]))
+        main = rs[0]
+        if key[0] == "g" and main["gid"] == 0:
+            main = next(r for r in rs if r["gid"])  # the book itself stays tied to a recording of it
+        if key[0] == "g":
+            target = by_id[key[1]]
+        else:
+            a = main["raw"]
+            title = clean_title(base_title(a.get("title")))
+            if not title:
                 continue
-            target.update(audio=lid, secs=secs, archive=archive)
-            target["tags"] = sorted(set(target["tags"]) | {"aud"})
-            continue
-        title = clean_title(re.sub(r"\s*\(.*?(version|dramatic reading).*?\)\s*$", "", a.get("title") or "", flags=re.I))
-        if not title:
-            continue
-        author = " & ".join(f"{au.get('first_name', '')} {au.get('last_name', '')}".strip() for au in authors[:2]) or "Various"
-        desc = re.sub(r"<[^>]+>", " ", a.get("description") or "")
-        extra.append(dict(id=-lid, title=title, author=author, words=0, downloads=0, tags=["aud"], india=False,
-                          about=desc, issued="", audio=lid, secs=secs, archive=archive, lang=LANG_CODES.get(a.get("language") or "", "")))
+            authors = a.get("authors") or []
+            author = " & ".join(f"{au.get('first_name', '')} {au.get('last_name', '')}".strip() for au in authors[:2]) or "Various"
+            desc = re.sub(r"<[^>]+>", " ", a.get("description") or "")
+            target = dict(id=-main["lid"], title=title, author=author, words=0, downloads=0, tags=[], india=False,
+                          about=desc, issued="", lang=LANG_CODES.get(a.get("language") or "", ""))
+            extra.append(target)
+        target.update(audio=main["lid"], secs=main["secs"], archive=main["archive"])
+        target["tags"] = sorted(set(target["tags"]) | {"aud"})
+        alts = [r for r in rs if r is main or r["secs"] >= 0.6 * main["secs"]]
+        if len(alts) > 1:
+            voices.append((target, main, alts))
     books.extend(extra)
-    print(f"audiobooks: {sum(1 for b in books if b.get('audio') and b['id'] > 0)} matched, {len(extra)} audio only")
+
+    path = os.path.join(out_dir, "voices.tsv")
+    known = {}
+    if os.path.exists(path):
+        for line in open(path, encoding="utf-8"):
+            p = line.rstrip("\n").split("\t")
+            if len(p) >= 6 and p[5]:
+                known[int(p[1])] = p[5].split("|")
+    known = fetch_readers([r["lid"] for _, _, alts in voices for r in alts], known)
+    os.makedirs(out_dir, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        for target, main, alts in sorted(voices, key=lambda v: v[0]["id"]):
+            for r in alts:
+                names = known.get(r["lid"], [])
+                f.write(f"{target['id']}\t{r['lid']}\t{r['secs']}\t{r['archive']}\t{voice_kind(r['raw'].get('title'), names)}"
+                        f"\t{tsv('|'.join(names[:40]))}\n")
+    print(f"audiobooks: {sum(1 for b in books if b.get('audio') and b['id'] > 0)} matched, {len(extra)} audio only, "
+          f"{len(voices)} with more than one voice ({sum(len(a) for _, _, a in voices)} recordings)")
 
 
 def fetch(url, timeout=30):
@@ -402,7 +495,7 @@ def main(out_dir, rdf_path=None, check_covers=True, audio=True):
     print(f"{seen} records, {len(books)} books kept")
 
     if audio:
-        add_audiobooks(books)
+        add_audiobooks(books, out_dir)
 
     os.makedirs(os.path.join(out_dir, "about"), exist_ok=True)
     with open(os.path.join(out_dir, "index.tsv"), "w", encoding="utf-8") as f:
