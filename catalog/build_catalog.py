@@ -69,7 +69,7 @@ TAGS = {
 # Library shelves: key, title, subtitle, rule.
 SHELVES = [
     ("most", "Most read", "Most downloaded classics", lambda b: True),
-    ("aud", "Audiobooks", "Free, read by volunteers", lambda b: b.get("audio", 0) > 0),
+    ("aud", "Audiobooks", "Read by LibriVox volunteers", lambda b: b.get("audio", 0) > 0),
     ("ill", "Illustrated", "Books with their original pictures", lambda b: "ill" in b["tags"]),
     ("short", "Short reads", "Under 2 hours", lambda b: b["words"] <= 30000),
     ("mys", "Mystery", "Detectives, crimes and thrillers", lambda b: "mys" in b["tags"]),
