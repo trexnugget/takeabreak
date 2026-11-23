@@ -378,7 +378,7 @@
 57724	A Cyclopaedia of Canadian Biography: Being Chiefly Men of the Time : A Collection of Persons Distinguished in Professional and Political Lif	Anonymous	700715	bio	0	0		en	1848
 51775	The Book of the Thousand Nights and a Night — Volume 02 (of 10)	Anonymous	154647	adv,myt	0	0		en	1470
 1719	The Ballad of the White Horse	G. K. Chesterton	21198	aud,myt,poe	1159	6897	ballad_of_the_whitehorse_jbc_librivox	en	116
-21	Three hundred Aesop’s fables : Translated by George Fyler Townsend	Aesop	43678	aud,cla,myt	6451	21254	300aesopsfables_ma_librivox	en	586
+21	Three hundred Aesop’s fables : Translated by George Fyler Townsend	Aesop	43678	aud,cla,myt	22826	21346	threehundredaesopsfables_2611_librivox	en	586
 4217	A Portrait of the Artist as a Young Man	James Joyce	82298	aud,cla,nov	890	32933	portrait_artist_pb_librivox	en	306
 86	A Connecticut Yankee in King Arthur's Court	Mark Twain	114196	aud,cla,hum,ill,nov,sff	141	49355	connecticutyankee_librivox	en	25472
 27673	Oedipus King of Thebes: Translated into English Rhyming Verse with Explanatory Notes	Sophocles	19415	cla,myt	0	0		en	307
@@ -783,7 +783,7 @@
 29904	Thoughts on Art and Life	Leonardo	47387	aud,phi	11156	19069	thoughts_on_art_and_life_1702_librivox	en	207
 2232	The Duchess of Malfi	John Webster	30182	aud	2974	10729	duchess_malfi_0912_librivox	en	144
 28233	Philosophiae Naturalis Principia Mathematica	Isaac Newton	143577	ill,phi	0	0		la	3005
-55822	Argonauts of the Western Pacific : An Account of Native Enterprise and Adventure in the Archipelagoes of Melanesian New Guinea	Bronislaw Malinowski	219307	ill	0	0		en	6542
+55822	Argonauts of the Western Pacific : An Account of Native Enterprise and Adventure in the Archipelagoes of Melanesian New Guinea	Bronislaw Malinowski	219307	aud,ill	20396	78033	argonauts_western_pacific_2611_librivox	en	6542
 61963	We	Evgenii Ivanovich Zamiatin	63682	aud,nov,sff	15492	31169	blackerchief_dick_2105_librivox	en	295
 77097	The magic ring, Vol. 1 (of 3)	Friedrich Heinrich Karl La Motte-Fouqué	55633	adv,nov,rom,sff	0	0		en	350
 3913	The Confessions of Jean Jacques Rousseau — Complete	Jean-Jacques Rousseau	270164	bio,ill,phi	0	0		en	1685
@@ -1512,7 +1512,7 @@
 67330	A History of Magic and Experimental Science, Volume 2 (of 2) : During the First Thirteen Centuries of Our Era	Lynn Thorndike	425828		0	0		en	1356
 1430	Beautiful Stories from Shakespeare	E. Nesbit & William Shakespeare	49740	aud,ill,kid	20771	19035	beautifulstoriesfromshakespeareversion2_2408_librivox	en	3543
 22238	Charles Carleton Coffin: War Correspondent, Traveller, Author, and Statesman	William Elliot Griffis	65279	bio	0	0		en	314
-16950	Goblin Market, The Prince's Progress, and Other Poems	Christina Georgina Rossetti	49208	aud,poe	20661	1728	helen_grey_2406.poem_librivox	en	223
+16950	Goblin Market, The Prince's Progress, and Other Poems	Christina Georgina Rossetti	49208	aud,poe	23054	2602	autumn_2611.poem_librivox	en	223
 8525	Eve's Diary, Complete	Mark Twain	6206	aud,hum,ill,nov	4089	2407	eves_diary_1003_librivox	en	4647
 9603	Hung Lou Meng, or, the Dream of the Red Chamber, a Chinese Novel, Book I	Xueqin Cao	180559	aud,nov	6221	69640	dream_red_chamber_1_1603_librivox	en	515
 45305	The City of God, Volume II	Augustine	244146	cla,phi,rel	0	0		en	817
@@ -17600,7 +17600,7 @@
 36008	The Blue Rose Fairy Book	Maurice Baring	39729	aud,ill,kid,myt	21017	14851	bluerosefairybook_2411_librivox	en	2770
 38754	Was heißt: sich im Denken orientieren?	Immanuel Kant	7255	phi	0	0		de	43
 39238	The homesteader : a novel	Oscar Micheaux	139838	aud,nov	14704	61954	homesteader_2012_librivox	en	572
-39944	Caper-Sauce: A Volume of Chit-Chat about Men, Women, and Things.	Fanny Fern	75024	hum	0	0		en	413
+39944	Caper-Sauce: A Volume of Chit-Chat about Men, Women, and Things.	Fanny Fern	75024	aud,hum	22600	32488	capersauce_2611_librivox	en	413
 41009	A Rose of Yesterday	F. Marion Crawford	50210	nov	0	0		en	215
 41071	A Son of Perdition: An Occult Romance	Fergus Hume	103815	nov,rom,sff	0	0		en	490
 41098	The Vinland Champions	Ottilie A. Liljencrantz	47022	adv	0	0		en	669
@@ -34564,7 +34564,7 @@
 54046	Mountaineering in the Sierra Nevada	Clarence King	95941	adv,tra	0	0		en	321
 54283	De Sobremesa; crónicas, Primera Parte (de 5)	Jacinto Benavente	51871	hum	0	0		es	414
 54636	The American Missionary — Volume 34, No. 02, February, 1880	Various	28410	per,rel	0	0		en	433
-54861	Torquemada en la cruz	Benito Pérez Galdós	61604	nov	0	0		es	246
+54861	Torquemada en la cruz	Benito Pérez Galdós	61604	aud,nov	22838	24370	torquemadaenlacruz_2611_librivox	es	246
 55323	Garryowen	H. De Vere Stacpoole	75874	nov	0	0		en	292
 55598	Shifting For Himself; or, Gilbert Greyson's Fortunes	Horatio Alger	53972	kid,nov	0	0		en	674
 55854	Letters from the Raven: Correspondence of L. Hearn with Henry Watkin	Lafcadio Hearn	36891	bio	0	0		en	750
@@ -82066,7 +82066,7 @@
 -10737	In Spring	Aline Kilmer	0	aud	10737	697	in_spring_1603.poem_librivox	en	0
 -10741	Leven van Maurits Lijnslager deel 3	Adriaan Loosjes Pzn.	0	aud	10741	38756	maurits_lijnslager_3_1604_librivox	nl	0
 -10743	Madcap	George Gibbs	0	aud	10743	42562	madcap_1604_librivox	en	0
--10748	History of a Six Weeks' Tour	Mary Wollstonecraft Shelley & Percy Bysshe Shelley	0	aud	10748	8352	history_six_weeks_tour_1607_librivox	en	0
+-10748	History of a Six Weeks' Tour	Percy Bysshe Shelley & Mary Wollstonecraft Shelley	0	aud	10748	8352	history_six_weeks_tour_1607_librivox	en	0
 -10753	Heel of Achilles	E. M. Delafield	0	aud	10753	48079	heelofachilles_1707_librivox	en	0
 -10754	Paved With Gold	Augustus Mayhew	0	aud	10754	91732	pavedwithgold_1607_librivox	en	0
 -10755	Philip Augustus	William Holden Hutton	0	aud	10755	27645	philip_augustus_pn_1605_librivox	en	0
@@ -82123,7 +82123,7 @@
 -10888	Sleeping Sickness	Fleming Mant Sandwith	0	aud	10888	8998	sleeping_sickness_1606_librivox	en	0
 -10895	Advent Days and Poems of Remembrance	Kate Seymour MacLean	0	aud	10895	2296	advent_days_1607_librivox	en	0
 -10898	For Christ and the Church	Charles Monroe Sheldon	0	aud	10898	3448	forchristandthechurch_1612_librivox	en	0
--10899	Lives of the Queens of England Volume 7	Elisabeth Strickland & Agnes Strickland	0	aud	10899	69207	queens_of_england_7_amb_1704_librivox	en	0
+-10899	Lives of the Queens of England Volume 7	Agnes Strickland & Elisabeth Strickland	0	aud	10899	69207	queens_of_england_7_amb_1704_librivox	en	0
 -10901	Short Nonfiction Collection, Vol. 044	Various	0	aud	10901	23314	nonfiction044_1607_librivox	en	0
 -10902	Rough Justice	Mary Elizabeth Braddon	0	aud	10902	37909	roughjustice_1703_librivox	en	0
 -10904	Creators: A Comedy	May Sinclair	0	aud	10904	56816	creators_1606_librivox	en	0
@@ -83707,7 +83707,7 @@
 -14651	Old Paths	J. C. Ryle	0	aud	14651	73798	oldpaths_2007_librivox	en	0
 -14655	Report of the National Advisory Commission on Civil Disorders (Kerner Commission Report)	National Advisory Commission on Civil Disorders	0	aud	14655	87591	kerner_commission_report_2005_librivox	en	0
 -14658	Prince Silverwings and Other Fairy Tales	Edith Ogden Harrison	0	aud	14658	6592	princesilverwings_2006_librivox	en	0
--14659	Running a Thousand Miles for Freedom	Ellen Craft & William Craft	0	aud	14659	11087	runningforfreedom_2009_librivox	en	0
+-14659	Running a Thousand Miles for Freedom	William Craft & Ellen Craft	0	aud	14659	11087	runningforfreedom_2009_librivox	en	0
 -14660	Diwan	Zeb-un-Nissa	0	aud	14660	6236	diwan_2004_librivox	en	0
 -14662	Rocket	Arthur Wing Pinero	0	aud	14662	9201	therocket_2004_librivox	en	0
 -14665	Report of the Presidential Task Force on Market Mechanisms (The Brady Report)	Presidential Task Force on Market Mechanisms	0	aud	14665	13267	brady_report_2006_librivox	en	0
@@ -83820,7 +83820,7 @@
 -14865	Pseudolus: or, The Cheat	Titus Maccius Plautus	0	aud	14865	7951	pseudolus_2007_librivox	en	0
 -14868	Preliminary Report on Neo-Fascist and Hate Groups	House Un-American Activities Committee	0	aud	14868	3161	preliminaryreport_hategroups_2003_librivox	en	0
 -14869	Garden Of Folly	Stephen Leacock	0	aud	14869	17645	garden_of_folly_2004_librivox	en	0
--14870	Lives of the Queens of England Volume 9	Agnes Strickland & Elisabeth Strickland	0	aud	14870	59618	queens_of_england_9_amb_2012_librivox	en	0
+-14870	Lives of the Queens of England Volume 9	Elisabeth Strickland & Agnes Strickland	0	aud	14870	59618	queens_of_england_9_amb_2012_librivox	en	0
 -14871	Stories from the History of Rome	Emily Beesly	0	aud	14871	13364	stories_history_rome_2102_librivox	en	0
 -14873	Sammlung deutscher Gedichte 033	Various	0	aud	14873	1934	sammlung_deutscher_gedichte_033__2006_librivox	de	0
 -14874	Misericordia	Benito Pérez Galdós	0	aud	14874	37390	misericordia_2005_librivox	es	0
@@ -84689,7 +84689,7 @@
 -16640	Percy Wynn, or Making a Boy of Him	Francis J. Finn, S.J.	0	aud	16640	23208	percywynn_2108_librivox	en	0
 -16641	Rover Vol. 01 No. 12	Lawrence Labree & Seba Smith	0	aud	16641	9546	rover_01_12_2107_librivox	en	0
 -16642	Captain Jinks of the Horse Marines	Clyde Fitch	0	aud	16642	12253	captainjinks_2208_librivox	en	0
--16643	Our Western Birds	Elizabeth Grinnell & Joseph Grinnell	0	aud	16643	14021	ourwesternbirds_2107_librivox	en	0
+-16643	Our Western Birds	Joseph Grinnell & Elizabeth Grinnell	0	aud	16643	14021	ourwesternbirds_2107_librivox	en	0
 -16644	Story Of The World: A Simple History For Boys And Girls	Elizabeth O'Neill	0	aud	16644	64880	story_of_the_world_2204_librivox	en	0
 -16645	National Geographic Magazine Vol. 09 - 11. November 1898	National Geographic Society	0	aud	16645	5013	ngm09_11_2107_librivox	en	0
 -16649	Biblische Geschichten des alten und neuen Bundes für die Jugend	Christoph von Schmid	0	aud	16649	28946	biblische_geschichten_fur_die_jugend_2106_librivox	de	0
@@ -86495,7 +86495,7 @@
 -20278	Insomnia Collection Vol. 006	Various	0	aud	20278	34886	insomnia006_2408_librivox	en	0
 -20282	Selected Poems	José Santos Chocano	0	aud	20282	1580	selectedpoemschocano_2403_librivox	en	0
 -20284	Selected Poems	Rafael Cabrera	0	aud	20284	1027	selectedpoemscabrera_2403_librivox	en	0
--20285	Letters of Robert Browning and Elizabeth Barrett Barrett, Part 3	Elizabeth Barrett Browning & Robert Browning	0	aud	20285	52356	letters-of-rbandebb-part3_2412_librivox	en	0
+-20285	Letters of Robert Browning and Elizabeth Barrett Barrett, Part 3	Robert Browning & Elizabeth Barrett Browning	0	aud	20285	52356	letters-of-rbandebb-part3_2412_librivox	en	0
 -20287	Autobiography of Charles H. Spurgeon, Volume 1	Charles H. Spurgeon	0	aud	20287	68267	autobiography_charleshspurgeon1_2502_librivox	en	0
 -20288	Карусель (Carousel)	Nadezhda Teffi	0	aud	20288	25310	carousel_2511_librivox	ru	0
 -20290	Practical Advice to Young Persons Respecting Temptation and Sin	Louis Gaston de Segur	0	aud	20290	6356	practicaladvice_2402_librivox	en	0
@@ -86614,7 +86614,7 @@
 -20501	House of Moonlight	August Derleth	0	aud	20501	5772	houseofmoonlight_2404_librivox	en	0
 -20502	Double	Edgar Wallace	0	aud	20502	27195	thedouble_2405_librivox	en	0
 -20504	Black Cat Vol. 04 No. 04 January 1899	Various	0	aud	20504	5934	blackcat0404_2406_librivox	en	0
--20505	Pioneer Mothers of America, Volume 1	Mary Wolcott Green & Harry Clinton Green	0	aud	20505	35818	pioneermothersamericavol1_2508_librivox	en	0
+-20505	Pioneer Mothers of America, Volume 1	Harry Clinton Green & Mary Wolcott Green	0	aud	20505	35818	pioneermothersamericavol1_2508_librivox	en	0
 -20506	Lectures to Young People	William B. Sprague	0	aud	20506	37051	lecturestoyoungpeople_2501_librivox	en	0
 -20507	Imperialism and World Politics, Part 2 of 4	Parker Thomas Moon	0	aud	20507	24037	imperialismandworldpoliticspart2of4_2409_librivox	en	0
 -20508	Children's Short Works, Vol. 057	Various	0	aud	20508	11694	childrensshortworks057_2412_librivox	en	0
@@ -86646,7 +86646,7 @@
 -20560	Murder Mistress	Robert Colby	0	aud	20560	12878	murdermistress_2405_librivox	en	0
 -20563	History of the Revolutions in Europe	Christoph Wilhelm von Koch	0	aud	20563	137861	historyrevolutionseurope_2507_librivox	en	0
 -20564	Whitman: An Interpretation in Narrative	Emory Holloway	0	aud	20564	38189	whitmananinterpretation_2406_librivox	en	0
--20565	Tradiciones filipinas	José Toral y Sagristá & Juan Toral y Sagristá	0	aud	20565	11141	tradicionesfilipinas_2406_librivox	es	0
+-20565	Tradiciones filipinas	Juan Toral y Sagristá & José Toral y Sagristá	0	aud	20565	11141	tradicionesfilipinas_2406_librivox	es	0
 -20567	Selected Poems	Julio Herrera y Reissig	0	aud	20567	739	selectedpoems_reissig_2406_librivox	en	0
 -20568	Tejas, la primera desmembración de Méjico	Carlos Pereyra	0	aud	20568	15316	tejaslaprimeradesmembraciondemejico_2406_librivox	es	0
 -20569	Poems Concerning the Slave Trade	Robert Southey	0	aud	20569	1707	poemsconcerningslavetrade_2405_librivox	en	0
@@ -86725,7 +86725,7 @@
 -20701	perro del hortelano	Félix Lope de Vega	0	aud	20701	7971	perrodelhortelano_2408_librivox	es	0
 -20702	Socialist Readings for Children	John Spargo	0	aud	20702	10790	socialistreadingsforchildren_2408_librivox	en	0
 -20703	Thrill Book Vol. I No. 8, June 15, 1919	Will Gage Carey & John Russell Coryell	0	aud	20703	16853	thrillbookvol1no8_2411_librivox	en	0
--20706	Venice	Dorothy Menpes & Mortimer Menpes	0	aud	20706	17552	venice_2408_librivox	en	0
+-20706	Venice	Mortimer Menpes & Dorothy Menpes	0	aud	20706	17552	venice_2408_librivox	en	0
 -20708	Tristram and Iseult and other poems	Matthew Arnold	0	aud	20708	9184	tristramandiseult_2407_librivox	en	0
 -20710	Short Story Collection Vol. 111	Various	0	aud	20710	30990	ssc111_2409_librivox	en	0
 -20712	Glaucia the Greek Slave	Emma Leslie	0	aud	20712	20860	glaucia_2412_librivox	en	0
@@ -86931,7 +86931,7 @@
 -21110	Tarzans Tiere	Edgar Rice Burroughs	0	aud	21110	25997	tarzanstiere_2503_librivox	de	0
 -21111	Sammlung kurzer deutscher Prosa 063	Various	0	aud	21111	3760	sammlungkurzerdeutscherprosa063_2412_librivox	de	0
 -21112	Second Chance	Nellie McClung	0	aud	21112	32008	secondchance_2412_librivox	en	0
--21115	Lives of the Queens of England Volume 11	Elisabeth Strickland & Agnes Strickland	0	aud	21115	51062	queensofengland11_2505_librivox	en	0
+-21115	Lives of the Queens of England Volume 11	Agnes Strickland & Elisabeth Strickland	0	aud	21115	51062	queensofengland11_2505_librivox	en	0
 -21118	Supersticiones y Leyendas Mayas	Manuel Rejón García	0	aud	21118	9781	supersticionesyleyendasmayas_2412_librivox	es	0
 -21120	Lectures on Modern History	William Smyth	0	aud	21120	141664	lecturesonmodernhistory_2604_librivox	en	0
 -21123	Psychologie der Massen	Gustave Le Bon	0	aud	21123	20319	psychologiedermassen_2412_librivox	de	0
@@ -86955,7 +86955,7 @@
 -21163	Comical History of Don Quixote, Part 2	Thomas D'Urfey	0	aud	21163	13177	thecomicalhistoryofdonquixotepart2_2508_librivox	en	0
 -21164	David Copperfield, Band 03	Charles Dickens	0	aud	21164	15960	davidcopperfieldband03version2_2412_librivox	de	0
 -21165	Philosophy and Civilization in the Middle Ages	Maurice de Wulf	0	aud	21165	29920	philosophycivilizationmiddleages_2602_librivox	en	0
--21166	Love Songs	Robert Browning & Elizabeth Barrett Browning	0	aud	21166	6337	lovesongs_2502_librivox	en	0
+-21166	Love Songs	Elizabeth Barrett Browning & Robert Browning	0	aud	21166	6337	lovesongs_2502_librivox	en	0
 -21167	cocodrilo	Fyodor Dostoyevsky	0	aud	21167	6599	cocodrilo_2412_librivox	es	0
 -21168	Hardcase	Luke Short	0	aud	21168	21530	hardcase_2412_librivox	en	0
 -21169	Thrill Book Vol. II No. 1, July 1, 1919	Clarence Leroy Andrews & Christopher Bannister	0	aud	21169	32165	thrillbookvoliino1july11919_2503_librivox	en	0
@@ -87648,6 +87648,7 @@
 -22580	American Bee Journal, Vol. XVII, No. 5 , February 2, 1881	Various	0	aud	22580	6483	theamericanbeejournalvolxviino5_2611_librivox	en	0
 -22584	Nuestra Señora de París	Victor Hugo	0	aud	22584	71647	nuestrasenoradeparis_2608_librivox	es	0
 -22585	Short Poetry Collection 276	Various	0	aud	22585	7546	spc276_2606_librivox	en	0
+-22586	Prince Eugene of Savoy	George Bruce Malleson	0	aud	22586	34582	princeeugeneofsavoy_2611_librivox	en	0
 -22587	Strange Love: A Novel of Abnormal Passion	Georges Eekhoud	0	aud	22587	19020	strangelove_2605_librivox	en	0
 -22588	Our Little Athenian Cousin of Long Ago	Julia Darrow Cowles	0	aud	22588	6064	ourlittleatheniancousinoflongago_2606_librivox	en	0
 -22590	French Régime in Wisconsin and the Northwest	Louisa Phelps Kellogg	0	aud	22590	46288	frenchregimeinwisconsin_2605_librivox	en	0
@@ -87699,6 +87700,7 @@
 -22737	Our Little Macedonian Cousin of Long Ago	Julia Darrow Cowles	0	aud	22737	5237	ourlittlemacedoniancousinoflongago_2608_librivox	en	0
 -22739	Black Cat Vol. 06 No. 10 July 1901	Various	0	aud	22739	6819	blackcat0610_2607_librivox	en	0
 -22743	Peder Victorious	O. E. Rølvaag	0	aud	22743	40697	pedervictorious_2608_librivox	en	0
+-22744	Regulatoren von Arkansas. Band 1.	Friedrich Gerstäcker	0	aud	22744	23510	dieregulatorenvonarkansasband1_2611_librivox	de	0
 -22745	Poor Relation	Edwin Arlington Robinson	0	aud	22745	2154	poorrelation_2607.poem_librivox	en	0
 -22746	Mini Multilingual Bedtime Stories - Collection 2	Aesop	0	aud	22746	691	mbs2_2608_librivox		0
 -22755	Short Poetry Collection 278	Various	0	aud	22755	3855	spc278_2608_librivox	en	0
@@ -87741,11 +87743,13 @@
 -22846	P. P. C.	Natalie Sumner Lincoln	0	aud	22846	25315	ppc_2608_librivox	en	0
 -22849	Short Science Fiction Collection 110	Various	0	aud	22849	33552	shortsciencefictioncollection110_2611_librivox	en	0
 -22856	Heroes of the Plains	J. W.  Buel	0	aud	22856	53733	heroesoftheplains_2609_librivox	en	0
+-22857	Mini Multilingual Bedtime Stories - Collection 3	Aesop	0	aud	22857	1977	mbs3_2611_librivox		0
 -22858	Among the Mongols	James Gilmour	0	aud	22858	26402	amongthemongols_2609_librivox	en	0
 -22859	Quarter to Four	William Wallace Cook	0	aud	22859	22266	quartertofour_2611_librivox	en	0
 -22865	Schloss und Fabrik Band 2	Louise Otto-Peters	0	aud	22865	16159	schlossundfabrikband2_2610_librivox	de	0
 -22868	Socialism	Edwin Clyde Robbins	0	aud	22868	35718	socialism_2609_librivox	en	0
 -22872	How To Be A Hermit, Or, A Bachelor Keeps House	Will Cuppy	0	aud	22872	29302	howtobeahermit_2610_librivox	en	0
+-22877	Eugenia Grandet	Honoré de Balzac	0	aud	22877	24151	eugeniagrandet_2611_librivox	es	0
 -22880	Magic	Hamlin Garland	0	aud	22880	685	magic_2608.poem_librivox	en	0
 -22881	Love Still Has Something of the Sea	Sir Charles Sedley	0	aud	22881	1045	lovestillhassomethingofthesea_2609.poem_librivox	en	0
 -22885	Suspiria de Profundis	Thomas de Quincey	0	aud	22885	16073	suspiriadeprofundis_2609_librivox	en	0
@@ -87765,6 +87769,7 @@
 -22935	History of the Great American Fortunes Vol. 3	Gustavus Myers	0	aud	22935	38806	greatamericanfortunes_vol3_2610_librivox	en	0
 -22944	His Last Sebastian and Other Poems	James Laver	0	aud	22944	7302	hislastsebastian_2609_librivox	en	0
 -22947	Consolación a Helvia	Lucius Annaeus Seneca	0	aud	22947	4209	consolacionahelvia_2610_librivox	es	0
+-22952	Night is a Jungle	Kirpal Singh	0	aud	22952	41210	thenightisajungle_2611_librivox	en	0
 -22953	Grateful Peter's New Year's Gift	Ruth Lamb	0	aud	22953	4834	gratefulpeter_2611_librivox	en	0
 -22955	Short Poetry Collection 281	Various	0	aud	22955	6021	spc281_2611_librivox	en	0
 -22957	Orlando Inamorato	Matteo Maria Boiardo	0	aud	22957	6315	orlandoinamorato_2610_librivox	en	0
@@ -87780,4 +87785,5 @@
 -22986	Selected Articles on War - Cause and Cure	Julia Emily Johnsen	0	aud	22986	45941	selectedarticleswar_2611_librivox	en	0
 -22991	Pilgrimage	Johan Bojer	0	aud	22991	13319	pilgrimage_2610_librivox	en	0
 -23033	Black Cat Vol. 06 No. 11 August 1901	Various	0	aud	23033	7486	blackcat0611_2611_librivox	en	0
+-23052	Black Cat Vol. 06 No. 12 September 1901	Various	0	aud	23052	6422	blackcatl0612_2611_librivox	en	0
 -23053	High Flight	John Gillespie Magee, Jr.	0	aud	23053	1434	highflight1_2611.poem_librivox	en	0
