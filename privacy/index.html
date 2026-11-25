@@ -15,24 +15,24 @@ a{color:var(--gold)}
 </style></head><body><main>
 <h1>TakeABreak – Privacy Policy</h1>
 <p><strong>App:</strong> TakeABreak: Stop Doomscrolling (Android)
-<strong>Effective date:</strong> 18 November 2026 (app version 4.34)
+<strong>Effective date:</strong> 25 November 2026 (app version 4.39)
 <strong>Developer:</strong> Anup Agarwal
 <strong>Contact:</strong> anupagarwal199@gmail.com</p>
 
 <h2>The short version</h2>
 <p>Everything the app knows about how you use your phone stays on your phone: which apps you open, when, and for how long is never uploaded. There are no ads, and nothing is sold.</p>
 <p>To keep the app working well, it sends anonymous app statistics (for example, that a nudge was shown) and crash reports, and it can receive news from the developer. These never include your screen time or which apps you use.</p>
-<p>The one exception is optional. If you sign in with Google, to join the <strong>leaderboard</strong> (the Ranks tab) or to use the <strong>Library</strong> (which needs an account from version 4.32), the app uploads your first name, your total screen time for the week and your reading time for the week, so you can compare with friends and other users. Nothing is uploaded unless you choose to sign in, and you can leave or delete your account at any time.</p>
+<p>The one exception is optional. If you sign in with Google, to join the <strong>leaderboard</strong> (the Ranks tab) or to use the <strong>Library</strong> (which needs an account from version 4.32), the app uploads your first name, your total screen time for the week and your reading time for the week, so you can compare with friends and other users. From version 4.39 it also keeps a profile (your name, the character picture you pick, your streak and a few stats, including your total screen time for each of the last 2 weeks' days) so friends can follow you, compare and start duels. Which apps you use is never uploaded. Nothing is uploaded unless you choose to sign in, and you can leave or delete your account at any time.</p>
 
 <h2>1. What the app looks at, and why</h2>
 <p>TakeABreak helps you notice and cut down on long scrolling sessions, and gives you a focus timer. To do that it needs a few permissions. Each one is used only on your phone.</p>
 <p><strong>Usage access.</strong> Lets the app see which app is open on screen and for how long, and how many times you unlock your phone. This is how it counts your screen time, sends nudges when a session runs long, and shows your daily and weekly patterns.</p>
 <p><strong>List of installed apps.</strong> When you add an app to watch, TakeABreak shows the apps on your phone that you can open from the home screen, so you can pick from them. It reads their names and icons only.</p>
-<p><strong>Notifications.</strong> Used for nudges, the "Halo is keeping score" status notification, the focus timer countdown and chime, the weekly recap, and occasional news from the developer.</p>
+<p><strong>Notifications.</strong> Used for nudges, the "Halo is keeping score" status notification, the focus timer countdown and chime, the weekly recap, streak reminders, new followers and duels (if you're signed in), and occasional news from the developer.</p>
 <p><strong>Display over other apps (optional).</strong> Only needed if you choose the "Full screen" reminder for an app, so the reminder can appear on top of the app you're scrolling.</p>
 <p><strong>Do Not Disturb access (optional).</strong> Only used if you turn on "Silence notifications while focusing" in the Focus tab. During a focus round the app switches Do Not Disturb to Priority mode, and puts your previous setting back on breaks and when the session ends. It doesn't read your notifications.</p>
 <p><strong>Battery and start-up.</strong> Lets the app keep running in the background, keep the focus timer on time with the screen off, and start again after your phone restarts, so nudges stay reliable. The app doesn't use this for anything else.</p>
-<p><strong>Internet.</strong> Used for app statistics, crash reports and news from the developer (section 4), by the Library to download the book list, covers and books and to stream audiobooks (section 5), by Google Play Billing if you choose to make an optional purchase, and by the leaderboard if you choose to join it.</p>
+<p><strong>Internet.</strong> Used for app statistics, crash reports and news from the developer (section 4), by the Library to download the book list, covers and books and to stream audiobooks (section 5), by Google Play Billing if you choose to make an optional purchase, by the leaderboard, friends and duels if you choose to sign in, and by Android's backup (section 2).</p>
 
 <h2>2. What is stored on your phone</h2>
 <p>The app saves the following in its own private storage on your phone:</p>
@@ -44,7 +44,9 @@ a{color:var(--gold)}
 <li>your reading and listening: the books and audiobooks you started, where you are in each one, your playback speed, and your reading and listening time, pages and chapters per day (and Book Save records from older versions)</li>
 <li>your focus sessions: when they started, how long you focused and how many rounds</li>
 </ul>
-<p>None of this leaves your phone, including when you join the leaderboard or when app statistics are sent. Android's cloud backup is switched off for the app. If you use <strong>Settings → Your data → Back up</strong>, the app writes a file to a place you choose with the system file picker; that file is yours, and the app never uploads it.</p>
+<p>None of this is sent to the developer or to other users, except the totals described in section 3 if you sign in. App statistics never include it.</p>
+<p><strong>Android backup (from 4.39).</strong> If backup is on in your phone's settings, Android backs up the app's settings (including the apps you watch and your limits), daily totals, badges, streaks, reading progress and character looks to your own Google account, the same way it backs up other apps, so they come back when you set up a new phone. The backup is kept and encrypted by Google; the developer can't see it. Your imported books and the book files aren't included. You can turn backup off in your phone's settings (Google → Backup).</p>
+<p>If you use <strong>Settings → Your data → Back up</strong>, the app writes a file to a place you choose with the system file picker; that file is yours, and the app never uploads it.</p>
 
 <h2>3. The leaderboard (optional)</h2>
 <p>The Ranks tab lets you race friends in a group, and see where you stand among everyone on the leaderboard, by total screen time for the week (lowest first). It stays off until you tap "Continue with Google", in the Ranks tab or on the Library's sign-in page (Focus → Read). From version 4.32 the Library needs this account, so signing in to read also joins the leaderboard; the sign-in page says so. Everything else (screen time, nudges, limits, patterns and the focus timer) works without an account.</p>
@@ -54,14 +56,21 @@ a{color:var(--gold)}
 <li><strong>Your total screen time for the week</strong>, as one number for the whole phone, and how many days it covers. It's sent a few times a day while you're signed in.</li>
 <li><strong>Your reading time for the week</strong>, as one number (books, audiobooks and reading apps together), shown next to your name. It never changes your rank. Which books you read is never sent.</li>
 <li><strong>Your groups:</strong> the names of groups you start, and which groups you're in.</li>
+<li><strong>Your profile (from 4.39):</strong> the character picture and frame you pick, your current and longest streak, shields, challenge level, best finish, duels won and lost, your total reading time, your badges, the month you joined, and whether your profile is private.</li>
+<li><strong>Your daily totals (from 4.39):</strong> your total screen time for each of the last 14 days, as one number per day for the whole phone, so friends can see the "you vs them" chart. It's only sent after the app has shown you what friends can see (the card at the top of Friends).</li>
+<li><strong>Who you follow and who you block.</strong></li>
+<li><strong>Duels:</strong> who's in the duel, its length and status, and both people's total screen time for each day of the duel.</li>
+<li><strong>Your progress</strong> (challenge level, streak, shields, picture, frame, duel record and badges), kept with your account so it comes back if you reinstall.</li>
+<li><strong>A notification token</strong>, so the server can tell you about new followers, duel invites and duel results.</li>
 <li><strong>Your Google account email, name and account ID</strong>, and a user ID. These are kept by Google's Firebase Authentication so you can sign in. They're never shown to other users.</li>
 </ul>
 <p>When you sign in and use the leaderboard, Google's Firebase services also process your IP address and basic device information (such as Android version and phone model) to keep sign-in secure and prevent abuse.</p>
-<p><strong>Never collected:</strong> which apps you use, how long you spend in any app, when you use your phone, or anything else from section 2.</p>
-<p><strong>Who can see it:</strong> people in your groups see your first name, weekly total and reading time. Everyone on the leaderboard can see your first name, total and reading time if you're in the top 50 for a week. Your total also counts, without your name, in everyone's rank and chart. Nobody can see the bottom of the global list.</p>
+<p><strong>Never collected:</strong> which apps you use, how long you spend in any app, what time of day you use your phone, or anything else from section 2 beyond the totals above.</p>
+<p><strong>Who can see it:</strong> people in your groups see your first name, weekly total and reading time. Everyone on the leaderboard can see your first name, total and reading time if you're in the top 50 for a week. Your total also counts, without your name, in everyone's rank and chart. Nobody can see the bottom of the global list. Your picture, frame and streak show next to your name wherever your name shows.</p>
+<p><strong>Your profile:</strong> anyone signed in who opens your profile (from Ranks, a group or your profile link) sees your name, picture, frame, streak, who you follow and who follows you. Your stats and daily totals are shown to them too, unless you turn on <strong>Private profile</strong> (Home → your profile → Edit); then only people you follow can see them or challenge you. In a duel, the other person sees your total for each duel day. People you block can't follow you or challenge you.</p>
 <p><strong>Where it's kept:</strong> on Google Firebase (Cloud Firestore in Google's Mumbai, India region, and Firebase Authentication, which may store sign-in records outside India). Google acts as a service provider and doesn't use this data for advertising.</p>
-<p><strong>How long:</strong> the boards only show this week and last week, and older weekly totals are deleted each time the app syncs. Signing out removes your weekly totals straight away. Your name and group memberships are kept until you leave a group or delete your leaderboard account. If you uninstall without signing out, your last two weekly totals stay stored (no longer shown after two weeks) until you ask me to delete them.</p>
-<p><strong>Security:</strong> data is encrypted in transit, and the server's access rules only let you change your own name, score and memberships. Nobody can browse the list of groups; a group can only be opened with its code.</p>
+<p><strong>How long:</strong> the boards only show this week and last week, and older weekly totals are deleted each time the app syncs. Signing out removes your weekly totals straight away. Your name, group memberships, profile, follows and progress are kept until you leave a group or delete your leaderboard account. Duels are kept until you or the other person deletes their account. A group's admin can remove members; removed members can join again with the code. If you uninstall without signing out, your last two weekly totals stay stored (no longer shown after two weeks) until you ask me to delete them.</p>
+<p><strong>Security:</strong> data is encrypted in transit, and the server's access rules only let you change your own name, score, profile, follows and memberships, and your own days in a duel. Nobody can browse the list of groups; a group can only be opened with its code.</p>
 
 <h2>4. App statistics, crash reports and news</h2>
 <p>These help me see which parts of the app help people, fix crashes, and tell you about updates. They use Google's Firebase services and don't need an account.</p>
@@ -97,7 +106,7 @@ a{color:var(--gold)}
 <h2 id="delete-account">8. Deleting your data and your leaderboard account</h2>
 <div class="box">
 <p><strong>Data on your phone:</strong> go to Settings → Apps → TakeABreak → Storage → Clear data, or uninstall the app. Either one removes it all permanently. You can also take back any permission at any time in your phone's settings.</p>
-<p><strong>Leaderboard account, in the app:</strong> open the ☰ menu on Home → Settings → Leaderboard → <strong>Delete my leaderboard account</strong>. This removes your name, every weekly total, your group memberships and your sign-in account straight away.</p>
+<p><strong>Leaderboard account, in the app:</strong> open the ☰ menu on Home → Settings → Leaderboard → <strong>Delete my leaderboard account</strong>. This removes your name, every weekly total, your group memberships, your profile and daily totals, your follows and blocks, your duels, your saved progress and your sign-in account straight away.</p>
 <p><strong>Leaderboard account, without the app:</strong> email <a href="mailto:anupagarwal199@gmail.com?subject=Delete%20my%20TakeABreak%20account">anupagarwal199@gmail.com</a> with the subject "Delete my TakeABreak account", from the Google account you signed in with. I'll delete the same data within 30 days and reply when it's done.</p>
 <p><strong>Only some of it:</strong> Settings → Leaderboard → <strong>Sign out</strong> removes your weekly totals and stops uploads, but keeps your name and groups for when you sign back in. Leaving a group removes you from it.</p>
 </div>
@@ -110,7 +119,8 @@ a{color:var(--gold)}
 
 <h2>11. Changes to this policy</h2>
 <p>When this policy changes, the new version is posted at this same address with a new effective date. Your screen-time data (which apps you use, when, and for how long) and your personal information are handled only as described here. If that ever changes, you'll be told in the app before it happens.</p>
-<p class="muted">18 November 2026 (4.33 and 4.34): app statistics note how far you got in first-time setup, and whether you read or listen, with your weekly reading time as a rough range (section 4).<br>
+<p class="muted">25 November 2026 (4.39): friends, profiles and duels. If you're signed in, your profile, streak and daily screen time totals for the last 2 weeks are kept so friends can compare (shown in the app before they're sent), plus follows, duels and your progress (section 3). Android backup is now on for the app's own data (section 2).<br>
+18 November 2026 (4.33 and 4.34): app statistics note how far you got in first-time setup, and whether you read or listen, with your weekly reading time as a rough range (section 4).<br>
 18 November 2026 (4.32): the Library needs a Google sign-in, which also joins the leaderboard (sections 3 and 5); the reader's dictionary is downloaded once and works offline (section 5).<br>
 17 November 2026 (4.30): you can import your own EPUB books (section 5). They stay on your phone and are never uploaded.<br>
 17 November 2026 (4.28.2): app statistics note which checklist settings are on or off (section 4).<br>
